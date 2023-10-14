@@ -29,7 +29,7 @@ function login.onLogin(player)
 	elseif not promotion or player:getLevel() < 20 then
 		player:setVocation(vocation:getDemotion())
 	end
-	
+
 	-- Events
 	player:registerEvent("PlayerDeath")
 	player:registerEvent("DropLoot")
