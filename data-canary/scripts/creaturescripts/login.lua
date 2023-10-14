@@ -27,7 +27,7 @@ function login.onLogin(player)
 	elseif player:isPromoted() then
 		player:setVocation(vocation:getDemotion())
 	end
-	
+
 	-- Events
 	player:registerEvent("PlayerDeath")
 	player:registerEvent("DropLoot")
