@@ -12,9 +12,9 @@ local questTable = {
 	{ storage = Storage.BigfootBurden.QuestLine, storageValue = 23 },
 	{ storage = Storage.BigfootBurden.QuestLineComplete, storageValue = 2 },
 	{ storage = Storage.BigfootBurden.Rank, storageValue = 1440 },
-	{ storage = Storage.BigfootBurden.Warzone1Access, storageValue = 2 },
+	{ storage = Storage.BigfootBurden.Warzone1Access, storageValue = 1 },
 	{ storage = Storage.BigfootBurden.Warzone2Access, storageValue = 2 },
-	{ storage = Storage.BigfootBurden.Warzone3Access, storageValue = 2 },
+	{ storage = Storage.BigfootBurden.Warzone3Access, storageValue = 3 },
 	{ storage = Storage.DangerousDepths.Questline, storageValue = 10 },
 	{ storage = Storage.DangerousDepths.Access.LavaPumpWarzoneVI, storageValue = 10 },
 	{ storage = Storage.DangerousDepths.Access.LavaPumpWarzoneV, storageValue = 10 },
@@ -375,6 +375,7 @@ local questTable = {
 	-- Sea Serpent Quest
 	{ storage = Storage.Quest.U8_2.FishForASerpent.QuestLine, storageValue = 5 },
 	{ storage = Storage.Quest.U8_2.TheHuntForTheSeaSerpent.QuestLine, storageValue = 2 },
+	{ storage = Storage.WhiteRavenMonastery.Door, storageValue = 1 },
 }
 
 -- from Position: (33201, 31762, 1)
