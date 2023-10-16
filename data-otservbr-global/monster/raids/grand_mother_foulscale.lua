@@ -65,7 +65,7 @@ monster.light = {
 monster.summon = {
 	maxSummons = 4,
 	summons = {
-		{ name = "dragon hatchlings", chance = 40, interval = 4000, count = 4 },
+		{ name = "dragon hatchling", chance = 40, interval = 4000, count = 4 },
 	},
 }
 
