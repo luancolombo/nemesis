@@ -54,7 +54,6 @@ end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end
 
-
 local products = {
 	["strike"] = {
 		["basic"] = {
@@ -172,7 +171,6 @@ npcHandler:setMessage(MESSAGE_GREET, "Welcome to my {special tokens} shop, |PLAY
 npcHandler:setMessage(MESSAGE_FAREWELL, "Please come and buy again, |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, take a good look at my very rare items.")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
-
 
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)

@@ -83,7 +83,6 @@ npcConfig.shop = {
 	{ itemName = "thundersoul tabard", clientId = 22532, buy = 100 },
 }
 
-
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)
 	npc:sellItem(player, itemId, amount, subType, 0, ignore, inBackpacks)
