@@ -6583,7 +6583,7 @@ GameStore.Categories = {
 			},
 		},
 	},
-	-- Special Potions Offers
+    -- Special Potions Offers
 	{
 		icons = { "Category_Boosts.png" },
 		parent = "Nemesis Exclusive",
