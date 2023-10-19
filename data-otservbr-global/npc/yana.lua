@@ -54,6 +54,7 @@ end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end
 
+
 local products = {
 	["strike"] = {
 		["basic"] = {
@@ -165,11 +166,13 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-local function greetCallback(npc, creature)
-	local playerId = creature:getId()
-	npcHandler:setTopic(playerId, 0)
-	return true
-end
+keywordHandler:addKeyword({ "special tokens" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you {creature products} to imbuiments, or if you want to buy very rare weapons, ask me for {tokens}." })
+
+npcHandler:setMessage(MESSAGE_GREET, "Welcome to my {special tokens} shop, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Please come and buy again, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, take a good look at my very rare items.")
+npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
+
 
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
@@ -188,7 +191,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "tokens") then
 		npc:openShopWindow(creature)
 		npcHandler:say("If you have any gold tokens with you, let's have a look! These are my offers.", npc, creature)
-	elseif MsgContains(message, "trade") then
+	elseif MsgContains(message, "creature products") then
 		npcHandler:say({ "I have creature products for the imbuements {strike}, {vampirism} and {void}. Make your choice, please!" }, npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 then
@@ -242,7 +245,6 @@ npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, false)
 
 -- npcType registering the npcConfig table
 npcType:register(npcConfig)

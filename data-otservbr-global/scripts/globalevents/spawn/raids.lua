@@ -12,6 +12,7 @@ local raids = {
 	--Quinta-Feira
 	["Thursday"] = {
 		["19:00"] = { raidName = "Undead Cavebear" },
+		["15:00"] = { raidName = "Ghazbaran" },
 	},
 
 	--Sexta-feira
