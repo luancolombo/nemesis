@@ -2675,19 +2675,10 @@ GameStore.Categories = {
 			{
 				icons = { "Outfit_Veteran_Paladin_Male_Addon_3.png", "Outfit_Veteran_Paladin_Female_Addon_3.png" },
 				name = "Full Veteran Paladin Outfit",
-				price = 750,
+				price = 1750,
 				sexId = { female = 1205, male = 1204 },
 				addon = 3,
-				description = "{character}\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>A Veteran Paladin has mastered the art of distance fighting. No matter how far away his prey may be, a marksman like the Veteran Paladin will always hit with extraordinary precision. No one can escape his keen hawk-eyed vision and even small stones become deadly weapons in his hands.</i>",
-				type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT,
-			},
-			{
-				icons = { "Outfit_Void_Master_Male_Addon_3.png", "Outfit_Void_Master_Female_Addon_3.png" },
-				name = "Full Void Master Outfit",
-				price = 750,
-				sexId = { female = 1203, male = 1202 },
-				addon = 3,
-				description = "{character}\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>According to ancient rumours, the pulsating orb that the Void Master balances skilfully on the tip of his staff consists of powerful cosmic spheres. If you gaze too long into the infinite emptiness inside the orb, its powers will absorb your mind.</i>",
+				description = "{info} usable by all characters of the account\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>A Veteran Paladin has mastered the art of distance fighting. No matter how far away his prey may be, a marksman like the Veteran Paladin will always hit with extraordinary precision. No one can escape his keen hawk-eyed vision and even small stones become deadly weapons in his hands.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT,
 			},
 			{
@@ -2697,6 +2688,15 @@ GameStore.Categories = {
 				sexId = { female = 852, male = 853 },
 				addon = 3,
 				description = "{character}\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>The warm and cosy cloak of the Winter Warden outfit will keep you warm in every situation. Best thing, it is not only comfortable but fashionable as well. You will be the envy of any snow queen or king, guaranteed!</i>",
+				type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT,
+			},
+			{
+				icons = { "Outfit_Void_Master_Male_Addon_3.png", "Outfit_Void_Master_Female_Addon_3.png" },
+				name = "Full Void Master Outfit",
+				price = 1750,
+				sexId = { female = 1203, male = 1202 },
+				addon = 3,
+				description = "{info} usable by all characters of the account\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>According to ancient rumours, the pulsating orb that the Void Master balances skilfully on the tip of his staff consists of powerful cosmic spheres. If you gaze too long into the infinite emptiness inside the orb, its powers will absorb your mind.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT,
 			},
 			{
