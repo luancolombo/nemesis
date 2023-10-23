@@ -91,12 +91,8 @@ function addItemsToShoppingBag(npc, player)
 		for _, item in pairs(itemList) do
 			shoppingBag:addItem(item.itemId, item.count)
 		end
-
-		player:removeMoneyBank(moneyRequired)
-
 		return true
 	end
-
 	return false
 end
 
@@ -326,12 +322,12 @@ local function purchaseItems(npc, player, message)
 	end
 end
 
-local function creatureSayCallback(npc, creature, type, message)
-	local player = Player(creature)
-	local playerId = player:getId()
-	if not npcHandler:checkInteraction(npc, creature) then
-		return false
-	end
+-- skill increase packages
+purchaseItems("bash", "skill club", 750000, { -- gold coin value
+	{itemId = 9657, count = 20}, -- cyclops toe
+	{itemId = 22189, count = 15}, -- ogre nose ring
+	{itemId = 10405, count = 10} -- warmaster's wristguards
+})
 
 	local imbuementPackages =
 		"These are the available imbuement packages, Skill increase: {bash}, {blockade}, {chop}, {epiphany}, {precision}, {slash}. Additional attributes: {featherweight}, {strike}, {swiftness}, {vampirism}, {vibrancy}, {void}. Elemental damage: {electrify}, {frost}, {reap}, {scorch}, {venom}. Elemental protection: {cloud fabric}, {demon presence}, {dragon hide}, {lich shroud}, {quara scale}, {snake skin}."
@@ -349,14 +345,138 @@ local function creatureSayCallback(npc, creature, type, message)
 			return
 		end
 
-		playerImbuementData[playerId] = nil
-		npcHandler:say("You have successfully completed your purchase of the items.", npc, player)
-		npcHandler:setTopic(playerId, 1)
-		npcHandler:say(imbuementPackages, npc, creature)
-	end
-end
+purchaseItems("chop", "skill axe", 975000, { -- gold coin value
+	{itemId = 10196, count = 20}, -- orc tooth
+	{itemId = 11447, count = 25}, -- battle stone
+	{itemId = 21200, count = 20} -- moohtant horn
+})
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|, say {imbuement packages} or {trade} for buy imbuement items.")
+purchaseItems("epiphany", "magic level", 825000, { -- gold coin value
+	{itemId = 9635, count = 25}, -- elvish talisman
+	{itemId = 11452, count = 15}, -- broken shamanic staff
+	{itemId = 10309, count = 15} -- strand of medusa hair
+})
+
+purchaseItems("precision", "skill distance", 825000, { -- gold coin value
+	{itemId = 11464, count = 25}, -- elven scouting glass
+	{itemId = 18994, count = 20}, -- elven hoof
+	{itemId = 10298, count = 10} -- metal spike
+})
+
+purchaseItems("slash", "skill sword", 825000, { -- gold coin value
+	{itemId = 9691, count = 25}, -- lion's mane
+	{itemId = 21202, count = 25}, -- mooh'tah shell
+	{itemId = 9654, count = 5} -- war crystal
+})
+
+-- additional attributes packages
+purchaseItems("featherweight", "capacity increase", 525000, { -- gold coin value
+    {itemId = 25694, count = 20}, -- fairy wings
+    {itemId = 25702, count = 10}, -- little bowl of myrrh
+    {itemId = 20205, count = 5} -- goosebump leather
+})
+
+purchaseItems("strike", "critical", 1000000, { -- gold coin value
+    {itemId = 11444, count = 20}, -- protective charm
+    {itemId = 10311, count = 25}, -- sabretooth
+    {itemId = 22728, count = 5} -- vexclaw talon
+})
+
+purchaseItems("swiftness", "speed", 1000000, { -- gold coin value
+    {itemId = 17458, count = 15}, -- damselfly wing
+    {itemId = 10302, count = 25}, -- compass
+    {itemId = 14081, count = 20} -- waspoid wing
+})
+
+purchaseItems("vampirism", "life leech", 1000000, { -- gold coin value
+    {itemId = 9685, count = 25}, -- vampire teeth
+    {itemId = 9633, count = 15}, -- bloody pincers
+    {itemId = 9663, count = 5} -- piece of dead brain
+})
+
+purchaseItems("vibrancy", "paralysis removal", 600000, { -- gold coin value
+    {itemId = 22053, count = 20}, -- wereboar hooves
+    {itemId = 23507, count = 15}, -- crystallized anger
+    {itemId = 28567, count = 5} -- quill
+})
+
+purchaseItems("void", "mana leech", 1000000, { -- gold coin value
+    {itemId = 11492, count = 25}, -- rope belt
+    {itemId = 20200, count = 25}, -- silencer claws
+    {itemId = 22730, count = 5} -- some grimeleech wings
+})
+
+-- elemental damage packages
+purchaseItems("electrify", "energy damage", 465000, { -- gold coin value
+    {itemId = 18993, count = 25}, -- rorc feather
+    {itemId = 21975, count = 5}, -- peacock feather fan
+    {itemId = 23508, count = 1} -- energy vein
+})
+
+purchaseItems("frost", "ice damage", 600000, { -- gold coin value
+    {itemId = 9661, count = 25}, -- frosty heart
+    {itemId = 21801, count = 10}, -- seacrest hair
+    {itemId = 9650, count = 5} -- polar bear paw
+})
+
+purchaseItems("reap", "death damage", 465000, { -- gold coin value
+    {itemId = 11484, count = 25}, -- pile of grave earth
+    {itemId = 9647, count = 20}, -- demonic skeletal hand
+    {itemId = 10420, count = 5} -- petrified scream
+})
+
+purchaseItems("scorch", "fire damage", 525000, { -- gold coin value
+    {itemId = 9636, count = 25}, -- fiery heart
+    {itemId = 5920, count = 5}, -- green dragon scale
+    {itemId = 5954, count = 5} -- demon horn
+})
+
+purchaseItems("venom", "earth damage", 705000, { -- gold coin value
+    {itemId = 9686, count = 25}, -- swamp grass
+    {itemId = 9640, count = 20}, -- poisonous slime
+    {itemId = 21194, count = 2} -- slime heart
+})
+
+-- elemental protection packages
+purchaseItems("cloud fabric", "energy protection", 700000, { -- gold coin value
+    {itemId = 9644, count = 20}, -- wyvern talisman
+    {itemId = 14079, count = 15}, -- crawler head plating
+    {itemId = 9665, count = 10} -- wyrm scale
+})
+
+purchaseItems("demon presence", "holy protection", 1050000, { -- gold coin value
+    {itemId = 9639, count = 25}, -- cultish robe
+    {itemId = 9638, count = 25}, -- cultish mask
+    {itemId = 10304, count = 20} -- hellspawn tail
+})
+
+purchaseItems("dragon hide", "fire protection", 525000, { -- gold coin value
+    {itemId = 5877, count = 20}, -- green dragon leather
+    {itemId = 16131, count = 10}, -- blazing bone
+    {itemId = 11658, count = 5} -- draken sulphur
+})
+
+purchaseItems("lich shroud", "death protection", 750000, { -- gold coin value
+    {itemId = 11466, count = 25}, -- flask of embalming fluid
+    {itemId = 22007, count = 20}, -- gloom wolf fur
+    {itemId = 9660, count = 5} -- mystical hourglass
+})
+
+purchaseItems("quara scale", "ice protection", 700000, { -- gold coin value
+    {itemId = 10295, count = 25}, -- winter wolf fur
+    {itemId = 10307, count = 15}, -- thick fur
+    {itemId = 14012, count = 10} -- deepling warts
+})
+
+purchaseItems("snake skin", "earth protection", 825000, { -- gold coin value
+    {itemId = 17823, count = 25}, -- piece of swampling wood
+    {itemId = 9694, count = 20}, -- snake skin
+    {itemId = 11702, count = 10} -- brimstone fangs
+})
+
+-- Basic
+
+npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME| say {pack imbuement} or {trade} for buy imbuement items.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "See you later |PLAYERNAME| come back soon.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "See you later |PLAYERNAME| come back soon.")
 
