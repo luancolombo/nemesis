@@ -67,6 +67,7 @@ npcConfig.shop = {
 	{ itemName = "abridged promotion scroll", clientId = 43946, buy = 100 },
 	{ itemName = "advanced promotion scroll", clientId = 43950, buy = 100 },
 	{ itemName = "silver raid token", clientId = 19083, buy = 200 },
+	{ itemName = "golden raid token", clientId = 19082, buy = 500 },
 }
 
 -- On buy npc shop message
