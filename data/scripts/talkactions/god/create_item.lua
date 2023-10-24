@@ -101,5 +101,5 @@ function createItem.onSay(player, words, param)
 end
 
 createItem:separator(" ")
-createItem:groupType("god")
+createItem:groupType("community manager")
 createItem:register()

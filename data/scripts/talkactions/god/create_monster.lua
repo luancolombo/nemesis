@@ -125,5 +125,5 @@ function createMonster.onSay(player, words, param)
 end
 
 createMonster:separator(" ")
-createMonster:groupType("god")
+createMonster:groupType("community manager")
 createMonster:register()

@@ -1,4 +1,4 @@
-local internalNpcName = "Nector"
+local internalNpcName = "Mector"
 local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
@@ -11,12 +11,12 @@ npcConfig.walkInterval = 2000
 npcConfig.walkRadius = 2
 
 npcConfig.outfit = {
-	lookType = 1489,
+	lookType = 1500,
 	lookHead = 79,
 	lookBody = 38,
 	lookLegs = 0,
 	lookFeet = 68,
-	lookAddons = 2,
+	lookAddons = 0,
 }
 
 npcConfig.flags = {
@@ -50,25 +50,23 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "gold tokens" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you very rare items changing your gold tokens. If you'd like to check the quality of my wares, ask me for a {trade}." })
+keywordHandler:addKeyword({ "heroes" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you the best rewards of this world. Ask me for a {trade}." })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to my supreme {gold tokens} shop, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Please come and buy again, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, take a good look at my very rare items.")
+npcHandler:setMessage(MESSAGE_GREET, "Welcome to the {heroes} shop, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Conquest the bosses and demons, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, take a good look at my glorious store.")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
-npcConfig.currency = 22721
+npcConfig.currency = 19082
 
 npcConfig.shop = {
-	{ itemName = "wealth duplex", clientId = 36727, buy = 100 },
-	{ itemName = "strike enhancement", clientId = 36724, buy = 100 },
-	{ itemName = "stamina extension", clientId = 36725, buy = 100 },
-	{ itemName = "bestiary betterment", clientId = 36728, buy = 100 },
-	{ itemName = "abridged promotion scroll", clientId = 43946, buy = 100 },
-	{ itemName = "advanced promotion scroll", clientId = 43950, buy = 100 },
-	{ itemName = "silver raid token", clientId = 19083, buy = 200 },
-	{ itemName = "golden raid token", clientId = 19082, buy = 500},
+	{ itemName = "bag of forge dusts", clientId = 23682, buy = 100 },
+	{ itemName = "mystery box", clientId = 26186, buy = 100 },
+	{ itemName = "bag you desire", clientId = 34109, buy = 100 },
+	{ itemName = "primal bag", clientId = 39546, buy = 100 },
+	{ itemName = "bag you covet", clientId = 43895, buy = 100 },
 }
+
 
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)

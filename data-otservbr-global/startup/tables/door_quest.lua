@@ -279,7 +279,7 @@ QuestDoorAction = {
 		itemId = false,
 		itemPos = { { x = 33080, y = 31164, z = 8 } },
 	},
-	[Storage.WrathoftheEmperor.Mission12] = {
+	[Storage.WrathoftheEmperor.Mission10] = {
 		itemId = false,
 		itemPos = { { x = 33076, y = 31176, z = 8 } },
 	},
