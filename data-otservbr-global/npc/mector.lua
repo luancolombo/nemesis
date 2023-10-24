@@ -67,7 +67,6 @@ npcConfig.shop = {
 	{ itemName = "bag you covet", clientId = 43895, buy = 100 },
 }
 
-
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)
 	npc:sellItem(player, itemId, amount, subType, 0, ignore, inBackpacks)
