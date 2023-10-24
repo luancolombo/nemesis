@@ -60,12 +60,13 @@ npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 npcConfig.currency = 19082
 
 npcConfig.shop = {
-	{ itemName = "bag of forge dusts", clientId = 23682, buy = 15 },
-	{ itemName = "mystery box", clientId = 26186, buy = 50 },
-	{ itemName = "bag you desire", clientId = 34109, buy = 500 },
-	{ itemName = "primal bag", clientId = 39546, buy = 500 },
-	{ itemName = "bag you covet", clientId = 43895, buy = 600 },
+	{ itemName = "bag of forge dusts", clientId = 23682, buy = 100 },
+	{ itemName = "mystery box", clientId = 26186, buy = 100 },
+	{ itemName = "bag you desire", clientId = 34109, buy = 100 },
+	{ itemName = "primal bag", clientId = 39546, buy = 100 },
+	{ itemName = "bag you covet", clientId = 43895, buy = 100 },
 }
+
 
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)

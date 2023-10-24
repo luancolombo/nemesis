@@ -60,13 +60,14 @@ npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 npcConfig.currency = 22721
 
 npcConfig.shop = {
-	{ itemName = "wealth duplex", clientId = 36727, buy = 50 },
-	{ itemName = "strike enhancement", clientId = 36724, buy = 60 },
-	{ itemName = "stamina extension", clientId = 36725, buy = 60 },
+	{ itemName = "wealth duplex", clientId = 36727, buy = 100 },
+	{ itemName = "strike enhancement", clientId = 36724, buy = 100 },
+	{ itemName = "stamina extension", clientId = 36725, buy = 100 },
 	{ itemName = "bestiary betterment", clientId = 36728, buy = 100 },
 	{ itemName = "abridged promotion scroll", clientId = 43946, buy = 100 },
 	{ itemName = "advanced promotion scroll", clientId = 43950, buy = 100 },
 	{ itemName = "silver raid token", clientId = 19083, buy = 200 },
+	{ itemName = "golden raid token", clientId = 19082, buy = 500},
 }
 
 -- On buy npc shop message
