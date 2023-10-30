@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Orshabaal")
 local monster = {}
 
 monster.description = "Orshabaal"
-monster.experience = 10000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 201,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 22500
-monster.maxHealth = 22500
+monster.health = 480000
+monster.maxHealth = 480000
 monster.race = "fire"
 monster.corpse = 5995
 monster.speed = 270
@@ -126,6 +126,8 @@ monster.loot = {
 	{ name = "great spirit potion", chance = 12500 },
 	{ name = "ultimate health potion", chance = 33333 },
 	{ name = "gold ingot", chance = 6666 },
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

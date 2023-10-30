@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("The Imperor")
 local monster = {}
 
 monster.description = "The Imperor"
-monster.experience = 8000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 237,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 15000
-monster.maxHealth = 15000
+monster.health = 200000
+monster.maxHealth = 200000
 monster.race = "blood"
 monster.corpse = 6363
 monster.speed = 155
@@ -86,6 +86,8 @@ monster.loot = {
 	{ id = 826, chance = 15380 }, -- magma coat
 	{ id = 3033, chance = 30770, maxCount = 4 }, -- small amethyst
 	{ id = 3030, chance = 7690, maxCount = 4 }, -- small ruby
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

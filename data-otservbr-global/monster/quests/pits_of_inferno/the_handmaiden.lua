@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("The Handmaiden")
 local monster = {}
 
 monster.description = "The Handmaiden"
-monster.experience = 7500
+monster.experience = 400000
 monster.outfit = {
 	lookType = 230,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 19500
-monster.maxHealth = 19500
+monster.health = 200000
+monster.maxHealth = 200000
 monster.race = "blood"
 monster.corpse = 6311
 monster.speed = 225
@@ -69,6 +69,8 @@ monster.voices = {
 
 monster.loot = {
 	{ id = 6539, chance = 35000 }, -- handmaiden's protector
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

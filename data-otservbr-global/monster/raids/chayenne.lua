@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Chayenne")
 local monster = {}
 
 monster.description = "Chayenne"
-monster.experience = 40000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 155,
 	lookHead = 78,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 100000
-monster.maxHealth = 100000
+monster.health = 480000
+monster.maxHealth = 480000
 monster.race = "blood"
 monster.corpse = 6081
 monster.speed = 150
@@ -66,7 +66,12 @@ monster.loot = {
 	{ id = 6571, chance = 100000, maxCount = 2 }, -- surprise bag
 	{ id = 281, chance = 100000 }, -- giant shimmering pearl (green)
 	{ id = 14681, chance = 100000 }, -- anniversary cake
+	{ id = 14674, chance = 100000 }, -- 15 aniversary backpack
+	{ id = 24395, chance = 1500 }, -- 20 aniversary backpack
+	{ id = 39693, chance = 900 }, -- 25 aniversary backpack
 	{ id = 14682, chance = 100000, unique = true }, -- chayenne's magical key
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

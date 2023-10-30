@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Dracola")
 local monster = {}
 
 monster.description = "Dracola"
-monster.experience = 11000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 231,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 16200
-monster.maxHealth = 16200
+monster.health = 200000
+monster.maxHealth = 200000
 monster.race = "undead"
 monster.corpse = 6306
 monster.speed = 185
@@ -86,6 +86,8 @@ monster.loot = {
 	{ id = 3035, chance = 20000, maxCount = 8 }, -- platinum coin
 	{ id = 6499, chance = 6000, maxCount = 4 }, -- demonic essence
 	{ id = 6546, chance = 100000 }, -- dracola's eye
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

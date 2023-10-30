@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Mr. Punish")
 local monster = {}
 
 monster.description = "Mr. Punish"
-monster.experience = 9000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 234,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 22000
-monster.maxHealth = 22000
+monster.health = 200000
+monster.maxHealth = 200000
 monster.race = "undead"
 monster.corpse = 6330
 monster.speed = 235
@@ -72,6 +72,8 @@ monster.voices = {
 
 monster.loot = {
 	{ id = 6537, chance = 100000 }, -- mr. punish's handcuffs
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

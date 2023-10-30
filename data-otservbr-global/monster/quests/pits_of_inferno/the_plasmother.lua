@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("The Plasmother")
 local monster = {}
 
 monster.description = "The Plasmother"
-monster.experience = 12000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 238,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 7500
-monster.maxHealth = 7500
+monster.health = 200000
+monster.maxHealth = 200000
 monster.race = "venom"
 monster.corpse = 6532
 monster.speed = 155
@@ -85,6 +85,8 @@ monster.loot = {
 	{ id = 3029, chance = 5000, maxCount = 3 }, -- small sapphire
 	{ id = 5944, chance = 35000 }, -- soul orb
 	{ id = 6535, chance = 100000 }, -- plasmother's remains
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

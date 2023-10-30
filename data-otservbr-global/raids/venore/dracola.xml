@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="Event" message="Beware mortals, Dracola is comming back to destroy your souls!" />
+	<announce delay="60000" type="Event" message="Dracola is back in pits of inferno!" />
+	<!--Single Spawns-->
+	<singlespawn delay="60000" name="Dracola" x="32837" y="32309" z="15" />
+</raid>

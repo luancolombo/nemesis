@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Massacre")
 local monster = {}
 
 monster.description = "Massacre"
-monster.experience = 20000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 244,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 32000
-monster.maxHealth = 32000
+monster.health = 200000
+monster.maxHealth = 200000
 monster.race = "blood"
 monster.corpse = 6335
 monster.speed = 215
@@ -87,6 +87,8 @@ monster.loot = {
 	{ id = 7403, chance = 900 }, -- berserker
 	{ id = 3360, chance = 3500 }, -- golden armor
 	{ id = 6104, chance = 1200 }, -- jewel case
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

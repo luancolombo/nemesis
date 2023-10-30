@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Furyosa")
 local monster = {}
 
 monster.description = "Furyosa"
-monster.experience = 11500
+monster.experience = 400000
 monster.outfit = {
 	lookType = 149,
 	lookHead = 94,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 25000
-monster.maxHealth = 25000
+monster.health = 480000
+monster.maxHealth = 480000
 monster.race = "blood"
 monster.corpse = 18118
 monster.speed = 135
@@ -83,7 +83,8 @@ monster.voices = {
 monster.loot = {
 	{ id = 3031, chance = 100000, maxCount = 200 }, -- gold coin
 	{ id = 8016, chance = 100000, maxCount = 5 }, -- jalapeno pepper
-	{ id = 19083, chance = 45000 }, -- silver raid token
+	{ id = 19082, chance = 100000, maxCount = 7 }, -- golden raid tokens
+	{ id = 19083, chance = 100000, maxCount = 10 }, -- silver raid token
 	{ id = 3035, chance = 85000, maxCount = 25 }, -- platinum coin
 	{ id = 6558, chance = 35000, maxCount = 3 }, -- flask of demonic blood
 	{ id = 6499, chance = 22500 }, -- demonic essence

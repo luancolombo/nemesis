@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Ghazbaran")
 local monster = {}
 
 monster.description = "Ghazbaran"
-monster.experience = 15000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 77000
-monster.maxHealth = 77000
+monster.health = 480000
+monster.maxHealth = 480000
 monster.race = "undead"
 monster.corpse = 6068
 monster.speed = 200
@@ -123,6 +123,8 @@ monster.loot = {
 	{ name = "spellbook of lost souls", chance = 16666 },
 	{ name = "spellscroll of prophecies", chance = 25000 },
 	{ name = "spellbook of dark mysteries", chance = 20000 },
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

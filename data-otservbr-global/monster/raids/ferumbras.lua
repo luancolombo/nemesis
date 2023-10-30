@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Ferumbras")
 local monster = {}
 
 monster.description = "Ferumbras"
-monster.experience = 12000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 229,
 	lookHead = 0,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 90000
-monster.maxHealth = 90000
+monster.health = 480000
+monster.maxHealth = 480000
 monster.race = "venom"
 monster.corpse = 6078
 monster.speed = 160
@@ -124,6 +124,8 @@ monster.loot = {
 	{ id = 3035, chance = 8000, maxCount = 58 }, -- platinum coin
 	{ id = 7423, chance = 8000 }, -- skullcrusher
 	{ id = 5944, chance = 8000, maxCount = 9 }, -- soul orb
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

@@ -40895,7 +40895,7 @@
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="20"/>
 	</item>
-	<item id="22723" article="a" name="platinum token" plural="platinum tokens">
+	<item id="22723" article="a" name="nemesis token" plural="nemesis tokens">
 		<attribute key="primarytype" value="valuables"/>
 	<attribute key="weight" value="20"/>
 	</item>

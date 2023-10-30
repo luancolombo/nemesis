@@ -105,6 +105,7 @@ monster.loot = {
 	{ name = "violet gem", chance = 1750 },
 	{ name = "wand of everblazing", chance = 880 },
 	{ name = "yellow gem", chance = 16670 },
+	{ name = "silver raid token", minCount = 0, maxCount = 2, chance = 8000 },
 }
 
 monster.attacks = {

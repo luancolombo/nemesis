@@ -110,8 +110,9 @@ monster.loot = {
 	{ name = "winged backpack", chance = 250 },
 	{ name = "rainbow necklace", chance = 1160 },
 	{ id = 30403, chance = 160 }, -- enchanted theurgic amulet
-	{ name = "sun medal", chance = 160 },
 	{ name = "sunray emblem", chance = 160 },
+	{ name = "golden raid token", chance = 100000, maxCount = 3 },
+	{ name = "silver raid token", chance = 100000, maxCount = 7 },
 }
 
 monster.attacks = {

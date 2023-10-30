@@ -115,6 +115,7 @@ monster.loot = {
 	{ name = "violet gem", chance = 3130 },
 	{ name = "winterblade", chance = 6250 },
 	{ name = "yellow gem", chance = 34380, maxCount = 2 },
+	{ name = "silver raid token", minCount = 0, maxCount = 2, chance = 8000 },
 }
 
 monster.attacks = {

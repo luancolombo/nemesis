@@ -80,6 +80,8 @@ monster.loot = {
 	{ name = "galea mortis", chance = 550 },
 	{ name = "shadow cowl", chance = 530 },
 	{ name = "toga mortis", chance = 500 },
+	{ name = "golden raid token", chance = 100000, maxCount = 3 },
+	{ name = "silver raid token", chance = 100000, maxCount = 7 },
 }
 
 monster.attacks = {

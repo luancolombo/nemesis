@@ -399,7 +399,7 @@ QuestDoorAction = {
 		itemId = false,
 		itemPos = { { x = 32316, y = 32264, z = 8 } },
 	},
-	[Storage.TheInquisition.RewardDoor] = {
+	[Storage.TheInquisition.Mission07] = {
 		itemId = false,
 		itemPos = { { x = 32320, y = 32258, z = 9 } },
 	},

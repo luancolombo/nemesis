@@ -77,6 +77,14 @@
 	<!-- <raid name="Citizen" file="venore/feverish_citizen.xml" interval2="500" margin="40" /> -->
 	<raid name="Hunters" file="venore/hunter.xml" interval2="500" margin="65" />
 	<raid name="Orc Backpack" file="venore/orc_backpack.xml" interval2="300" margin="110" />
+	<raid name="The Old Widow" file="venore/the_old_widow.xml" interval2="1440" margin="60" />
+	<raid name="Massacre" file="venore/massacre.xml" interval2="1440" margin="120" />
+	<raid name="The Plasmother" file="venore/the_plasmother.xml" interval2="1440" margin="120" />
+	<raid name="Dracola" file="venore/dracola.xml" interval2="1440" margin="120" />
+	<raid name="Mr. Punish" file="venore/mr_punish.xml" interval2="1440" margin="120" />
+	<raid name="The Handmaiden" file="venore/the_handmaiden.xml" interval2="1440" margin="120" />
+	<raid name="Countess Sorrow" file="venore/countess_sorrow.xml" interval2="1440" margin="120" />
+	<raid name="The Imperor" file="venore/the_imperor.xml" interval2="1440" margin="120" />
 	<raid name="Undead Army" file="venore/undead.xml" interval2="500" margin="100" />
 	<raid name="Water Buffalo" file="venore/water_buffalo.xml" interval2="500" margin="100" />
 </raids>

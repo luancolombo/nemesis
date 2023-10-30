@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Countess Sorrow")
 local monster = {}
 
 monster.description = "Countess Sorrow"
-monster.experience = 13000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 241,
 	lookHead = 20,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 6500
-monster.maxHealth = 6500
+monster.health = 200000
+monster.maxHealth = 200000
 monster.race = "undead"
 monster.corpse = 6343
 monster.speed = 200
@@ -92,6 +92,8 @@ monster.loot = {
 	{ id = 3084, chance = 23530 }, -- protection amulet
 	{ id = 3049, chance = 5880 }, -- stealth ring
 	{ id = 3123, chance = 47060 }, -- worn leather boots
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

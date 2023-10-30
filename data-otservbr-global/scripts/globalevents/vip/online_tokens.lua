@@ -1,17 +1,17 @@
 local config = {
-	enabled = false,
+	enabled = true,
 	storage = Storage.VipSystem.OnlineTokensGain,
 	checkDuplicateIps = false,
 
-	tokenItemId = 14112, -- bar of gold
+	tokenItemId = 22723, -- platinum token
 
-	interval = 5 * 1000,
+	interval = 60 * 1000,
 
 	-- per hour | system will calculate how many tokens will be given and when
 	-- put 0 in tokensPerHour.free to disable free from receiving tokens
 	tokensPerHour = {
-		free = 1,
-		vip = 2,
+		free = 5,
+		vip = 10,
 	},
 
 	awardOn = 5,

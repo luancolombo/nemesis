@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Morgaroth")
 local monster = {}
 
 monster.description = "Morgaroth"
-monster.experience = 15000
+monster.experience = 400000
 monster.outfit = {
 	lookType = 12,
 	lookHead = 2,
@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 55000
-monster.maxHealth = 55000
+monster.health = 480000
+monster.maxHealth = 480000
 monster.race = "fire"
 monster.corpse = 6068
 monster.speed = 305
@@ -133,6 +133,8 @@ monster.loot = {
 	{ name = "dragon robe", chance = 4500 },
 	{ name = "molten plate", chance = 4500 },
 	{ name = "great shield", chance = 500 },
+	{ name = "golden raid token", chance = 100000, maxCount = 7 },
+	{ name = "silver raid token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {
