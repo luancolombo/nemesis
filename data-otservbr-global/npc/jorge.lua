@@ -60,6 +60,7 @@ npcConfig.currency = 19083
 
 npcConfig.shop = {
 	{ itemName = "Abacus", clientid = 8156, buy = 20 },
+	{ itemName = "Golden Raid Token", clientid = 19082, buy = 100 },
 	{ itemName = "Assassin Doll", clientid = 28897, buy = 20 },
 	{ itemName = "Bookworm Doll", clientid = 18343, buy = 20 },
 	{ itemName = "Cateroides Doll", clientid = 22151, buy = 20 },

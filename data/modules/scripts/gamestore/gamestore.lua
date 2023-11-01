@@ -10,7 +10,7 @@ dofile(CORE_DIRECTORY .. "/modules/scripts/gamestore/init.lua")
 -- Config
 
 HomeBanners = {
-	images = { "home/banner_armouredarcher.png", "home/banner_podiumoftenacity.png" },
+	images = { "home/banner_armouredarcher.png", "home/banner_podiumoftenacity.png", "home/banner_podiumofrenown.png", "home/banner_rottenbloodbundle.png" },
 	delay = 10,
 }
 
@@ -28,6 +28,7 @@ if configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) then
 	local vipBonusLoot = configManager.getNumber(configKeys.VIP_BONUS_LOOT)
 	local vipBonusSkill = configManager.getNumber(configKeys.VIP_BONUS_SKILL)
 	local vipStayOnline = configManager.getBoolean(configKeys.VIP_STAY_ONLINE)
+	local vipAutoLootVipOnly = configManager.getBoolean(configKeys.VIP_AUTOLOOT_VIP_ONLY)
 
 	premiumDescription = "<i>Enhance your gaming experience by gaining advantages:</i>\n\n"
 	if vipBonusExp > 0 then
@@ -41,6 +42,9 @@ if configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) then
 	end
 	if vipStayOnline then
 		premiumDescription = premiumDescription .. "&#8226; stay online idle without getting disconnected\n"
+	end
+	if vipAutoLootVipOnly then
+		premiumDescription = premiumDescription .. "&#8226; autoloot enabled\n"
 	end
 	premiumDescription = premiumDescription .. "\n{usablebyallicon} valid for all characters on this account\n{activated}"
 end
@@ -1323,6 +1327,7 @@ GameStore.Categories = {
 				id = 216,
 				description = "{character}\n{speedboost}\n\n<i>A wild, ancient creature, which had been hiding in the depths of the shadows for a very long time, has been spotted in Tibia again! The almighty Shadow Draptor has returned and only the bravest Tibians can control such a beast!</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
+				home = true,
 			},
 			{
 				icons = { "Dawn_Strayer.png" },
@@ -2347,6 +2352,16 @@ GameStore.Categories = {
 				addon = 3,
 				description = "{character}\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>You recently graduated from the Magic Academy and want to bring your knowledge to good use? Congratulations, you are now an honourable disciple of magic! Open up a bottle of well-aged mana and treat yourself with the fashionable Conjurer outfit.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT,
+			},
+			{
+				icons = { "Outfit_Darklight_Evoker_Male_Addon_3.png", "Outfit_Darklight_Evoker_Female_Addon_3.png" },
+				name = "Full Darklight Evoker Outfit",
+				price = 900,
+				sexId = { female = 1676, male = 1675 },
+				addon = 3,
+				description = "{character}\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>You recently graduated from the Magic Academy and want to bring your knowledge to good use? Congratulations, you are now an honourable disciple of magic! Open up a bottle of well-aged mana and treat yourself with the fashionable Darklight Evoker outfit.</i>",
+				type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT,
+				home = true,
 			},
 			{
 				icons = { "Outfit_Death_Herald_Male_Addon_3.png", "Outfit_Death_Herald_Female_Addon_3.png" },
@@ -4148,6 +4163,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
 				type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+				home = true,
 			},
 			{
 				icons = { "Podium_of_Tenacity.png" },
