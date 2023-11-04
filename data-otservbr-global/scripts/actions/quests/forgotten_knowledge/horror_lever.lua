@@ -1,4 +1,3 @@
-local eggPos = Position(32269, 31084, 14)
 local config = {
 	boss = {
 		name = "Melting Frozen Horror",
@@ -19,8 +18,6 @@ local config = {
 	monsters = {
 		{ name = "icicle", pos = Position(32266, 31084, 14) },
 		{ name = "icicle", pos = Position(32272, 31084, 14) },
-		{ name = "dragon egg", pos = eggPos },
-		{ name = "melting frozen horror", pos = Position(32267, 31071, 14) },
 	},
 	specPos = {
 		from = Position(32257, 31080, 14),
