@@ -18,9 +18,6 @@ local config = {
 	exit = Position(32678, 32888, 14),
 }
 
-	
-
 local lever = BossLever(config)
 lever:position(Position(32657, 32876, 14))
 lever:register()
-
