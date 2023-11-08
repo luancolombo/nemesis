@@ -459,7 +459,7 @@ function Npc:parseGuildBank(message, npc, creature, playerId, npcHandler)
 			npcHandler:say(
 				string.format(
 					"Alright, we have placed an order to deposit the amount of %d gold to \z
-                           your guild account. Please check your inbox for confirmation.",
+                           your guild account. Please check your new guild balance.",
 					count[playerId]
 				),
 				npc,
@@ -534,7 +534,7 @@ function Npc:parseGuildBank(message, npc, creature, playerId, npcHandler)
 			npcHandler:say(
 				string.format(
 					"We placed an order to withdraw %d gold from your guild account. \z
-                            Please check your inbox for confirmation.",
+                            Please check your new guild balance.",
 					count[playerId]
 				),
 				npc,
@@ -634,7 +634,7 @@ function Npc:parseGuildBank(message, npc, creature, playerId, npcHandler)
 		return true
 	elseif npcHandler:getTopic(playerId) == 128 then
 		if MsgContains(message, "yes") then
-			npcHandler:say(string.format("We have placed an order to transfer %d gold from your guild account to guild %s.  Please check your inbox for confirmation.", count[playerId], string.titleCase(transfer[playerId])), npc, creature)
+			npcHandler:say(string.format("We have placed an order to transfer %d gold from your guild account to guild %s.  Please check your new balance.", count[playerId], string.titleCase(transfer[playerId])), npc, creature)
 			local guild = player:getGuild()
 			local info = {
 				type = "Guild to Guild Transfer",
