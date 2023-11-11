@@ -2,33 +2,39 @@ local raids = {
 	--Terça-Feira
 	["Tuesday"] = {
 		["16:00"] = { raidName = "Midnight Panther" },
+		["17:15"] = { raidName = "Massacre" },
 	},
 
 	--Quarta-Feira
 	["Wednesday"] = {
 		["12:00"] = { raidName = "Draptor" },
+		["17:15"] = { raidName = "The Plasmother" },
 	},
 
 	--Quinta-Feira
 	["Thursday"] = {
-		["19:00"] = { raidName = "Undead Cavebear" },
 		["15:00"] = { raidName = "Ghazbaran" },
+		["17:15"] = { raidName = "Dracola" },
+		["19:00"] = { raidName = "Undead Cavebear" },
 	},
 
 	--Sexta-feira
 	["Friday"] = {
 		["06:00"] = { raidName = "Titanica" },
+		["17:15"] = { raidName = "Mr. Punish" },
 	},
 
 	--Sábado
 	["Saturday"] = {
+		["17:15"] = { raidName = "The Handmaiden" },
 		["20:00"] = { raidName = "Draptor" },
 	},
 
 	--Domingo
 	["Sunday"] = {
-		["15:00"] = { raidName = "Midnight Panther" },
 		["13:30"] = { raidName = "Orc Backpack" },
+		["15:00"] = { raidName = "Midnight Panther" },
+		["17:15"] = { raidName = "Countess Sorrow" },
 	},
 
 	-- By date (Day/Month)
