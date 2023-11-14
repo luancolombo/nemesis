@@ -68980,4 +68980,27 @@
 		<attribute key="charges" value="14400"/>
 		<attribute key="weight" value="1000"/>
 	</item>
+	<item id="44183" article="a" name="nemesis backpack">
+		<attribute key="containersize" value="30"/>
+		<attribute key="weight" value="1500"/>
+		<attribute key="description" value="It was rewarded by the kings."/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+	</item>
+	<item id="44184" article="a" name="war dragon backpack">
+		<attribute key="containersize" value="50"/>
+		<attribute key="weight" value="1500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+		</attribute>
+	</item>
+	<item id="44185" article="a" name="legendary treasure">
+		<attribute key="primarytype" value="quest items"/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="44186" article="a" name="nemesis king treasure">
+		<attribute key="primarytype" value="quest items"/>
+		<attribute key="weight" value="1500"/>
+	</item>
 </items>
