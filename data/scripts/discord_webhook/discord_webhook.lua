@@ -6,6 +6,7 @@ announcementChannels = {
 	["serverAnnouncements"] = "", -- Used for an announcement channel on your discord
 	["raids"] = "", -- Used to isolate raids on your discord
 	["player-kills"] = "", -- Self-explaining
+	["bans"] = "", -- Used for anunciate bans
 }
 
 --[[
