@@ -64,8 +64,6 @@ npcConfig.shop = {
 	{ itemName = "strike enhancement", clientId = 36724, buy = 60 },
 	{ itemName = "stamina extension", clientId = 36725, buy = 60 },
 	{ itemName = "bestiary betterment", clientId = 36728, buy = 100 },
-	{ itemName = "abridged promotion scroll", clientId = 43946, buy = 100 },
-	{ itemName = "advanced promotion scroll", clientId = 43950, buy = 100 },
 	{ itemName = "silver raid token", clientId = 19083, buy = 200 },
 }
 

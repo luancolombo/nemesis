@@ -17,20 +17,20 @@ slots = {
 			centerPosition = Position(1024, 963, 7), --Centro da Roleta onde o pr�mio do item para
 
 			items = {
-				{id = 3043, count = 1, chance = 0.2, rare = true},
-				{id = 3278, count = 1, chance = 0.3, rare = true},
-				{id = 19082, count = 1, chance = 0.5, rare = true},
-				{id = 44051, count = 1, chance = 9},
-				{id = 44052, count = 1, chance = 9},
-				{id = 19083, count = 1, chance = 9},
-				{id = 44184, count = 1, chance = 9},
-				{id = 44186, count = 1, chance = 9},
-				{id = 25632, count = 1, chance = 9},
-				{id = 6529, count = 1, chance = 9},
-				{id = 14000, count = 1, chance = 9},
-				{id = 3365, count = 1, chance = 9},
-				{id = 44183, count = 1, chance = 9},
-				{id = 44185, count = 1, chance = 9}
+				{id = 43895, count = 1, chance = 0.2, rare = true}, -- bag you covet
+				{id = 39546, count = 1, chance = 0.3, rare = true}, -- primal bag
+				{id = 34109, count = 1, chance = 0.5, rare = true}, -- bag you desire
+				{id = 44051, count = 1, chance = 9}, --duality doll (dog)
+				{id = 44052, count = 1, chance = 9}, --duality doll (cat)
+				{id = 19083, count = 50, chance = 9}, --silver raid token (50x)
+				{id = 39693, count = 1, chance = 9}, --25 years backpack
+				{id = 24395, count = 1, chance = 9}, --20 years backpack
+				{id = 39759, count = 1, chance = 9}, --golden doll
+				{id = 3423, count = 1, chance = 9}, --blessed shield
+				{id = 19082, count = 20, chance = 9}, --golden raid token (20x)
+				{id = 3365, count = 1, chance = 9}, --golden helmet
+				{id = 44183, count = 1, chance = 9}, --nemesis backpack
+				{id = 44185, count = 1, chance = 9} --legendary treasure
 			},
 		}
 }

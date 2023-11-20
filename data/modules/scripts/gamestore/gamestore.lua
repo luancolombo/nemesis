@@ -6510,10 +6510,10 @@ GameStore.Categories = {
 				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
 			},
 			{
-				icons = { "mystery_box.png" },
-				name = "Mystery Box",
+				icons = { "legendary_treasure.png" },
+				name = "Legendary Treasure",
 				price = 200,
-				itemtype = 26186,
+				itemtype = 44185,
 				count = 1,
 				description = "It weighs 15.00 oz.\nImportante: Esse item de forma alguma se caracteriza como lootbox, todos os itens a seguir tem a mesma chance de dropar:\n<i>Itens Falcon</i>\nFalcon Bow\nFalcon Battleaxe\nFalcon Mace\nFalcon Plate\nFalcon Coif\nFalcon Greaves\nFalcon Longsword\nFalcon Circlet\nFalcon Wand\nFalcon Rod\nFalcon Shield\n<i>Itens Cobra</i>\nCobra Boots\nCobra Club\nCobra Sword\nCobra Axe\nThe Cobra Amulet\nCobra Hood\nCobra Crossbow\nCobra Wand\nCobra Rod\n<i>Itens Lion</i>\nLion Shield\nLion Rod\nLion Wand\nLion Plate\nLion Amulet\nLion Longsword\nLion Longbow\nLion Axe\nLion Spangenhelm\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_ITEM,

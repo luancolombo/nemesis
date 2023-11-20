@@ -61,7 +61,7 @@ npcConfig.currency = 19082
 
 npcConfig.shop = {
 	{ itemName = "bag of forge dusts", clientId = 23682, buy = 15 },
-	{ itemName = "mystery box", clientId = 26186, buy = 50 },
+	{ itemName = "legendary treasure", clientId = 44185, buy = 70 },
 	{ itemName = "bag you desire", clientId = 34109, buy = 500 },
 	{ itemName = "primal bag", clientId = 39546, buy = 500 },
 	{ itemName = "bag you covet", clientId = 43895, buy = 600 },
