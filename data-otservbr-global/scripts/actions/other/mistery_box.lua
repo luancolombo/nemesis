@@ -28,6 +28,12 @@ local rewards = {
 	{ id = 34150, name = "Lion Longbow" },
 	{ id = 34253, name = "Lion Axe" },
 	{ id = 34156, name = "Lion Spangenhelm" },
+	{ id = 39162, name = "Naga Wand" },
+	{ id = 39155, name = "Naga Sword" },
+	{ id = 39163, name = "Naga Rod" },
+	{ id = 39159, name = "Naga Crossbow" },
+	{ id = 39157, name = "Naga Club" },
+	{ id = 39156, name = "Naga Axe" },
 }
 
 local misteryBox = Action()
