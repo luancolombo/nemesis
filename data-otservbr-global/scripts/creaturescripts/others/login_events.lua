@@ -12,6 +12,8 @@ function loginEvents.onLogin(player)
 		--Cults Of Tibia Quest
 		"HealthPillar",
 		"YalahariHealth",
+		-- Custom Events
+		"TaskCreature"
 	}
 
 	for i = 1, #events do

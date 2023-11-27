@@ -69003,4 +69003,7 @@
 		<attribute key="primarytype" value="quest items"/>
 		<attribute key="weight" value="1500"/>
 	</item>
+	<item id="44187" article="the" name="nemesis task board">
+	<attribute key="description" value="Here you can find the Kingdom Quests."/>
+	</item>
 </items>
