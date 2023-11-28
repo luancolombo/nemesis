@@ -1538,6 +1538,7 @@ GameStore.Categories = {
 				id = 218,
 				description = "{character}\n{speedboost}\n\n<i>A wild, ancient creature, which had been hiding in the depths of the shadows for a very long time, has been spotted in Tibia again! The almighty Shadow Draptor has returned and only the bravest Tibians can control such a beast!</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
+				home = true,
 			},
 			{
 				icons = { "Frostbringer.png" },
@@ -1858,6 +1859,14 @@ GameStore.Categories = {
 				name = "Obsidian Shrine",
 				price = 690,
 				id = 197,
+				description = "{character}\n{speedboost}\n\n<i>The famous Wandering Shrines were first raised by the nomad people of the Zaoan steppe. Their exceptional craftsmanship, combining architectonic features with living animals, is acknowledged even far beyond the continent of Zao. These spiritual companions will give you the opportunity to regain your strength during long and exciting journeys.</i>",
+				type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
+			},
+			{
+				icons = { "Obstinate_Ox.png" },
+				name = "Obstinate Ox",
+				price = 690,
+				id = 215,
 				description = "{character}\n{speedboost}\n\n<i>The famous Wandering Shrines were first raised by the nomad people of the Zaoan steppe. Their exceptional craftsmanship, combining architectonic features with living animals, is acknowledged even far beyond the continent of Zao. These spiritual companions will give you the opportunity to regain your strength during long and exciting journeys.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
 			},
@@ -6809,7 +6818,6 @@ GameStore.Categories = {
 				count = 1,
 				description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
 				type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
-				home = true,
 			},
 			{
 				icons = { "Guzzlemaw_Grub.png" },

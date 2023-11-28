@@ -6,6 +6,7 @@ local config = {
 		{ id = 35283, charges = 1000 },
 		{ id = 35282, charges = 1000 },
 		{ id = 35280, charges = 1000 },
+		{ id = 44066, charges = 1000 },
 	},
 	storage = tonumber(Storage.PlayerWeaponReward), -- storage key, player can only win once
 }
