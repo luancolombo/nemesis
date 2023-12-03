@@ -3,7 +3,7 @@ local table = {
 	-- [level] = type = "bank", id = {QUANTIDADE, 0}, msg = "MENSAGEM"},
 	-- [level] = type = "addon", id = {ID_ADDON_FEMALE, ID_ADDON_MALE}, msg = "MENSAGEM"},
 	-- [level] = type = "mount", id = {ID_MOUNT, 0}, msg = "MENSAGEM"},
-	
+	[20] = { type = "item", id = { 3043, 5 }, msg = "You earned 5 crystal coins for reaching level 20!" },
 	[150] = { type = "addon", id = { 136, 128 }, msg = "You got the citizen full addon for reaching level 150!" },
 	[250] = { type = "mount", id = { 9, 0 }, msg = "You have earned the Blazzebringer mount for reaching level 250!" },
 }
