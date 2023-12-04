@@ -1833,6 +1833,12 @@
 	<npc centerx="32192" centery="32299" centerz="7" radius="1">
 		<npc name="Zethra" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="32196" centery="32303" centerz="7" radius="1">
+		<npc name="The Lootmonger" x="1" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="32203" centery="32303" centerz="7" radius="1">
+		<npc name="Battlemart" x="1" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="32690" centery="32310" centerz="7" radius="1">
 		<npc name="Lorbas" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -2985,11 +2991,5 @@
 	</npc>
 	<npc centerx="33587" centery="32966" centerz="15" radius="1">
 		<npc name="Gnomish Operative (Raiders)" x="0" y="0" z="15" spawntime="60" />
-	</npc>
-	<npc centerx="32196" centery="32303" centerz="7" radius="1">
-		<npc name="The Lootmonger" x="1" y="0" z="6" spawntime="60" />
-	</npc>
-	<npc centerx="32203" centery="32303" centerz="7" radius="1">
-		<npc name="Battlemart" x="1" y="0" z="6" spawntime="60" />
 	</npc>
 </npcs>

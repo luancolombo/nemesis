@@ -70,7 +70,7 @@ rewards = {
 	},
 },
 
-{name = "Rotworm", color = 40, total = 300, type = "once", storage = 190006, storagecount = 190007, 
+{name = "Rotworm", color = 40, total = 200, type = "once", storage = 190006, storagecount = 190007, 
 rewards = {
 {3043, 5},
 {"exp", 100000},
@@ -86,6 +86,7 @@ rewards = {
 
 {name = "Valkyrie", color = 40, total = 500, type = "once", storage = 190010, storagecount = 190011, 
 rewards = { 
+{3043, 5},	
 {3437, 1},
 {19082, 50},
 	},
@@ -93,20 +94,23 @@ rewards = {
 
 {name = "Weakened Frazzlemaw", color = 40, total = 1000, type = "daily", storage = 190012, storagecount = 190013, 
 rewards = { 
+{3043, 10},
 {22516, 10},
 {19082, 10},
 	},
 },
 
 {name = "Enfeebled Silencer", color = 40, total = 1000, type = "daily", storage = 190014, storagecount = 190015, 
-rewards = { 
+rewards = {
+{3043, 10},	 
 {22721, 3},
 {19082, 10},
 	},
 },
 
 {name = "Deepling Guard", color = 40, total = 1000, type = "daily", storage = 190016, storagecount = 190017, 
-rewards = { 
+rewards = {
+{3043, 10},	 
 {14142, 1},
 {19082, 10},
 	},
@@ -114,13 +118,15 @@ rewards = {
 
 {name = "Deepling Warrior", color = 40, total = 1000, type = "daily", storage = 190018, storagecount = 190019, 
 rewards = { 
+{3043, 10},
 {"exp", 10000000},
 {19082, 10},
 	},
 },
 
 {name = "Deepling Scout", color = 40, total = 1000, type = "daily", storage = 190020, storagecount = 190021, 
-rewards = { 
+rewards = {
+{3043, 10}, 
 {"exp", 10000000},
 {19082, 10},
 	},
@@ -169,7 +175,8 @@ rewards = {
 },
 
 {name = "Cloak Of Terror", color = 40, total = 1000, type = "daily", storage = 190032, storagecount = 190033, 
-rewards = { 
+rewards = {
+{3043, 10},	 
 {"exp", 30000000},
 {19082, 10},
 	},
@@ -206,6 +213,7 @@ rewards = {
 
 {name = "Infernal Phantom", color = 40, total = 1000, type = "daily", storage = 190042, storagecount = 190043, 
 rewards = { 
+{3043, 50},
 {"exp", 30000000},
 {19082, 40},
 	},
@@ -220,6 +228,7 @@ rewards = {
 
 {name = "Dawnfire Asura", color = 40, total = 1000, type = "daily", storage = 190046, storagecount = 190047, 
 rewards = { 
+{3043, 50},
 {"exp", 20000000},
 {19082, 50},
 	},
