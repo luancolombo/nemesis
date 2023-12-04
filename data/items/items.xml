@@ -46519,6 +46519,7 @@
 	<item fromid="26195" toid="26946" name="RESERVED SPRITE"/>
 	<item fromid="26947" toid="26948" article="a" name="Journal Shield">
 		<attribute key="primarytype" value="shields"/>
+		<attribute key="weaponType" value="shield"/>
 		<attribute key="description" value="Tibia's very first headline is written on it. Awarded by BomDiaTibia.com"/>
 		<attribute key="weight" value="2700"/>
 	</item>
