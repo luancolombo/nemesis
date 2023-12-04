@@ -96,6 +96,8 @@ monster.loot = {
 	{ id = 32619, chance = 730 }, -- pair of nightmare boots
 	{ id = 32631, chance = 730 }, -- ghost claw
 	{ id = 32630, chance = 730 }, -- spooky hood
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

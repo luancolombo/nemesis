@@ -86,8 +86,8 @@ monster.loot = {
 	{ id = 826, chance = 15380 }, -- magma coat
 	{ id = 3033, chance = 30770, maxCount = 4 }, -- small amethyst
 	{ id = 3030, chance = 7690, maxCount = 4 }, -- small ruby
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

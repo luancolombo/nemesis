@@ -96,6 +96,8 @@ monster.loot = {
 	{ id = 22721, chance = 100000 }, -- gold token
 	{ id = 22516, chance = 100000 }, -- silver token
 	{ name = "spark sphere", chance = 100000 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

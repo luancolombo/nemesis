@@ -69,8 +69,8 @@ monster.voices = {
 
 monster.loot = {
 	{ id = 6539, chance = 35000 }, -- handmaiden's protector
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

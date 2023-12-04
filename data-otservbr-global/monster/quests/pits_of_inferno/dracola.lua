@@ -86,8 +86,8 @@ monster.loot = {
 	{ id = 3035, chance = 20000, maxCount = 8 }, -- platinum coin
 	{ id = 6499, chance = 6000, maxCount = 4 }, -- demonic essence
 	{ id = 6546, chance = 100000 }, -- dracola's eye
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

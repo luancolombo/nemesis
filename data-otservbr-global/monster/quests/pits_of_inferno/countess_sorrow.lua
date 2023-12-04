@@ -92,8 +92,8 @@ monster.loot = {
 	{ id = 3084, chance = 23530 }, -- protection amulet
 	{ id = 3049, chance = 5880 }, -- stealth ring
 	{ id = 3123, chance = 47060 }, -- worn leather boots
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

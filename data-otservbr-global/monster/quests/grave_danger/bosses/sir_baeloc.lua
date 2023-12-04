@@ -100,7 +100,7 @@ monster.loot = {
 	{ id = 31592, chance = 1800 }, -- signet ring
 	{ name = "terra helmet", chance = 750 },
 	{ name = "final judgement", chance = 450 },
-	{ name = "silver raid token", minCount = 0, maxCount = 2, chance = 8000 },
+	{ name = "silver nemesis token", minCount = 0, maxCount = 2, chance =15000 },
 }
 
 monster.attacks = {

@@ -126,8 +126,8 @@ monster.loot = {
 	{ name = "great spirit potion", chance = 12500 },
 	{ name = "ultimate health potion", chance = 33333 },
 	{ name = "gold ingot", chance = 6666 },
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

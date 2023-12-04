@@ -70,8 +70,8 @@ monster.loot = {
 	{ id = 24395, chance = 1500 }, -- 20 aniversary backpack
 	{ id = 39693, chance = 900 }, -- 25 aniversary backpack
 	{ id = 14682, chance = 100000, unique = true }, -- chayenne's magical key
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

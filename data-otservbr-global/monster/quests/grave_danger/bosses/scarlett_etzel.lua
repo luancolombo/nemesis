@@ -111,7 +111,7 @@ monster.loot = {
 	{ name = "cobra sword", chance = 650 },
 	{ name = "cobra wand", chance = 650 },
 	{ name = "cobra amulet", chance = 350 },
-	{ name = "silver raid token", minCount = 0, maxCount = 2, chance = 8000 },
+	{ name = "silver nemesis token", minCount = 0, maxCount = 2, chance = 15000 },
 }
 
 monster.attacks = {

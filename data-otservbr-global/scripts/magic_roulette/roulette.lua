@@ -12,7 +12,7 @@ local Strings = dofile(DATA_DIRECTORY .. '/scripts/magic_roulette/lib/core/strin
 
 slots = {
 		[17320] = Slot {
-			needItem = {id = 3043, count = 1},
+			needItem = {id = 44188, count = 1},
 			tilesPerSlot = 9,
 			centerPosition = Position(1024, 963, 7), --Centro da Roleta onde o pr�mio do item para
 

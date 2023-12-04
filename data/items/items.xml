@@ -35324,11 +35324,11 @@
 		<attribute key="primarytype" value="wall hangings"/>
 	</item>
 	<item id="19081" article="a" name="skull"/>
-	<item id="19082" article="a" name="golden raid token">
+	<item id="19082" article="a" name="golden nemesis token">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="110"/>
 	</item>
-	<item id="19083" article="a" name="silver raid token">
+	<item id="19083" article="a" name="silver nemesis token">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="100"/>
 	</item>
@@ -69005,5 +69005,9 @@
 	</item>
 	<item id="44187" article="the" name="nemesis task board">
 	<attribute key="description" value="Here you can find the Kingdom Quests."/>
+	</item>
+	<item id="44188" article="a" name="nemesis roulette token">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="weight" value="110"/>
 	</item>
 </items>

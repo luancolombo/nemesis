@@ -141,6 +141,8 @@ monster.loot = {
 	{ id = 7405, chance = 800 }, -- havoc blade
 	{ id = 7411, chance = 400 }, -- ornamented axe
 	{ id = 22737, chance = 3500 }, -- folded rift carpet
+	{ name = "golden nemesis token", chance = 100000, maxCount = 12 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 21 },
 }
 
 monster.attacks = {

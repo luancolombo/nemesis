@@ -131,7 +131,7 @@ monster.loot = {
 	{ name = "ring of the sky", chance = 2040 },
 	{ name = "abyss hammer", chance = 2040 },
 	{ id = 3341, chance = 3130 }, -- arcane staff
-	{ name = "silver raid token", minCount = 0, maxCount = 2, chance = 8000 },
+	{ name = "silver nemesis token", minCount = 0, maxCount = 2, chance = 18000 },
 }
 
 monster.attacks = {

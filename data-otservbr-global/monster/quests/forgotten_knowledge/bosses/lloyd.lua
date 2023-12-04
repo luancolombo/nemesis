@@ -109,6 +109,8 @@ monster.loot = {
 	{ name = "boots of haste", chance = 2560 },
 	{ id = 24959, chance = 500, unique = true }, -- part of a rune
 	{ name = "pillow backpack", chance = 256 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

@@ -124,8 +124,8 @@ monster.loot = {
 	{ id = 3035, chance = 8000, maxCount = 58 }, -- platinum coin
 	{ id = 7423, chance = 8000 }, -- skullcrusher
 	{ id = 5944, chance = 8000, maxCount = 9 }, -- soul orb
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

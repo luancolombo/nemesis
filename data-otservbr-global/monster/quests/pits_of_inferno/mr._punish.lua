@@ -72,8 +72,8 @@ monster.voices = {
 
 monster.loot = {
 	{ id = 6537, chance = 100000 }, -- mr. punish's handcuffs
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

@@ -111,6 +111,8 @@ monster.loot = {
 	{ id = 24957, chance = 500, unique = true }, -- part of a rune
 	{ id = 3021, chance = 200 }, -- sapphire amulet
 	{ id = 20089, chance = 200 }, -- umbral spellbook
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

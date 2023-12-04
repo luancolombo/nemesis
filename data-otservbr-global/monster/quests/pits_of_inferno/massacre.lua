@@ -87,8 +87,8 @@ monster.loot = {
 	{ id = 7403, chance = 900 }, -- berserker
 	{ id = 3360, chance = 3500 }, -- golden armor
 	{ id = 6104, chance = 1200 }, -- jewel case
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

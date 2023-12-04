@@ -111,8 +111,8 @@ monster.loot = {
 	{ name = "rainbow necklace", chance = 1160 },
 	{ id = 30403, chance = 160 }, -- enchanted theurgic amulet
 	{ name = "sunray emblem", chance = 160 },
-	{ name = "golden raid token", chance = 100000, maxCount = 3 },
-	{ name = "silver raid token", chance = 100000, maxCount = 7 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 3 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 7 },
 }
 
 monster.attacks = {

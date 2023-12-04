@@ -85,8 +85,8 @@ monster.loot = {
 	{ id = 3029, chance = 5000, maxCount = 3 }, -- small sapphire
 	{ id = 5944, chance = 35000 }, -- soul orb
 	{ id = 6535, chance = 100000 }, -- plasmother's remains
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

@@ -123,8 +123,8 @@ monster.loot = {
 	{ name = "spellbook of lost souls", chance = 16666 },
 	{ name = "spellscroll of prophecies", chance = 25000 },
 	{ name = "spellbook of dark mysteries", chance = 20000 },
-	{ name = "golden raid token", chance = 100000, maxCount = 7 },
-	{ name = "silver raid token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

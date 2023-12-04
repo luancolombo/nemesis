@@ -126,6 +126,8 @@ monster.loot = {
 	{ id = 20080, chance = 400 }, -- umbral hammer
 	{ id = 24954, chance = 400 }, -- part of a rune
 	{ id = 23375, chance = 3000, maxCount = 5 }, -- supreme health potion
+	{ name = "golden nemesis token", chance = 100000, maxCount = 12 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 21 },
 }
 
 monster.attacks = {
