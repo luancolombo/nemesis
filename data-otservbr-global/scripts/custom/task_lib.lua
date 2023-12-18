@@ -46,7 +46,7 @@ task_pt_br = {
 }
 
 taskConfiguration = {
-{name = "Minotaur", color = 40, total = 1000, type = "once", storage = 190000, storagecount = 190001, 
+{name = "Minotaur", color = 40, total = 750, type = "once", storage = 190000, storagecount = 190001, 
 rewards = {
 {5804, 1},
 {"exp", 1000000},
@@ -54,14 +54,14 @@ rewards = {
 	},
 },
 
-{name = "Dragon", color = 40, total = 1000, type = "daily", storage = 190002, storagecount = 190003, 
+{name = "Dragon", color = 40, total = 300, type = "daily", storage = 190002, storagecount = 190003, 
 rewards = {
 {3043, 20},
 {"exp", 1500000},
 	},
 },
 
-{name = "Dragon Lord", color = 40, total = 1000, type = "once", storage = 190004, storagecount = 190005, 
+{name = "Dragon Lord", color = 40, total = 750, type = "once", storage = 190004, storagecount = 190005, 
 rewards = {
 {5919, 1},
 {5908, 1},
@@ -77,7 +77,7 @@ rewards = {
 	},
 },
 
-{name = "Amazon", color = 40, total = 500, type = "repeatable", storage = 190008, storagecount = 190009, 
+{name = "Amazon", color = 40, total = 250, type = "repeatable", storage = 190008, storagecount = 190009, 
 rewards = { 
 {"exp", 1500000},
 {3043, 1},
@@ -92,7 +92,7 @@ rewards = {
 	},
 },
 
-{name = "Weakened Frazzlemaw", color = 40, total = 1000, type = "daily", storage = 190012, storagecount = 190013, 
+{name = "Weakened Frazzlemaw", color = 40, total = 500, type = "daily", storage = 190012, storagecount = 190013, 
 rewards = { 
 {3043, 10},
 {22516, 10},
@@ -100,7 +100,7 @@ rewards = {
 	},
 },
 
-{name = "Enfeebled Silencer", color = 40, total = 1000, type = "daily", storage = 190014, storagecount = 190015, 
+{name = "Enfeebled Silencer", color = 40, total = 500, type = "daily", storage = 190014, storagecount = 190015, 
 rewards = {
 {3043, 10},	 
 {22721, 3},
@@ -108,7 +108,7 @@ rewards = {
 	},
 },
 
-{name = "Deepling Guard", color = 40, total = 1000, type = "daily", storage = 190016, storagecount = 190017, 
+{name = "Deepling Guard", color = 40, total = 500, type = "daily", storage = 190016, storagecount = 190017, 
 rewards = {
 {3043, 10},	 
 {14142, 1},
@@ -116,7 +116,7 @@ rewards = {
 	},
 },
 
-{name = "Deepling Warrior", color = 40, total = 1000, type = "daily", storage = 190018, storagecount = 190019, 
+{name = "Deepling Warrior", color = 40, total = 500, type = "daily", storage = 190018, storagecount = 190019, 
 rewards = { 
 {3043, 10},
 {"exp", 10000000},
@@ -124,7 +124,7 @@ rewards = {
 	},
 },
 
-{name = "Deepling Scout", color = 40, total = 1000, type = "daily", storage = 190020, storagecount = 190021, 
+{name = "Deepling Scout", color = 40, total = 500, type = "daily", storage = 190020, storagecount = 190021, 
 rewards = {
 {3043, 10}, 
 {"exp", 10000000},
@@ -132,49 +132,49 @@ rewards = {
 	},
 },
 
-{name = "Guzzlemaw", color = 40, total = 5000, type = "once", storage = 190022, storagecount = 190023, 
+{name = "Guzzlemaw", color = 40, total = 1000, type = "once", storage = 190022, storagecount = 190023, 
 rewards = { 
 {20270, 1},
 {19082, 100},
 	},
 },
 
-{name = "Frazzlemaw", color = 40, total = 5000, type = "once", storage = 190022, storagecount = 190023, 
+{name = "Frazzlemaw", color = 40, total = 1000, type = "once", storage = 190022, storagecount = 190023, 
 rewards = { 
 {20272, 1},
 {19082, 100},
 	},
 },
 
-{name = "Silencer", color = 40, total = 5000, type = "once", storage = 190024, storagecount = 190025, 
+{name = "Silencer", color = 40, total = 1000, type = "once", storage = 190024, storagecount = 190025, 
 rewards = { 
 {20271, 1},
 {19082, 100},
 	},
 },
 
-{name = "Medusa", color = 40, total = 5000, type = "once", storage = 190026, storagecount = 190027, 
+{name = "Medusa", color = 40, total = 1000, type = "once", storage = 190026, storagecount = 190027, 
 rewards = { 
 {3393, 1},
 {19082, 150},
 	},
 },
 
-{name = "Demon", color = 40, total = 5000, type = "once", storage = 190028, storagecount = 190029, 
+{name = "Demon", color = 40, total = 1000, type = "once", storage = 190028, storagecount = 190029, 
 rewards = { 
 {3365, 1},
 {19082, 150},
 	},
 },
 
-{name = "Hero", color = 40, total = 2000, type = "once", storage = 190030, storagecount = 190031, 
+{name = "Hero", color = 40, total = 1000, type = "once", storage = 190030, storagecount = 190031, 
 rewards = { 
 {3394, 1},
 {19082, 50},
 	},
 },
 
-{name = "Cloak Of Terror", color = 40, total = 1000, type = "daily", storage = 190032, storagecount = 190033, 
+{name = "Cloak Of Terror", color = 40, total = 500, type = "daily", storage = 190032, storagecount = 190033, 
 rewards = {
 {3043, 10},	 
 {"exp", 30000000},
@@ -182,28 +182,28 @@ rewards = {
 	},
 },
 
-{name = "Vibrant Phantom", color = 40, total = 1000, type = "daily", storage = 190034, storagecount = 190035, 
+{name = "Vibrant Phantom", color = 40, total = 500, type = "daily", storage = 190034, storagecount = 190035, 
 rewards = { 
 {"exp", 30000000},
 {19082, 10},
 	},
 },
 
-{name = "Courage Leech", color = 40, total = 1000, type = "daily", storage = 190036, storagecount = 190037, 
+{name = "Courage Leech", color = 40, total = 500, type = "daily", storage = 190036, storagecount = 190037, 
 rewards = { 
 {"exp", 30000000},
 {19082, 10},
 	},
 },
 
-{name = "Brachiodemon", color = 40, total = 1000, type = "daily", storage = 190038, storagecount = 190039, 
+{name = "Brachiodemon", color = 40, total = 500, type = "daily", storage = 190038, storagecount = 190039, 
 rewards = { 
 {"exp", 30000000},
 {19082, 10},
 	},
 },
 
-{name = "Infernal Demon", color = 40, total = 5000, type = "once", storage = 190040, storagecount = 190041, 
+{name = "Infernal Demon", color = 40, total = 2000, type = "once", storage = 190040, storagecount = 190041, 
 rewards = {
 {"exp", 100000000},	
 {34109, 1},
@@ -219,7 +219,7 @@ rewards = {
 	},
 },
 
-{name = "Juggernaut", color = 40, total = 2000, type = "once", storage = 190044, storagecount = 190045, 
+{name = "Juggernaut", color = 40, total = 1000, type = "once", storage = 190044, storagecount = 190045, 
 rewards = { 
 {3422, 1},
 {19082, 150},
@@ -234,14 +234,14 @@ rewards = {
 	},
 },
 
-{name = "Girtablilu Warrior", color = 40, total = 5000, type = "once", storage = 190052, storagecount = 190053, 
+{name = "Girtablilu Warrior", color = 40, total = 1000, type = "once", storage = 190052, storagecount = 190053, 
 rewards = {   
 {"exp", 100000000},
 {19082, 150},
 	},
 },
 
-{name = "Dark Carnisylvan", color = 40, total = 5000, type = "once", storage = 190062, storagecount = 190063, 
+{name = "Dark Carnisylvan", color = 40, total = 1000, type = "once", storage = 190062, storagecount = 190063, 
 rewards = { 
 {"exp", 100000000},
 {19082, 150},
