@@ -46,15 +46,72 @@ task_pt_br = {
 }
 
 taskConfiguration = {
+{name = "Rotworm", color = 40, total = 200, type = "once", storage = 190006, storagecount = 190007, 
+rewards = {
+{3043, 5},
+{"exp", 100000},
+	},
+},
+	
+{name = "Amazon", color = 40, total = 250, type = "daily", storage = 190008, storagecount = 190009, 
+rewards = { 
+{"exp", 1500000},
+{3043, 3},
+	},
+},
+
+{name = "Cyclops", color = 40, total = 250, type = "daily", storage = 190064, storagecount = 190065, 
+rewards = {
+{3043, 20},
+{"exp", 1500000},
+	},
+},
+
+{name = "Thornback Tortoise", color = 40, total = 250, type = "daily", storage = 190066, storagecount = 190067, 
+rewards = {
+{3043, 20},
+{"exp", 1500000},
+	},
+},
+
 {name = "Minotaur", color = 40, total = 750, type = "once", storage = 190000, storagecount = 190001, 
 rewards = {
 {5804, 1},
-{"exp", 1000000},
+{"exp", 3000000},
 {19082, 50},
 	},
 },
 
-{name = "Dragon", color = 40, total = 300, type = "daily", storage = 190002, storagecount = 190003, 
+{name = "Valkyrie", color = 40, total = 500, type = "once", storage = 190010, storagecount = 190011, 
+rewards = { 
+{3043, 5},	
+{3437, 1},
+{19082, 50},
+	},
+},
+
+{name = "Ancient Scarab", color = 40, total = 250, type = "daily", storage = 190072, storagecount = 190073, 
+rewards = {
+{3043, 20},
+{"exp", 1500000},
+	},
+},
+
+{name = "Noble Lion", color = 40, total = 250, type = "daily", storage = 190078, storagecount = 190079, 
+rewards = {
+{3043, 20},
+{"exp", 1500000},
+	},
+},
+
+{name = "Giant Spider", color = 40, total = 250, type = "daily", storage = 190082, storagecount = 190083, 
+rewards = {
+{3043, 20},
+{"exp", 1500000},
+	},
+},
+
+{name = "Dragon", color = 40, total = 200, type = "daily", storage = 190002, storagecount = 190003, 
 rewards = {
 {3043, 20},
 {"exp", 1500000},
@@ -70,25 +127,60 @@ rewards = {
 	},
 },
 
-{name = "Rotworm", color = 40, total = 200, type = "once", storage = 190006, storagecount = 190007, 
+{name = "Wyrm", color = 40, total = 250, type = "daily", storage = 190068, storagecount = 190069, 
 rewards = {
-{3043, 5},
-{"exp", 100000},
-	},
-},
-
-{name = "Amazon", color = 40, total = 250, type = "repeatable", storage = 190008, storagecount = 190009, 
-rewards = { 
+{3043, 30},
 {"exp", 1500000},
-{3043, 1},
 	},
 },
 
-{name = "Valkyrie", color = 40, total = 500, type = "once", storage = 190010, storagecount = 190011, 
+{name = "Dawnfire Asura", color = 40, total = 1000, type = "daily", storage = 190046, storagecount = 190047, 
 rewards = { 
-{3043, 5},	
-{3437, 1},
+{3043, 50},
+{"exp", 20000000},
 {19082, 50},
+	},
+},
+
+{name = "Hellspawn", color = 40, total = 1000, type = "daily", storage = 190070, storagecount = 190071, 
+rewards = { 
+{3043, 50},
+{"exp", 20000000},
+	},
+},
+
+{name = "Hydra", color = 40, total = 250, type = "daily", storage = 190074, storagecount = 190075, 
+rewards = {
+{3043, 30},
+{"exp", 1500000},
+	},
+},
+
+{name = "Medusa", color = 40, total = 2000, type = "once", storage = 190026, storagecount = 190027, 
+rewards = { 
+{3393, 1},
+{19082, 150},
+	},
+},
+
+{name = "Renegade Knight", color = 40, total = 250, type = "daily", storage = 190080, storagecount = 190081, 
+rewards = {
+{3043, 50},
+{"exp", 1500000},
+	},
+},
+
+{name = "Hero", color = 40, total = 1000, type = "once", storage = 190030, storagecount = 190031, 
+rewards = { 
+{3394, 1},
+{19082, 50},
+	},
+},
+
+{name = "Werehyaena", color = 40, total = 250, type = "daily", storage = 190076, storagecount = 190077, 
+rewards = {
+{3043, 50},
+{"exp", 1500000},
 	},
 },
 
@@ -153,24 +245,10 @@ rewards = {
 	},
 },
 
-{name = "Medusa", color = 40, total = 1000, type = "once", storage = 190026, storagecount = 190027, 
-rewards = { 
-{3393, 1},
-{19082, 150},
-	},
-},
-
 {name = "Demon", color = 40, total = 1000, type = "once", storage = 190028, storagecount = 190029, 
 rewards = { 
 {3365, 1},
 {19082, 150},
-	},
-},
-
-{name = "Hero", color = 40, total = 1000, type = "once", storage = 190030, storagecount = 190031, 
-rewards = { 
-{3394, 1},
-{19082, 50},
 	},
 },
 
@@ -211,7 +289,7 @@ rewards = {
 	},
 },
 
-{name = "Infernal Phantom", color = 40, total = 1000, type = "daily", storage = 190042, storagecount = 190043, 
+{name = "Infernal Phantom", color = 40, total = 2000, type = "daily", storage = 190042, storagecount = 190043, 
 rewards = { 
 {3043, 50},
 {"exp", 30000000},
@@ -223,14 +301,6 @@ rewards = {
 rewards = { 
 {3422, 1},
 {19082, 150},
-	},
-},
-
-{name = "Dawnfire Asura", color = 40, total = 1000, type = "daily", storage = 190046, storagecount = 190047, 
-rewards = { 
-{3043, 50},
-{"exp", 20000000},
-{19082, 50},
 	},
 },
 
