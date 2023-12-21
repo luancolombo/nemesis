@@ -65,7 +65,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ name = "crystal coin", chance = 4494, maxCount = 1 },
+	{ name = "crystal coin", chance = 60000, maxCount = 2 },
 	{ name = "slightly rusted legs", chance = 1392 },
 	{ name = "slightly rusted armor", chance = 1203 },
 	{ name = "guardian halberd", chance = 1139 },
