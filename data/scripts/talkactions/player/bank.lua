@@ -15,7 +15,7 @@ function balance.onSay(player, words, param)
 end
 
 balance:separator(" ")
-balance:groupType("normal")
+balance:groupType("tutor")
 balance:register()
 
 local deposit = TalkAction("!deposit")
@@ -42,7 +42,7 @@ function deposit.onSay(player, words, param)
 end
 
 deposit:separator(" ")
-deposit:groupType("normal")
+deposit:groupType("tutor")
 deposit:register()
 
 local withdraw = TalkAction("!withdraw")
@@ -64,7 +64,7 @@ function withdraw.onSay(player, words, param)
 end
 
 withdraw:separator(" ")
-withdraw:groupType("normal")
+withdraw:groupType("tutor")
 withdraw:register()
 
 local transfer = TalkAction("!transfer")
@@ -100,5 +100,5 @@ function transfer.onSay(player, words, param)
 end
 
 transfer:separator(" ")
-transfer:groupType("senior tutor")
+transfer:groupType("tutor")
 transfer:register()

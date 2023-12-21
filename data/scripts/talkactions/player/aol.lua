@@ -13,5 +13,5 @@ function aol.onSay(player, words, param)
 	return true
 end
 
-aol:groupType("senior tutor")
+aol:groupType("normal")
 aol:register()
