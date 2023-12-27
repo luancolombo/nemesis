@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 480000
-monster.maxHealth = 480000
+monster.health = 280000
+monster.maxHealth = 280000
 monster.race = "blood"
 monster.corpse = 18118
 monster.speed = 135
@@ -88,13 +88,12 @@ monster.loot = {
 	{ id = 3035, chance = 85000, maxCount = 25 }, -- platinum coin
 	{ id = 6558, chance = 35000, maxCount = 3 }, -- flask of demonic blood
 	{ id = 6499, chance = 22500 }, -- demonic essence
-	{ id = 5911, chance = 4000 }, -- red piece of cloth
+	{ id = 5911, chance = 40000 }, -- red piece of cloth
 	{ id = 5944, chance = 21500 }, -- soul orb
-	{ id = 5944, chance = 50 }, -- soul orb
-	{ id = 3007, chance = 410 }, -- crystal ring
-	{ id = 6300, chance = 60 }, -- death ring
-	{ id = 3439, chance = 100 }, -- phoenix shield
-	{ id = 19391, chance = 100 }, -- furious frock
+	{ id = 3007, chance = 41000 }, -- crystal ring
+	{ id = 6300, chance = 60000 }, -- death ring
+	{ id = 3439, chance = 10000 }, -- phoenix shield
+	{ id = 19391, chance = 10000 }, -- furious frock
 }
 
 monster.attacks = {
