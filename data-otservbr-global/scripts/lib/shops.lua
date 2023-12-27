@@ -702,6 +702,7 @@ LootShopConfigTable = {
 		{ itemName = "snake skin", clientId = 9694, sell = 400 },
 		{ itemName = "solid rage", clientId = 23517, sell = 310 },
 		{ itemName = "some grimeleech wings", clientId = 22730, sell = 1200 },
+		{ itemName = "soul orb", clientId = 5944, sell = 25 },
 		{ itemName = "spark sphere", clientId = 23518, sell = 350 },
 		{ itemName = "sparkion claw", clientId = 23502, sell = 290 },
 		{ itemName = "sparkion legs", clientId = 23504, sell = 310 },
