@@ -58484,12 +58484,12 @@
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallice"/>
-		<attribute key="absorbpercentice" value="12"/>
 		<attribute key="magiclevelpoints" value="5"/>
-		<attribute key="manaleechamount" value="300"/>
-		<attribute key="manaleechchance" value="100"/>
+		<attribute key="absorbpercentice" value="12"/>
 		<attribute key="lifeleechamount" value="500"/>
 		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="range" value="6"/>
 		<attribute key="weight" value="2500"/>
 		<attribute key="imbuementslot" value="2">
@@ -68559,6 +68559,10 @@
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillsword" value="5"/>
+		<attribute key="lifeleechamount" value="600"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="6100"/>
 		<attribute key="imbuementslot" value="3">
 			<attribute key="life leech" value="3"/>
@@ -68575,6 +68579,10 @@
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillsword" value="5"/>
+		<attribute key="lifeleechamount" value="600"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="6000"/>
 		<attribute key="imbuementslot" value="3">
 			<attribute key="life leech" value="3"/>
@@ -68591,6 +68599,10 @@
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillclub" value="5"/>
+		<attribute key="lifeleechamount" value="600"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="6900"/>
 		<attribute key="imbuementslot" value="3">
 			<attribute key="life leech" value="3"/>
@@ -68607,6 +68619,10 @@
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillclub" value="5"/>
+		<attribute key="lifeleechamount" value="600"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="6800"/>
 		<attribute key="imbuementslot" value="3">
 			<attribute key="life leech" value="3"/>
@@ -68623,6 +68639,10 @@
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillaxe" value="5"/>
+		<attribute key="lifeleechamount" value="600"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="7200"/>
 		<attribute key="imbuementslot" value="3">
 			<attribute key="life leech" value="3"/>
@@ -68639,6 +68659,10 @@
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillaxe" value="5"/>
+		<attribute key="lifeleechamount" value="600"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="7200"/>
 		<attribute key="imbuementslot" value="3">
 			<attribute key="life leech" value="3"/>
