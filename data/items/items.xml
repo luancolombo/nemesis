@@ -68892,6 +68892,10 @@
 		<attribute key="energymagiclevelpoints" value="1"/>
 		<attribute key="criticalhitdamage" value="12"/>
 		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="lifeleechamount" value="200"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="100"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="2200"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -68909,6 +68913,10 @@
 		<attribute key="energymagiclevelpoints" value="1"/>
 		<attribute key="criticalhitdamage" value="12"/>
 		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="lifeleechamount" value="200"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="100"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="2100"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -68939,6 +68947,10 @@
 		<attribute key="icemagiclevelpoints" value="1"/>
 		<attribute key="criticalhitdamage" value="5"/>
 		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="lifeleechamount" value="600"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="2500"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -68956,6 +68968,10 @@
 		<attribute key="icemagiclevelpoints" value="1"/>
 		<attribute key="criticalhitdamage" value="5"/>
 		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="lifeleechamount" value="600"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="manaleechamount" value="300"/>
+		<attribute key="manaleechchance" value="100"/>
 		<attribute key="weight" value="2400"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
