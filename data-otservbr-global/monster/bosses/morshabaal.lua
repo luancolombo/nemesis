@@ -73,8 +73,10 @@ monster.voices = {
 monster.summons = {}
 
 monster.loot = {
-	{ id = 3043, chance = 60000, maxCount = 35 }, -- crystal coin
+	{ id = 3043, chance = 100000, maxCount = 90 }, -- crystal coin
 	{ id = 3035, chance = 100000, maxCount = 69 }, -- Platinum Coin
+	{ id = 19082, chance = 100000, maxCount = 250 }, -- Golden Nemesis Tokenn
+	{ id = 19083, chance = 100000, maxCount = 300 }, -- Silver Nemesis Token
 	{ id = 23373, chance = 40000, maxCount = 100 }, -- Ultimate Mana Potion
 	{ id = 7643, chance = 30000, maxCount = 100 }, -- Ultimate Health Potion
 	{ id = 23374, chance = 30000, maxCount = 100 }, -- Ultimate Spirit Potion
@@ -84,10 +86,10 @@ monster.loot = {
 	{ id = 32625, chance = 40000 }, -- Amber with a Dragonfly
 	{ id = 30054, chance = 20000 }, -- Unicorn Figurine
 	{ id = 31323, chance = 20000 }, -- Sea Horse Figurine
-	{ id = 37611, chance = 10000 }, -- Morshabaal's Mask
+	{ id = 37611, chance = 100000 }, -- Morshabaal's Mask
 	{ id = 30060, chance = 10000 }, -- Giant Emerald
 	{ id = 14112, chance = 10000 }, -- Bar of Gold
-	{ id = 37613, chance = 6666 }, -- Morshabaal's Brain
+	{ id = 37613, chance = 100000 }, -- Morshabaal's Brain
 	{ id = 37608, chance = 6666 }, -- Green Demon Armor
 	{ id = 37609, chance = 6666 }, -- Green Demon Helmet
 	{ id = 37607, chance = 6666 }, -- Green Demon Legs
@@ -98,7 +100,7 @@ monster.loot = {
 
 monster.attacks = {
 	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -5500, length = 8, spread = 0, effect = CONST_ME_WHITE_ENERGY_SPARK },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -4000, maxDamage = -30000, effect = CONST_ME_ICEATTACK },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -1000, maxDamage = -3000, effect = CONST_ME_ICEATTACK },
 	{ name = "melee", interval = 2000, chance = 100, skill = 200, attack = 250 },
 	{ name = "combat", interval = 1000, chance = 7, type = COMBAT_MANADRAIN, minDamage = -100, maxDamage = -1000, range = 7, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_POFF, target = false },
 	{ name = "drunk", interval = 1000, chance = 7, range = 7, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA, target = false },
