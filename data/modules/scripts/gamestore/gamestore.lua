@@ -355,7 +355,7 @@ GameStore.Categories = {
 			{
 				icons = { "Durable_Exercise_Axe.png" },
 				name = "Durable Exercise Axe",
-				price = 90,
+				price = 45,
 				itemtype = 35280,
 				charges = 1800,
 				description = "<i>Use it to train your axe fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your axe fighting skill\n{info} usable 1800 times a piece",
@@ -364,7 +364,7 @@ GameStore.Categories = {
 			{
 				icons = { "Durable_Exercise_Bow.png" },
 				name = "Durable Exercise Bow",
-				price = 90,
+				price = 45,
 				itemtype = 35282,
 				charges = 1800,
 				description = "<i>Use it to train your distance fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your distance fighting skill\n{info} usable 1800 times a piece",
@@ -373,7 +373,7 @@ GameStore.Categories = {
 			{
 				icons = { "Durable_Exercise_Club.png" },
 				name = "Durable Exercise Club",
-				price = 90,
+				price = 45,
 				itemtype = 35281,
 				charges = 1800,
 				description = "<i>Use it to train your club fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your club fighting skill\n{info} usable 1800 times a piece",
@@ -382,7 +382,7 @@ GameStore.Categories = {
 			{
 				icons = { "Durable_Exercise_Rod.png" },
 				name = "Durable Exercise Rod",
-				price = 90,
+				price = 45,
 				itemtype = 35283,
 				charges = 1800,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 1800 times a piece",
@@ -391,7 +391,7 @@ GameStore.Categories = {
 			{
 				icons = { "Durable_Exercise_Sword.png" },
 				name = "Durable Exercise Sword",
-				price = 90,
+				price = 45,
 				itemtype = 35279,
 				charges = 1800,
 				description = "<i>Use it to train your sword fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your sword fighting skill\n{info} usable 1800 times a piece",
@@ -400,7 +400,7 @@ GameStore.Categories = {
 			{
 				icons = { "Durable_Exercise_Wand.png" },
 				name = "Durable Exercise Wand",
-				price = 90,
+				price = 45,
 				itemtype = 35284,
 				charges = 1800,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 1800 times a piece",
@@ -409,7 +409,7 @@ GameStore.Categories = {
 			{
 				icons = { "Durable_Exercise_Shield.png" },
 				name = "Durable Exercise Shield",
-				price = 90,
+				price = 45,
 				itemtype = 44066,
 				charges = 1800,
 				description = "<i>Use it to train your shielding skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your shielding skill\n{info} usable 1800 times a piece",
@@ -481,7 +481,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Axe.png" },
 				name = "Lasting Exercise Axe",
-				price = 720,
+				price = 360,
 				itemtype = 35286,
 				charges = 14400,
 				description = "<i>Use it to train your axe fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your axe fighting skill\n{info} usable 14400 times a piece",
@@ -490,7 +490,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Bow.png" },
 				name = "Lasting Exercise Bow",
-				price = 720,
+				price = 360,
 				itemtype = 35288,
 				charges = 14400,
 				description = "<i>Use it to train your distance fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your distance fighting skill\n{info} usable 14400 times a piece",
@@ -499,7 +499,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Club.png" },
 				name = "Lasting Exercise Club",
-				price = 720,
+				price = 360,
 				itemtype = 35287,
 				charges = 14400,
 				description = "<i>Use it to train your club fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your club fighting skill\n{info} usable 14400 times a piece",
@@ -508,7 +508,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Rod.png" },
 				name = "Lasting Exercise Rod",
-				price = 720,
+				price = 360,
 				itemtype = 35289,
 				charges = 14400,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 14400 times a piece",
@@ -517,7 +517,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Sword.png" },
 				name = "Lasting Exercise Sword",
-				price = 720,
+				price = 360,
 				itemtype = 35285,
 				charges = 14400,
 				description = "<i>Use it to train your sword fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your sword fighting skill\n{info} usable 14400 times a piece",
@@ -526,7 +526,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Wand.png" },
 				name = "Lasting Exercise Wand",
-				price = 720,
+				price = 360,
 				itemtype = 35290,
 				charges = 14400,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 14400 times a piece",
@@ -535,7 +535,7 @@ GameStore.Categories = {
 			{
 				icons = { "Lasting_Exercise_Shield.png" },
 				name = "Lasting Exercise Shield",
-				price = 720,
+				price = 360,
 				itemtype = 44067,
 				charges = 14400,
 				description = "<i>Use it to train your shielding skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your shielding skill\n{info} usable 14400 times a piece",
@@ -6394,7 +6394,7 @@ GameStore.Categories = {
 			{
 				icons = { "Prey_Bonus_Reroll.png" },
 				name = "Prey Wildcard",
-				price = 50,
+				price = 25,
 				id = GameStore.SubActions.PREY_WILDCARD,
 				count = 5,
 				description = "<i>Use Prey Wildcards to reroll the bonus of an active prey, to lock your active prey or to select a prey of your choice.</i>\n\n{character}\n{info} added directly to Prey dialog\n{info} maximum amount that can be owned by character: 50",
@@ -6454,7 +6454,7 @@ GameStore.Categories = {
 			{
 				icons = { "Prey_Bonus_Reroll.png" },
 				name = "Prey Wildcard",
-				price = 200,
+				price = 100,
 				count = 20,
 				description = "<i>Use Prey Wildcards to reroll the bonus of an active prey, to lock your active prey or to select a prey of your choice.</i>\n\n{character}\n{info} added directly to Prey dialog\n{info} maximum amount that can be owned by character: 50",
 				type = GameStore.OfferTypes.OFFER_TYPE_PREYBONUS,
