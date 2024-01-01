@@ -15,6 +15,8 @@ taskOptions = {
 	uniqueTaskStorage = 65002
 }
 
+-- Ultima storage utilizada: 190085
+
 task_pt_br = {
 	exitButton = "Fechar",
 	confirmButton = "Validar",
@@ -57,6 +59,7 @@ rewards = {
 rewards = { 
 {"exp", 1500000},
 {3043, 3},
+{19082, 10},
 	},
 },
 
@@ -64,6 +67,7 @@ rewards = {
 rewards = {
 {3043, 20},
 {"exp", 1500000},
+{19082, 10},
 	},
 },
 
@@ -71,6 +75,7 @@ rewards = {
 rewards = {
 {3043, 20},
 {"exp", 1500000},
+{19082, 10},
 	},
 },
 
@@ -94,6 +99,7 @@ rewards = {
 rewards = {
 {3043, 20},
 {"exp", 1500000},
+{19082, 10},
 	},
 },
 
@@ -101,6 +107,7 @@ rewards = {
 rewards = {
 {3043, 20},
 {"exp", 1500000},
+{19082, 10},
 	},
 },
 
@@ -108,6 +115,7 @@ rewards = {
 rewards = {
 {3043, 20},
 {"exp", 1500000},
+{19082, 10},
 	},
 },
 
@@ -115,6 +123,7 @@ rewards = {
 rewards = {
 {3043, 20},
 {"exp", 1500000},
+{19082, 10},
 	},
 },
 
@@ -131,6 +140,7 @@ rewards = {
 rewards = {
 {3043, 30},
 {"exp", 1500000},
+{19082, 10},
 	},
 },
 
@@ -138,7 +148,7 @@ rewards = {
 rewards = { 
 {3043, 50},
 {"exp", 20000000},
-{19082, 50},
+{19082, 25},
 	},
 },
 
@@ -146,6 +156,7 @@ rewards = {
 rewards = { 
 {3043, 50},
 {"exp", 20000000},
+{19082, 25},
 	},
 },
 
@@ -153,6 +164,7 @@ rewards = {
 rewards = {
 {3043, 30},
 {"exp", 1500000},
+{19082, 10},
 	},
 },
 
@@ -163,10 +175,11 @@ rewards = {
 	},
 },
 
-{name = "Renegade Knight", color = 40, total = 250, type = "daily", storage = 190080, storagecount = 190081, 
+{name = "Renegade Knight", color = 40, total = 350, type = "daily", storage = 190080, storagecount = 190081, 
 rewards = {
 {3043, 50},
 {"exp", 1500000},
+{19082, 15},
 	},
 },
 
@@ -181,6 +194,7 @@ rewards = {
 rewards = {
 {3043, 50},
 {"exp", 1500000},
+{19082, 20},
 	},
 },
 
@@ -188,7 +202,7 @@ rewards = {
 rewards = { 
 {3043, 10},
 {22516, 10},
-{19082, 10},
+{19082, 20},
 	},
 },
 
@@ -196,7 +210,7 @@ rewards = {
 rewards = {
 {3043, 10},	 
 {22721, 3},
-{19082, 10},
+{19082, 20},
 	},
 },
 
@@ -204,7 +218,7 @@ rewards = {
 rewards = {
 {3043, 10},	 
 {14142, 1},
-{19082, 10},
+{19082, 20},
 	},
 },
 
@@ -212,7 +226,7 @@ rewards = {
 rewards = { 
 {3043, 10},
 {"exp", 10000000},
-{19082, 10},
+{19082, 20},
 	},
 },
 
@@ -220,7 +234,15 @@ rewards = {
 rewards = {
 {3043, 10}, 
 {"exp", 10000000},
-{19082, 10},
+{19082, 20},
+	},
+},
+
+{name = "Guzzlemaw", color = 40, total = 1000, type = "daily", storage = 190084, storagecount = 190085, 
+rewards = {
+{3043, 10}, 
+{"exp", 10000000},
+{19082, 30},
 	},
 },
 
@@ -256,28 +278,28 @@ rewards = {
 rewards = {
 {3043, 10},	 
 {"exp", 30000000},
-{19082, 10},
+{19082, 25},
 	},
 },
 
 {name = "Vibrant Phantom", color = 40, total = 500, type = "daily", storage = 190034, storagecount = 190035, 
 rewards = { 
 {"exp", 30000000},
-{19082, 10},
+{19082, 25},
 	},
 },
 
 {name = "Courage Leech", color = 40, total = 500, type = "daily", storage = 190036, storagecount = 190037, 
 rewards = { 
 {"exp", 30000000},
-{19082, 10},
+{19082, 25},
 	},
 },
 
 {name = "Brachiodemon", color = 40, total = 500, type = "daily", storage = 190038, storagecount = 190039, 
 rewards = { 
 {"exp", 30000000},
-{19082, 10},
+{19082, 25},
 	},
 },
 
