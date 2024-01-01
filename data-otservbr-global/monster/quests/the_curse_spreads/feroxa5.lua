@@ -82,6 +82,8 @@ monster.loot = {
 	{ id = 22085, chance = 1500 }, -- fur armor
 	{ id = 22086, chance = 1500 }, -- badger boots
 	{ id = 22104, chance = 12000 }, -- trophy of feroxa
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {
