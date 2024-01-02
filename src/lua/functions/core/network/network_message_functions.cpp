@@ -191,12 +191,11 @@ int NetworkMessageFunctions::luaNetworkMessageAdd64(lua_State* L) {
 }
 
 int NetworkMessageFunctions::luaNetworkMessageAddString(lua_State* L) {
-	// networkMessage:addString(string, function)
+	// networkMessage:addString(string)
 	const std::string &string = getString(L, 2);
-	const std::string &function = getString(L, 3);
 	const auto &message = getUserdataShared<NetworkMessage>(L, 1);
 	if (message) {
-		message->addString(string, function);
+		message->addString(string);
 		pushBoolean(L, true);
 	} else {
 		lua_pushnil(L);
