@@ -48,297 +48,526 @@ task_pt_br = {
 }
 
 taskConfiguration = {
-{name = "Rotworm", color = 40, total = 200, type = "once", storage = 190006, storagecount = 190007, 
-rewards = {
-{3043, 5},
-{"exp", 100000},
+	{
+		name = "Rotworm",
+		color = 40,
+		total = 200,
+		type = "once",
+		storage = 190006,
+		storagecount = 190007,
+		rewards = {
+			{3043, 5},
+			{"exp", 100000},
+		},
+		mobs = {"Rotworm"},
 	},
-},
-	
-{name = "Amazon", color = 40, total = 250, type = "daily", storage = 190008, storagecount = 190009, 
-rewards = { 
-{"exp", 1500000},
-{3043, 3},
-{19082, 10},
+	{
+		name = "Amazon",
+		color = 40,
+		total = 250,
+		type = "daily",
+		storage = 190008,
+		storagecount = 190009,
+		rewards = { 
+			{"exp", 1500000},
+			{3043, 3},
+			{19082, 10},
+		},
+		mobs = {"Amazon"},
 	},
-},
-
-{name = "Cyclops", color = 40, total = 250, type = "daily", storage = 190064, storagecount = 190065, 
-rewards = {
-{3043, 20},
-{"exp", 1500000},
-{19082, 10},
+	{
+		name = "Cyclops",
+		color = 40,
+		total = 250,
+		type = "daily",
+		storage = 190064,
+		storagecount = 190065,
+		rewards = {
+			{3043, 20},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Cyclops"},
 	},
-},
-
-{name = "Thornback Tortoise", color = 40, total = 250, type = "daily", storage = 190066, storagecount = 190067, 
-rewards = {
-{3043, 20},
-{"exp", 1500000},
-{19082, 10},
+	{
+		name = "Tortoises",
+		color = 40,
+		total = 300,
+		type = "daily",
+		storage = 190066,
+		storagecount = 190067,
+		rewards = {
+			{3043, 20},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Thornback Tortoise", "Tortoise"},
 	},
-},
-
-{name = "Minotaur", color = 40, total = 750, type = "once", storage = 190000, storagecount = 190001, 
-rewards = {
-{5804, 1},
-{"exp", 3000000},
-{19082, 50},
+	{
+		name = "Minotaur Lair",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190000,
+		storagecount = 190001,
+		rewards = {
+			{5804, 1},
+			{"exp", 3000000},
+			{19082, 50},
+		},
+		mobs = {"Minotaur", "Minotaur Archer", "Minotaur Guard", "Minotaur Mage"},
 	},
-},
-
-{name = "Valkyrie", color = 40, total = 500, type = "once", storage = 190010, storagecount = 190011, 
-rewards = { 
-{3043, 5},	
-{3437, 1},
-{19082, 50},
+	{
+		name = "Valkyrie",
+		color = 40,
+		total = 500,
+		type = "once",
+		storage = 190010,
+		storagecount = 190011,
+		rewards = { 
+			{3043, 5},	
+			{3437, 1},
+			{19082, 50},
+		},
+		mobs = {"Valkyrie"},
 	},
-},
-
-{name = "Ancient Scarab", color = 40, total = 250, type = "daily", storage = 190072, storagecount = 190073, 
-rewards = {
-{3043, 20},
-{"exp", 1500000},
-{19082, 10},
+	{
+		name = "Ancient Scarab",
+		color = 40,
+		total = 250,
+		type = "daily",
+		storage = 190072,
+		storagecount = 190073,
+		rewards = {
+			{3043, 20},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Ancient Scarab"},
 	},
-},
-
-{name = "Noble Lion", color = 40, total = 250, type = "daily", storage = 190078, storagecount = 190079, 
-rewards = {
-{3043, 20},
-{"exp", 1500000},
-{19082, 10},
+	{
+		name = "Noble Lion",
+		color = 40,
+		total = 250,
+		type = "daily",
+		storage = 190078,
+		storagecount = 190079,
+		rewards = {
+			{3043, 20},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Noble Lion"},
 	},
-},
-
-{name = "Giant Spider", color = 40, total = 250, type = "daily", storage = 190082, storagecount = 190083, 
-rewards = {
-{3043, 20},
-{"exp", 1500000},
-{19082, 10},
+	{
+		name = "Giant Spider",
+		color = 40,
+		total = 250,
+		type = "daily",
+		storage = 190082,
+		storagecount = 190083,
+		rewards = {
+			{3043, 20},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Giant Spider"},
 	},
-},
-
-{name = "Dragon", color = 40, total = 200, type = "daily", storage = 190002, storagecount = 190003, 
-rewards = {
-{3043, 20},
-{"exp", 1500000},
-{19082, 10},
+	{
+		name = "Dragon",
+		color = 40,
+		total = 200,
+		type = "daily",
+		storage = 190002,
+		storagecount = 190003,
+		rewards = {
+			{3043, 20},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Dragon"},
 	},
-},
-
-{name = "Dragon Lord", color = 40, total = 750, type = "once", storage = 190004, storagecount = 190005, 
-rewards = {
-{5919, 1},
-{5908, 1},
-{19082, 50},
-{"exp", 1500000},
+	{
+		name = "Dragon Lord",
+		color = 40,
+		total = 750,
+		type = "once",
+		storage = 190004,
+		storagecount = 190005,
+		rewards = {
+			{5919, 1},
+			{5908, 1},
+			{19082, 50},
+			{"exp", 1500000},
+		},
+		mobs = {"Dragon Lord"},
 	},
-},
-
-{name = "Wyrm", color = 40, total = 250, type = "daily", storage = 190068, storagecount = 190069, 
-rewards = {
-{3043, 30},
-{"exp", 1500000},
-{19082, 10},
+	{
+		name = "Wyrm",
+		color = 40,
+		total = 250,
+		type = "daily",
+		storage = 190068,
+		storagecount = 190069,
+		rewards = {
+			{3043, 30},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Wyrm"},
 	},
-},
-
-{name = "Dawnfire Asura", color = 40, total = 1000, type = "daily", storage = 190046, storagecount = 190047, 
-rewards = { 
-{3043, 50},
-{"exp", 20000000},
-{19082, 25},
+	{
+		name = "Asuras",
+		color = 40,
+		total = 1000,
+		type = "daily",
+		storage = 190046,
+		storagecount = 190047,
+		rewards = { 
+			{3043, 50},
+			{"exp", 20000000},
+			{19082, 25},
+		},
+		mobs = {"Dawnfire Asura", "Midnight Asura", "Frost Flower Asura"},
 	},
-},
-
-{name = "Hellspawn", color = 40, total = 1000, type = "daily", storage = 190070, storagecount = 190071, 
-rewards = { 
-{3043, 50},
-{"exp", 20000000},
-{19082, 25},
+	{
+		name = "Hellspawn",
+		color = 40,
+		total = 1000,
+		type = "daily",
+		storage = 190070,
+		storagecount = 190071,
+		rewards = { 
+			{3043, 50},
+			{"exp", 20000000},
+			{19082, 25},
+		},
+		mobs = {"Hellspawn"},
 	},
-},
-
-{name = "Hydra", color = 40, total = 250, type = "daily", storage = 190074, storagecount = 190075, 
-rewards = {
-{3043, 30},
-{"exp", 1500000},
-{19082, 10},
+	{
+		name = "Hydra",
+		color = 40,
+		total = 250,
+		type = "daily",
+		storage = 190074,
+		storagecount = 190075,
+		rewards = {
+			{3043, 30},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Hydra"},
 	},
-},
-
-{name = "Medusa", color = 40, total = 2000, type = "once", storage = 190026, storagecount = 190027, 
-rewards = { 
-{3393, 1},
-{19082, 150},
+	{
+		name = "Medusa",
+		color = 40,
+		total = 2000,
+		type = "once",
+		storage = 190026,
+		storagecount = 190027,
+		rewards = { 
+			{3393, 1},
+			{19082, 150},
+		},
+		mobs = {"Medusa"},
 	},
-},
-
-{name = "Renegade Knight", color = 40, total = 350, type = "daily", storage = 190080, storagecount = 190081, 
-rewards = {
-{3043, 50},
-{"exp", 1500000},
-{19082, 15},
+	{
+		name = "Renegade Knight",
+		color = 40,
+		total = 350,
+		type = "daily",
+		storage = 190080,
+		storagecount = 190081,
+		rewards = {
+			{3043, 50},
+			{"exp", 1500000},
+			{19082, 15},
+		},
+		mobs = {"Renegade Knight"},
 	},
-},
-
-{name = "Hero", color = 40, total = 1000, type = "once", storage = 190030, storagecount = 190031, 
-rewards = { 
-{3394, 1},
-{19082, 50},
+	{
+		name = "Hero",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190030,
+		storagecount = 190031,
+		rewards = { 
+			{3394, 1},
+			{19082, 50},
+		},
+		mobs = {"Hero"},
 	},
-},
-
-{name = "Werehyaena", color = 40, total = 250, type = "daily", storage = 190076, storagecount = 190077, 
-rewards = {
-{3043, 50},
-{"exp", 1500000},
-{19082, 20},
+	{
+		name = "Werehyaena",
+		color = 40,
+		total = 250,
+		type = "daily",
+		storage = 190076,
+		storagecount = 190077,
+		rewards = {
+			{3043, 50},
+			{"exp", 1500000},
+			{19082, 20},
+		},
+		mobs = {"Werehyaena"},
 	},
-},
-
-{name = "Weakened Frazzlemaw", color = 40, total = 500, type = "daily", storage = 190012, storagecount = 190013, 
-rewards = { 
-{3043, 10},
-{22516, 10},
-{19082, 20},
+	{
+		name = "Weakened Frazzlemaw",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190012,
+		storagecount = 190013,
+		rewards = { 
+			{3043, 10},
+			{22516, 10},
+			{19082, 20},
+		},
+		mobs = {"Weakened Frazzlemaw"},
 	},
-},
-
-{name = "Enfeebled Silencer", color = 40, total = 500, type = "daily", storage = 190014, storagecount = 190015, 
-rewards = {
-{3043, 10},	 
-{22721, 3},
-{19082, 20},
+	{
+		name = "Enfeebled Silencer",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190014,
+		storagecount = 190015,
+		rewards = {
+			{3043, 10},
+			{22721, 3},
+			{19082, 20},
+		},
+		mobs = {"Enfeebled Silencer"},
 	},
-},
-
-{name = "Deepling Guard", color = 40, total = 500, type = "daily", storage = 190016, storagecount = 190017, 
-rewards = {
-{3043, 10},	 
-{14142, 1},
-{19082, 20},
+	{
+		name = "Deepling Guard",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190016,
+		storagecount = 190017,
+		rewards = {
+			{3043, 10},
+			{14142, 1},
+			{19082, 20},
+		},
+		mobs = {"Deepling Guard"},
 	},
-},
-
-{name = "Deepling Warrior", color = 40, total = 500, type = "daily", storage = 190018, storagecount = 190019, 
-rewards = { 
-{3043, 10},
-{"exp", 10000000},
-{19082, 20},
+	{
+		name = "Deepling Warrior",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190018,
+		storagecount = 190019,
+		rewards = {
+			{3043, 10},
+			{"exp", 10000000},
+			{19082, 20},
+		},
+		mobs = {"Deepling Warrior"},
 	},
-},
-
-{name = "Deepling Scout", color = 40, total = 500, type = "daily", storage = 190020, storagecount = 190021, 
-rewards = {
-{3043, 10}, 
-{"exp", 10000000},
-{19082, 20},
+	{
+		name = "Deepling Scout",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190020,
+		storagecount = 190021,
+		rewards = {
+			{3043, 10},
+			{"exp", 10000000},
+			{19082, 20},
+		},
+		mobs = {"Deepling Scout"},
 	},
-},
-
-{name = "Guzzlemaw", color = 40, total = 1000, type = "daily", storage = 190084, storagecount = 190085, 
-rewards = {
-{3043, 10}, 
-{"exp", 10000000},
-{19082, 30},
+	{
+		name = "Guzzlemaw",
+		color = 40,
+		total = 1000,
+		type = "daily",
+		storage = 190084,
+		storagecount = 190085,
+		rewards = {
+			{3043, 10},
+			{"exp", 10000000},
+			{19082, 30},
+		},
+		mobs = {"Guzzlemaw"},
 	},
-},
-
-{name = "Guzzlemaw", color = 40, total = 1000, type = "once", storage = 190022, storagecount = 190023, 
-rewards = { 
-{20270, 1},
-{19082, 100},
+	{
+		name = "Guzzlemaw",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190022,
+		storagecount = 190023,
+		rewards = {
+			{20270, 1},
+			{19082, 100},
+		},
+		mobs = {"Guzzlemaw"},
 	},
-},
-
-{name = "Frazzlemaw", color = 40, total = 1000, type = "once", storage = 190022, storagecount = 190023, 
-rewards = { 
-{20272, 1},
-{19082, 100},
+	{
+		name = "Frazzlemaw",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190086,
+		storagecount = 190087,
+		rewards = {
+			{20272, 1},
+			{19082, 100},
+		},
+		mobs = {"Frazzlemaw"},
 	},
-},
-
-{name = "Silencer", color = 40, total = 1000, type = "once", storage = 190024, storagecount = 190025, 
-rewards = { 
-{20271, 1},
-{19082, 100},
+	{
+		name = "Silencer",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190024,
+		storagecount = 190025,
+		rewards = {
+			{20271, 1},
+			{19082, 100},
+		},
+		mobs = {"Silencer"},
 	},
-},
-
-{name = "Demon", color = 40, total = 1000, type = "once", storage = 190028, storagecount = 190029, 
-rewards = { 
-{3365, 1},
-{19082, 150},
+	{
+		name = "Demon",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190028,
+		storagecount = 190029,
+		rewards = {
+			{3365, 1},
+			{19082, 150},
+		},
+		mobs = {"Demon"},
 	},
-},
-
-{name = "Cloak Of Terror", color = 40, total = 500, type = "daily", storage = 190032, storagecount = 190033, 
-rewards = {
-{3043, 10},	 
-{"exp", 30000000},
-{19082, 25},
+	{
+		name = "Cloak Of Terror",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190032,
+		storagecount = 190033,
+		rewards = {
+			{3043, 10},
+			{"exp", 30000000},
+			{19082, 25},
+		},
+		mobs = {"Cloak Of Terror"},
 	},
-},
-
-{name = "Vibrant Phantom", color = 40, total = 500, type = "daily", storage = 190034, storagecount = 190035, 
-rewards = { 
-{"exp", 30000000},
-{19082, 25},
+	{
+		name = "Vibrant Phantom",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190034,
+		storagecount = 190035,
+		rewards = {
+			{"exp", 30000000},
+			{19082, 25},
+		},
+		mobs = {"Vibrant Phantom"},
 	},
-},
-
-{name = "Courage Leech", color = 40, total = 500, type = "daily", storage = 190036, storagecount = 190037, 
-rewards = { 
-{"exp", 30000000},
-{19082, 25},
+	{
+		name = "Courage Leech",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190036,
+		storagecount = 190037,
+		rewards = {
+			{"exp", 30000000},
+			{19082, 25},
+		},
+		mobs = {"Courage Leech"},
 	},
-},
-
-{name = "Brachiodemon", color = 40, total = 500, type = "daily", storage = 190038, storagecount = 190039, 
-rewards = { 
-{"exp", 30000000},
-{19082, 25},
+	{
+		name = "Brachiodemon",
+		color = 40,
+		total = 500,
+		type = "daily",
+		storage = 190038,
+		storagecount = 190039,
+		rewards = {
+			{"exp", 30000000},
+			{19082, 25},
+		},
+		mobs = {"Brachiodemon"},
 	},
-},
-
-{name = "Infernal Demon", color = 40, total = 2000, type = "once", storage = 190040, storagecount = 190041, 
-rewards = {
-{"exp", 100000000},	
-{34109, 1},
-{19082, 250},
+	{
+		name = "Infernal Demon",
+		color = 40,
+		total = 2000,
+		type = "once",
+		storage = 190040,
+		storagecount = 190041,
+		rewards = {
+			{"exp", 100000000},
+			{34109, 1},
+			{19082, 250},
+		},
+		mobs = {"Infernal Demon"},
 	},
-},
-
-{name = "Infernal Phantom", color = 40, total = 2000, type = "daily", storage = 190042, storagecount = 190043, 
-rewards = { 
-{3043, 50},
-{"exp", 30000000},
-{19082, 40},
+	{
+		name = "Infernal Phantom",
+		color = 40,
+		total = 2000,
+		type = "daily",
+		storage = 190042,
+		storagecount = 190043,
+		rewards = {
+			{3043, 50},
+			{"exp", 30000000},
+			{19082, 40},
+		},
+		mobs = {"Infernal Phantom"},
 	},
-},
-
-{name = "Juggernaut", color = 40, total = 1000, type = "once", storage = 190044, storagecount = 190045, 
-rewards = { 
-{3422, 1},
-{19082, 150},
+	{
+		name = "Juggernaut",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190044,
+		storagecount = 190045,
+		rewards = {
+			{3422, 1},
+			{19082, 150},
+		},
+		mobs = {"Juggernaut"},
 	},
-},
-
-{name = "Girtablilu Warrior", color = 40, total = 1000, type = "once", storage = 190052, storagecount = 190053, 
-rewards = {   
-{"exp", 100000000},
-{19082, 150},
+	{
+		name = "Girtablilu Warrior",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190052,
+		storagecount = 190053,
+		rewards = {
+			{"exp", 100000000},
+			{19082, 150},
+		},
+		mobs = {"Girtablilu Warrior"},
 	},
-},
-
-{name = "Dark Carnisylvan", color = 40, total = 1000, type = "once", storage = 190062, storagecount = 190063, 
-rewards = { 
-{"exp", 100000000},
-{19082, 150},
-	},
-},
+	{
+		name = "Dark Carnisylvan",
+		color = 40,
+		total = 1000,
+		type = "once",
+		storage = 190062,
+		storagecount = 190063,
+		rewards = {
+			{"exp", 100000000},
+			{19082, 150},
+		},
+		mobs = {"Dark Carnisylvan"}
+	}	
 }
 
 squareWaitTime = 5000
@@ -371,12 +600,15 @@ end
 
 function getTaskByMonsterName(name)
 	for i, data in pairs(taskConfiguration) do
-		if data.name:lower() == name:lower() then
-			return data
-		end
+			for j, mob in ipairs(data.mobs) do
+					if mob:lower() == name:lower() then
+							return data
+					end
+			end
 	end
 	return false
 end
+
 
 function Player.startTask(self, storage)
 local player = self

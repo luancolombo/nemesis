@@ -22,13 +22,16 @@ end
 taskCreature:register()
 
 local taskCreatureStartup = GlobalEvent("TaskCreatureStartup")
+
 function taskCreatureStartup.onStartup()
 	for _, bossName in pairs(taskConfiguration) do -- here is including the task_lib.lua monster list
-		local mType = MonsterType(bossName.name)
-		if not mType then
-			logger.error("[TaskCreatureStartup] boss with name {} is not a valid MonsterType", bossName.name)
-		else
-			mType:registerEvent("TaskCreature")
+		for key, value in ipairs(bossName.mobs) do
+			local mType = MonsterType(value)
+			if not mType then
+				logger.error("[TaskCreatureStartup] boss with name {} is not a valid MonsterType", value)
+			else
+				mType:registerEvent("TaskCreature")
+			end
 		end
 	end
 end

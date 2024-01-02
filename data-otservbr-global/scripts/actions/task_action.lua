@@ -171,6 +171,16 @@ function confirmTaskModalWindow(player, storage)
 			end
 		end
 	end
+	if data.mobs then
+		if taskOptions.selectLanguage == 1 then
+			window:addChoice("Mobs:")
+		else
+			window:addChoice("Mobs:")
+		end
+		for _, mob in pairs(data.mobs) do
+			window:addChoice(" - " .. mob)
+		end
+	end
 	local function confirmCallback(player, button, choice)
 		if player:hasStartedTask(storage) or not player:canStartCustomTask(storage) then
 			errorModalWindow(player)
@@ -288,7 +298,7 @@ function sendTaskModalWindow(player)
 				end
 			end
 		else
-			window:addChoice(data.name ..", "..data.total)
+			window:addChoice(data.name ..", "..data.total.. " | " .. ( data.type == "daily" and "Diaria" or data.type == "repeatable" and "Repetivel" or "Unico"))
 		end
 	end
 	local function confirmCallback(player, button, choice)
