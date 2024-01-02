@@ -16,10 +16,6 @@ function callback.playerOnLook(player, thing, position, distance)
 		else
 			description = description .. thing:getDescription(distance)
 		end
-		local ownerName = thing:getOwnerName()
-		if ownerName then
-			description = string.format("%s\nIt belongs to %s.", description, ownerName)
-		end
 	else
 		description = description .. thing:getDescription(distance)
 		if thing:isMonster() then

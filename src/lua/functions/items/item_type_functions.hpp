@@ -25,7 +25,6 @@ public:
 		registerMethod(L, "ItemType", "isMovable", ItemTypeFunctions::luaItemTypeIsMovable);
 		registerMethod(L, "ItemType", "isRune", ItemTypeFunctions::luaItemTypeIsRune);
 		registerMethod(L, "ItemType", "isStackable", ItemTypeFunctions::luaItemTypeIsStackable);
-		registerMethod(L, "ItemType", "isStowable", ItemTypeFunctions::luaItemTypeIsStowable);
 		registerMethod(L, "ItemType", "isReadable", ItemTypeFunctions::luaItemTypeIsReadable);
 		registerMethod(L, "ItemType", "isWritable", ItemTypeFunctions::luaItemTypeIsWritable);
 		registerMethod(L, "ItemType", "isBlocking", ItemTypeFunctions::luaItemTypeIsBlocking);
@@ -92,7 +91,6 @@ private:
 	static int luaItemTypeIsMovable(lua_State* L);
 	static int luaItemTypeIsRune(lua_State* L);
 	static int luaItemTypeIsStackable(lua_State* L);
-	static int luaItemTypeIsStowable(lua_State* L);
 	static int luaItemTypeIsReadable(lua_State* L);
 	static int luaItemTypeIsWritable(lua_State* L);
 	static int luaItemTypeIsBlocking(lua_State* L);

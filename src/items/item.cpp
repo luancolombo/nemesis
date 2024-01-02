@@ -238,15 +238,7 @@ bool Item::equals(std::shared_ptr<Item> compareItem) const {
 		return false;
 	}
 
-	if (getOwnerId() != compareItem->getOwnerId()) {
-		return false;
-	}
-
 	for (const auto &attribute : getAttributeVector()) {
-		if (attribute.getAttributeType() == ItemAttribute_t::STORE) {
-			continue;
-		}
-
 		for (const auto &compareAttribute : compareItem->getAttributeVector()) {
 			if (attribute.getAttributeType() != compareAttribute.getAttributeType()) {
 				continue;
@@ -379,9 +371,6 @@ std::shared_ptr<Player> Item::getHoldingPlayer() {
 }
 
 bool Item::isItemStorable() const {
-	if (isStoreItem() || hasOwner()) {
-		return false;
-	}
 	auto isContainerAndHasSomethingInside = (getContainer() != NULL) && (getContainer()->getItemList().size() > 0);
 	return (isStowable() || isContainerAndHasSomethingInside);
 }
@@ -800,16 +789,6 @@ Attr_ReadValue Item::readAttr(AttrTypes_t attr, PropStream &propStream) {
 			break;
 		}
 
-		case ATTR_OWNER: {
-			uint32_t ownerId;
-			if (!propStream.read<uint32_t>(ownerId)) {
-				g_logger().error("[{}] failed to read amount", __FUNCTION__);
-				return ATTR_READ_ERROR;
-			}
-
-			setAttribute(OWNER, ownerId);
-			break;
-		}
 		default:
 			return ATTR_READ_ERROR;
 	}
@@ -970,15 +949,9 @@ void Item::serializeAttr(PropWriteStream &propWriteStream) const {
 		propWriteStream.write<uint8_t>(ATTR_AMOUNT);
 		propWriteStream.write<uint16_t>(getAttribute<uint16_t>(AMOUNT));
 	}
-
 	if (hasAttribute(STORE_INBOX_CATEGORY)) {
 		propWriteStream.write<uint8_t>(ATTR_STORE_INBOX_CATEGORY);
 		propWriteStream.writeString(getString(ItemAttribute_t::STORE_INBOX_CATEGORY));
-	}
-
-	if (hasAttribute(OWNER)) {
-		propWriteStream.write<uint8_t>(ATTR_OWNER);
-		propWriteStream.write<uint32_t>(getAttribute<uint32_t>(ItemAttribute_t::OWNER));
 	}
 
 	// Serialize custom attributes, only serialize if the map not is empty
@@ -3239,7 +3212,11 @@ bool Item::hasMarketAttributes() const {
 		}
 	}
 
-	return !hasImbuements() && !isStoreItem() && !hasOwner();
+	if (hasImbuements()) {
+		return false;
+	}
+
+	return true;
 }
 
 bool Item::isInsideDepot(bool includeInbox /* = false*/) {

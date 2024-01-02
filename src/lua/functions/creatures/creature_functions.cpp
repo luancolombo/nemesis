@@ -705,11 +705,7 @@ int CreatureFunctions::luaCreatureRemoveCondition(lua_State* L) {
 	const std::shared_ptr<Condition> condition = creature->getCondition(conditionType, conditionId, subId);
 	if (condition) {
 		bool force = getBoolean(L, 5, false);
-		if (subId == 0) {
-			creature->removeCondition(conditionType, conditionId, force);
-		} else {
-			creature->removeCondition(condition);
-		}
+		creature->removeCondition(conditionType, conditionId, force);
 		pushBoolean(L, true);
 	} else {
 		lua_pushnil(L);

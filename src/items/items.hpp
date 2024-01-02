@@ -342,7 +342,6 @@ public:
 	bool loaded = false;
 	bool spellbook = false;
 	bool isWrapKit = false;
-	bool m_canBeUsedByGuests = false;
 };
 
 class Items {

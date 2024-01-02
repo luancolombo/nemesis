@@ -578,9 +578,15 @@ function Player:addItemStoreInbox(itemId, amount, movable, setOwner)
 			amount = amount - iType:getStackSize()
 		end
 	end
-	local item = Game.createItem(itemId, amount)
-	if not item then
-		return nil
+
+	local newItem = inbox:addItem(itemId, amount, INDEX_WHEREEVER, FLAG_NOLIMIT)
+
+	if not moveable then
+		for _, item in pairs(inbox:getItems()) do
+			if item:getId() == itemId then
+				item:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
+			end
+		end
 	end
 	return self:addItemStoreInboxEx(item, movable, setOwner)
 end

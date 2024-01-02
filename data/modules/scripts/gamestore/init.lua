@@ -34,7 +34,6 @@ GameStore.OfferTypes = {
 	OFFER_TYPE_HIRELING_OUTFIT = 24,
 	OFFER_TYPE_HUNTINGSLOT = 25,
 	OFFER_TYPE_ITEM_BED = 26,
-	OFFER_TYPE_ITEM_UNIQUE = 27,
 }
 
 GameStore.SubActions = {
@@ -98,7 +97,6 @@ function convertType(type)
 		[GameStore.OfferTypes.OFFER_TYPE_CHARGES] = GameStore.ConverType.SHOW_ITEM,
 		[GameStore.OfferTypes.OFFER_TYPE_HIRELING] = GameStore.ConverType.SHOW_HIRELING,
 		[GameStore.OfferTypes.OFFER_TYPE_ITEM_BED] = GameStore.ConverType.SHOW_NONE,
-		[GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE] = GameStore.ConverType.SHOW_ITEM,
 	}
 
 	if not types[type] then
@@ -296,8 +294,8 @@ function parseTransferableCoins(playerId, msg)
 	addPlayerEvent(sendStorePurchaseSuccessful, 550, playerId, "You have transfered " .. amount .. " coins to " .. reciver .. " successfully")
 
 	-- Adding history for both receiver/sender
-	GameStore.insertHistory(accountId, GameStore.HistoryTypes.HISTORY_TYPE_NONE, player:getName() .. " transferred you this amount.", amount, GameStore.CoinType.Transferable)
-	GameStore.insertHistory(player:getAccountId(), GameStore.HistoryTypes.HISTORY_TYPE_NONE, "You transferred this amount to " .. reciver, -1 * amount, GameStore.CoinType.Transferable)
+	GameStore.insertHistory(accountId, GameStore.HistoryTypes.HISTORY_TYPE_NONE, player:getName() .. " transferred you this amount.", amount, GameStore.CoinType.Coin)
+	GameStore.insertHistory(player:getAccountId(), GameStore.HistoryTypes.HISTORY_TYPE_NONE, "You transferred this amount to " .. reciver, -1 * amount, GameStore.CoinType.Coin)
 	openStore(playerId)
 end
 
@@ -320,14 +318,14 @@ function parseRequestStoreOffers(playerId, msg)
 	local oldProtocol = player:getClient().version < 1200
 
 	if oldProtocol then
-		local stringParam = msg:getString()
-		local category = GameStore.getCategoryByName(stringParam)
+		local categoryName = msg:getString()
+		local category = GameStore.getCategoryByName(categoryName)
 		if category then
 			addPlayerEvent(sendShowStoreOffersOnOldProtocol, 350, playerId, category)
 		end
 	elseif actionType == GameStore.ActionType.OPEN_CATEGORY then
-		local stringParam = msg:getString()
-		local category = GameStore.getCategoryByName(stringParam)
+		local categoryName = msg:getString()
+		local category = GameStore.getCategoryByName(categoryName)
 		if category then
 			addPlayerEvent(sendShowStoreOffers, 50, playerId, category)
 		end
@@ -477,6 +475,8 @@ function parseBuyStoreOffer(playerId, msg)
 			GameStore.processExpBoostPuchase(player)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREYSLOT then
 			GameStore.processPreyThirdSlot(player)
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_HUNTINGSLOT then
+			GameStore.processTaskHuntingThirdSlot(player)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREYBONUS then
 			GameStore.processPreyBonusReroll(player, offer.count)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_TEMPLE then
@@ -646,16 +646,10 @@ function Player.canBuyOffer(self, offer)
 
 	if disabled ~= 1 then
 		if offer.type == GameStore.OfferTypes.OFFER_TYPE_POUCH then
-			local pouch = self:getItemById(23721, true)
-			if pouch then
+			local pounch = self:getItemById(23721, true)
+			if pounch then
 				disabled = 1
-				disabledReason = "You already have a Loot Pouch."
-			end
-		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE then
-			local item = self:getItemById(offer.itemtype, true)
-			if item then
-				disabled = 1
-				disabledReason = "You already have a " .. ItemType(item:getId()):getName() .. "."
+				disabledReason = "You already have Loot Pouch."
 			end
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_BLESSINGS then
 			if self:getBlessingCount(offer.blessid) >= 5 then
@@ -1103,7 +1097,7 @@ function sendStoreTransactionHistory(playerId, page, entriesPerPage)
 		msg:addByte(entry.mode) -- 0 = normal, 1 = gift, 2 = refund
 		msg:add32(entry.amount)
 		if not oldProtocol then
-			msg:addByte(entry.type or 0x00) -- 0 = transferable tibia coin, 1 = normal tibia coin
+			msg:addByte(0x0) -- 0 = transferable tibia coin, 1 = normal tibia coin
 		end
 		msg:addString(entry.description, "sendStoreTransactionHistory - entry.description")
 		if not oldProtocol then
@@ -1126,7 +1120,8 @@ function sendStorePurchaseSuccessful(playerId, message)
 	msg:addString(message, "sendStorePurchaseSuccessful - message")
 	if oldProtocol then
 		-- Send all coins can be used for buy store offers
-		msg:addU32(player:getTibiaCoins())
+		local totalCoins = player:getTibiaCoins() + player:getTransferableCoins()
+		msg:addU32(totalCoins)
 		-- Send transferable coins can be used on transfer
 		msg:addU32(player:getTransferableCoins())
 	end
@@ -1180,7 +1175,8 @@ function sendUpdatedStoreBalances(playerId)
 	msg:addByte(0x01)
 
 	-- Send total of coins (transferable and normal coin)
-	msg:addU32(player:getTibiaCoins())
+	local totalCoins = player:getTibiaCoins() + player:getTransferableCoins()
+	msg:addU32(totalCoins)
 	msg:addU32(player:getTransferableCoins()) -- How many are Transferable
 	if not oldProtocol then
 		-- How many are reserved for a Character Auction
@@ -1768,9 +1764,7 @@ function GameStore.processPreyBonusReroll(player, offerCount)
 end
 
 function GameStore.processTempleTeleportPurchase(player)
-	local inPz = player:getTile():hasFlag(TILESTATE_PROTECTIONZONE)
-	local inFight = player:isPzLocked() or player:getCondition(CONDITION_INFIGHT, CONDITIONID_DEFAULT)
-	if not inPz and inFight then
+	if player:getCondition(CONDITION_INFIGHT, CONDITIONID_DEFAULT) or player:isPzLocked() then
 		return error({ code = 0, message = "You can't use temple teleport in fight!" })
 	end
 
@@ -1821,10 +1815,7 @@ function GameStore.processHirelingChangeNamePurchase(player, offer, productType,
 	local offerId = offer.id
 
 	if player:getClient().version < 1200 then
-		return error({
-			code = 1,
-			message = "You cannot buy hireling change name on client 10, please relog on client 12 and try again.",
-		})
+		return error({ code = 1, message = "You cannot buy hireling change name on client 10, please relog on client 12 and try again." })
 	end
 
 	if productType == GameStore.ClientOfferTypes.CLIENT_STORE_OFFER_NAMECHANGE then
@@ -1850,10 +1841,7 @@ function GameStore.processHirelingChangeSexPurchase(player, offer)
 	local playerId = player:getId()
 
 	if player:getClient().version < 1200 then
-		return error({
-			code = 1,
-			message = "You cannot buy hireling change sex on client 10, please relog on client 12 and try again.",
-		})
+		return error({ code = 1, message = "You cannot buy hireling change sex on client 10, please relog on client 12 and try again." })
 	end
 
 	local message = "Close the store window to select which hireling should have the sex changed."
@@ -1864,10 +1852,7 @@ end
 
 function GameStore.processHirelingSkillPurchase(player, offer)
 	if player:getClient().version < 1200 then
-		return error({
-			code = 1,
-			message = "You cannot buy hireling skill on client 10, please relog on client 12 and try again.",
-		})
+		return error({ code = 1, message = "You cannot buy hireling skill on client 10, please relog on client 12 and try again." })
 	end
 
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
@@ -1877,10 +1862,7 @@ end
 
 function GameStore.processHirelingOutfitPurchase(player, offer)
 	if player:getClient().version < 1200 then
-		return error({
-			code = 1,
-			message = "You cannot buy hireling outfit on client 10, please relog on client 12 and try again.",
-		})
+		return error({ code = 1, message = "You cannot buy hireling outfit on client 10, please relog on client 12 and try again." })
 	end
 
 	local outfitName = GetHirelingOutfitNameById(offer.id)
@@ -1893,14 +1875,16 @@ end
 --==Player==--
 -- Character auction coins
 function Player.canRemoveCoins(self, coins)
-	return self:getTibiaCoins() >= coins
+	if self:getTibiaCoins() < coins then
+		return false
+	end
+	return true
 end
 
 function Player.removeCoinsBalance(self, coins)
 	if self:canRemoveCoins(coins) then
 		sendStoreBalanceUpdating(self:getId(), true)
-		self:removeTibiaCoins(coins)
-		return true
+		return self:removeTibiaCoins(coins)
 	end
 
 	return false
@@ -1914,16 +1898,51 @@ function Player.addCoinsBalance(self, coins, update)
 	return true
 end
 
+-- Transferable + normal coin
+function Player.canRemoveAllCoins(self, coins)
+	if self:getTibiaCoins() + self:getTransferableCoins() < coins then
+		return false
+	end
+	return true
+end
+
+--[[
+	Removes a specified amount of coins from the player's inventory.
+	@param coins (number) - The amount of coins to be removed.
+	@return (boolean) - Returns true if the coins were successfully removed, false otherwise.
+--]]
+function Player.removeAllCoins(self, coins)
+	-- Check if it is possible to remove all the coins.
+	if self:canRemoveAllCoins(coins) then
+		local tibiaCoins = self:getTibiaCoins()
+		-- Check if there are enough Tibia coins to remove.
+		if tibiaCoins >= coins then
+			self:removeTibiaCoins(coins)
+		else
+			-- Remove the available Tibia coins and calculate the remaining amount to remove from transferable coins.
+			self:removeTibiaCoins(tibiaCoins)
+			self:removeTransferableCoins(coins - tibiaCoins)
+		end
+
+		sendStoreBalanceUpdating(self:getId(), true)
+		return true
+	end
+
+	return false
+end
+
 -- Transferable coins
 function Player.canRemoveTransferableCoins(self, coins)
-	return self:getTransferableCoins() >= coins
+	if self:getTransferableCoins() < coins then
+		return false
+	end
+	return true
 end
 
 function Player.removeTransferableCoinsBalance(self, coins)
 	if self:canRemoveTransferableCoins(coins) then
 		sendStoreBalanceUpdating(self:getId(), true)
-		self:removeTransferableCoins(coins)
-		return true
+		return self:removeTransferableCoins(coins)
 	end
 
 	return false
@@ -1939,7 +1958,7 @@ end
 
 --- Support Functions
 function Player.makeCoinTransaction(self, offer, desc)
-	local op = false
+	local op = true
 
 	if desc then
 		desc = offer.name .. " (" .. desc .. ")"
@@ -1947,9 +1966,14 @@ function Player.makeCoinTransaction(self, offer, desc)
 		desc = offer.name
 	end
 
-	if offer.coinType == GameStore.CoinType.Coin and self:canRemoveCoins(offer.price) then
+	-- First try remove normal coins, later the transferable coins
+	if self:canRemoveAllCoins(offer.price) then
+		op = self:removeAllCoins(offer.price)
+	elseif self:canRemoveCoins(offer.price) then
+		-- Remove normal coins
 		op = self:removeCoinsBalance(offer.price)
-	elseif offer.coinType == GameStore.CoinType.Transferable and self:canRemoveTransferableCoins(offer.price) then
+	else
+		-- Remove transferable coins
 		op = self:removeTransferableCoinsBalance(offer.price)
 	end
 
@@ -1966,17 +1990,23 @@ end
 -- @param coinType (string) - The type of the offer.
 -- @return (boolean) - Returns true if the player can pay for the offer, false otherwise.
 function Player.canPayForOffer(self, coinsToRemove, coinType)
+	local can_remove_coins = self:canRemoveCoins(coinsToRemove)
+	local can_remove_transferable_coins = self:canRemoveTransferableCoins(coinsToRemove)
+
 	-- Check if the player has the required amount of regular coins and the offer type is regular.
-	if coinType == GameStore.CoinType.Coin then
-		return self:canRemoveCoins(coinsToRemove)
+	if self:getTibiaCoins() >= coinsToRemove and coinType == GameStore.CoinType.Coin then
+		return can_remove_coins
 	end
 
 	-- Check if the player has the required amount of transferable coins and the offer type is transferable.
-	if coinType == GameStore.CoinType.Transferable then
-		return self:canRemoveTransferableCoins(coinsToRemove)
+	if self:getTransferableCoins() >= coinsToRemove and coinType == GameStore.CoinType.Transferable then
+		return can_remove_transferable_coins
 	end
 
-	return false
+	-- Check if the player has either the required amount of regular coins or transferable coins,
+	-- or both amounts combined.
+	local remove_all_coins = self:canRemoveAllCoins(coinsToRemove)
+	return remove_all_coins or (can_remove_coins or can_remove_transferable_coins)
 end
 
 --- Other players functions
@@ -2067,17 +2097,13 @@ function sendHomePage(playerId)
 	end
 
 	msg:addU16(#homeOffers) -- offers
-	for p, offer in pairs(homeOffers) do
-		local offerPrice = offer.type == GameStore.OfferTypes.OFFER_TYPE_EXPBOOST and GameStore.ExpBoostValues[player:getStorageValue(GameStore.Storages.expBoostCount)] or offer.price
-		if offer.type == GameStore.OfferTypes.OFFER_TYPE_NAMECHANGE and player:kv():get("namelock") then
-			offerPrice = 0
-		end
 
+	for p, offer in pairs(homeOffers) do
 		msg:addString(offer.name, "sendHomePage - offer.name")
 		msg:addByte(0x1) -- ?
 		msg:addU32(offer.id or 0) -- id
 		msg:addU16(0x1)
-		msg:addU32(offerPrice)
+		msg:addU32(offer.price)
 		msg:addByte(offer.coinType or 0x00)
 
 		msg:addByte((offer.disabledReadonIndex ~= nil) and 1 or 0)
@@ -2096,10 +2122,11 @@ function sendHomePage(playerId)
 			msg:addString(offer.icons[1], "sendHomePage - offer.icons[1]")
 		elseif type == GameStore.ConverType.SHOW_MOUNT then
 			local mount = Mount(offer.id)
-			if not mount then
-				msg:addU16(0)
-			else
+			if mount then
 				msg:addU16(mount:getClientId())
+			else
+				logger.debug("[sendHomePage] mount with id {} not exist, ignoring to avoid a debug on the client", offer.id)
+				msg:addU16(0)
 			end
 		elseif type == GameStore.ConverType.SHOW_ITEM then
 			msg:addU16(offer.itemtype)

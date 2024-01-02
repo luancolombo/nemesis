@@ -24,9 +24,6 @@ ReturnValue DepotChest::queryAdd(int32_t index, const std::shared_ptr<Thing> &th
 	if (item == nullptr) {
 		return RETURNVALUE_NOTPOSSIBLE;
 	}
-	if (actor && item->hasOwner() && !item->isOwner(actor)) {
-		return RETURNVALUE_ITEMISNOTYOURS;
-	}
 
 	bool skipLimit = hasBitSet(FLAG_NOLIMIT, flags);
 	if (!skipLimit) {
