@@ -59861,42 +59861,42 @@
 		<attribute key="primarytype" value="exercise weapons"/>
 		<attribute key="showCharges" value="1"/>
 		<attribute key="charges" value="1800"/>
-		<attribute key="moveable" value="0"/>
+		<attribute key="movable" value="0"/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item id="35280" article="an" name="durable exercise axe">
 		<attribute key="primarytype" value="exercise weapons"/>
 		<attribute key="showCharges" value="1"/>
 		<attribute key="charges" value="1800"/>
-		<attribute key="moveable" value="0"/>
+		<attribute key="movable" value="0"/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item id="35281" article="an" name="durable exercise club">
 		<attribute key="primarytype" value="exercise weapons"/>
 		<attribute key="showCharges" value="1"/>
 		<attribute key="charges" value="1800"/>
-		<attribute key="moveable" value="0"/>
+		<attribute key="movable" value="0"/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item id="35282" article="an" name="durable exercise bow">
 		<attribute key="primarytype" value="exercise weapons"/>
 		<attribute key="showCharges" value="1"/>
 		<attribute key="charges" value="1800"/>
-		<attribute key="moveable" value="0"/>
+		<attribute key="movable" value="0"/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item id="35283" article="an" name="durable exercise rod">
 		<attribute key="primarytype" value="exercise weapons"/>
 		<attribute key="showCharges" value="1"/>
 		<attribute key="charges" value="1800"/>
-		<attribute key="moveable" value="0"/>
+		<attribute key="movable" value="0"/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item id="35284" article="an" name="durable exercise wand">
 		<attribute key="primarytype" value="exercise weapons"/>
 		<attribute key="showCharges" value="1"/>
 		<attribute key="charges" value="1800"/>
-		<attribute key="moveable" value="0"/>
+		<attribute key="movable" value="0"/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item id="35285" article="an" name="lasting exercise sword">
@@ -68994,7 +68994,7 @@
 		<attribute key="primarytype" value="exercise weapons"/>
 		<attribute key="showCharges" value="1"/>
 		<attribute key="charges" value="1800"/>
-		<attribute key="moveable" value="0"/>
+		<attribute key="movable" value="0"/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item id="44067" article="an" name="lasting exercise shield">

@@ -495,6 +495,9 @@ public:
 	bool canReceiveAutoCarpet() const {
 		return isBlocking() && isAlwaysOnTop() && !items[id].hasHeight;
 	}
+	bool canBeUsedByGuests() const {
+		return isDummy() || items[id].m_canBeUsedByGuests;
+	}
 
 	bool isDecayDisabled() const {
 		return decayDisabled;

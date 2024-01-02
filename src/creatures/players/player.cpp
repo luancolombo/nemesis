@@ -2970,8 +2970,7 @@ void Player::notifyStatusChange(std::shared_ptr<Player> loginPlayer, VipStatus_t
 		return;
 	}
 
-	auto it = VIPList.find(loginPlayer->guid);
-	if (it == VIPList.end()) {
+	if (!VIPList.contains(loginPlayer->guid)) {
 		return;
 	}
 
@@ -2987,10 +2986,11 @@ void Player::notifyStatusChange(std::shared_ptr<Player> loginPlayer, VipStatus_t
 }
 
 bool Player::removeVIP(uint32_t vipGuid) {
-	if (VIPList.erase(vipGuid) == 0) {
+	if (!VIPList.erase(vipGuid)) {
 		return false;
 	}
 
+	VIPList.erase(vipGuid);
 	if (account) {
 		IOLoginData::removeVIPEntry(account->getID(), vipGuid);
 	}
@@ -3004,8 +3004,7 @@ bool Player::addVIP(uint32_t vipGuid, const std::string &vipName, VipStatus_t st
 		return false;
 	}
 
-	auto result = VIPList.insert(vipGuid);
-	if (!result.second) {
+	if (!VIPList.insert(vipGuid).second) {
 		sendTextMessage(MESSAGE_FAILURE, "This player is already in your list.");
 		return false;
 	}
@@ -3086,6 +3085,9 @@ ReturnValue Player::queryAdd(int32_t index, const std::shared_ptr<Thing> &thing,
 	if (item == nullptr) {
 		g_logger().error("[Player::queryAdd] - Item is nullptr");
 		return RETURNVALUE_NOTPOSSIBLE;
+	}
+	if (item->hasOwner() && !item->isOwner(getPlayer())) {
+		return RETURNVALUE_ITEMISNOTYOURS;
 	}
 
 	bool childIsOwner = hasBitSet(FLAG_CHILDISOWNER, flags);
@@ -4637,8 +4639,7 @@ bool Player::onKilledPlayer(const std::shared_ptr<Player> &target, bool lastHit)
 				for (auto &kill : target->unjustifiedKills) {
 					if (kill.target == getGUID() && kill.unavenged) {
 						kill.unavenged = false;
-						auto it = attackedSet.find(target->guid);
-						attackedSet.erase(it);
+						attackedSet.erase(target->guid);
 						break;
 					}
 				}
@@ -5046,7 +5047,7 @@ bool Player::hasAttacked(std::shared_ptr<Player> attacked) const {
 		return false;
 	}
 
-	return attackedSet.find(attacked->guid) != attackedSet.end();
+	return attackedSet.contains(attacked->guid);
 }
 
 void Player::addAttacked(std::shared_ptr<Player> attacked) {
@@ -5054,7 +5055,7 @@ void Player::addAttacked(std::shared_ptr<Player> attacked) {
 		return;
 	}
 
-	attackedSet.insert(attacked->guid);
+	attackedSet.emplace(attacked->guid);
 }
 
 void Player::removeAttacked(std::shared_ptr<Player> attacked) {
@@ -5062,10 +5063,7 @@ void Player::removeAttacked(std::shared_ptr<Player> attacked) {
 		return;
 	}
 
-	auto it = attackedSet.find(attacked->guid);
-	if (it != attackedSet.end()) {
-		attackedSet.erase(it);
-	}
+	attackedSet.erase(attacked->guid);
 }
 
 void Player::clearAttacked() {
@@ -7772,6 +7770,7 @@ const std::unique_ptr<PlayerWheel> &Player::wheel() const {
 }
 
 void Player::sendLootMessage(const std::string &message) const {
+	auto party = getParty();
 	if (!party) {
 		sendTextMessage(MESSAGE_LOOT, message);
 		return;

@@ -441,9 +441,7 @@ function parseBuyStoreOffer(playerId, msg)
 	-- Handled errors have a code index and unhandled errors do not
 	local pcallOk, pcallError = pcall(function()
 		if offer.type == GameStore.OfferTypes.OFFER_TYPE_ITEM then
-			GameStore.processItemPurchase(player, offer.itemtype, offer.count, offer.movable, offer.setOwner)
-		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE then
-			GameStore.processItemPurchase(player, offer.itemtype, offer.count, offer.movable, offer.setOwner)
+			GameStore.processItemPurchase(player, offer.itemtype, offer.count, offer.movable)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_POUCH then
 			GameStore.processItemPurchase(player, offer.itemtype, offer.count)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_INSTANT_REWARD_ACCESS then
@@ -457,7 +455,7 @@ function parseBuyStoreOffer(playerId, msg)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREMIUM then
 			GameStore.processPremiumPurchase(player, offer.id)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE then
-			GameStore.processStackablePurchase(player, offer.itemtype, offer.count, offer.name, offer.movable, offer.setOwner)
+			GameStore.processStackablePurchase(player, offer.itemtype, offer.count, offer.name, offer.movable)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_HOUSE then
 			GameStore.processHouseRelatedPurchase(player, offer)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_OUTFIT then
@@ -482,7 +480,7 @@ function parseBuyStoreOffer(playerId, msg)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_TEMPLE then
 			GameStore.processTempleTeleportPurchase(player)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_CHARGES then
-			GameStore.processChargesPurchase(player, offer.itemtype, offer.name, offer.charges, offer.movable, offer.setOwner)
+			GameStore.processChargesPurchase(player, offer.itemtype, offer.name, offer.charges, offer.movable)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_HIRELING then
 			local hirelingName = msg:getString()
 			local sex = msg:getByte()
@@ -1503,21 +1501,39 @@ end
 -- take a table {code = ..., message = ...} if the error is handled. When no code
 -- index is present the error is assumed to be unhandled.
 
-function GameStore.processItemPurchase(player, offerId, offerCount, movable, setOwner)
+function GameStore.processItemPurchase(player, offerId, offerCount, movable)
 	if player:getFreeCapacity() < ItemType(offerId):getWeight(offerCount) then
 		return error({ code = 0, message = "Please make sure you have free capacity to hold this item." })
 	end
 
-	for t = 1, offerCount do
-		player:addItemStoreInbox(offerId, offerCount or 1, movable, setOwner)
+	local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
+	if inbox then
+		for t = 1, offerCount do
+			local inboxItem = inbox:addItem(offerId, offerCount or 1)
+			if movable ~= true and inboxItem then
+				inboxItem:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
+			end
+		end
+	else
+		return error({ code = 0, message = "Please make sure you have free slots in your store inbox." })
 	end
 end
 
-function GameStore.processChargesPurchase(player, itemtype, name, charges, movable, setOwner)
+function GameStore.processChargesPurchase(player, itemtype, name, charges, movable)
 	if player:getFreeCapacity() < ItemType(itemtype):getWeight(1) then
 		return error({ code = 0, message = "Please make sure you have free capacity to hold this item." })
 	end
-	player:addItemStoreInbox(itemtype, charges, movable, setOwner)
+
+	local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
+	if inbox then
+		local inboxItem = inbox:addItem(itemtype, charges)
+
+		if movable ~= true and inboxItem then
+			inboxItem:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
+		end
+	else
+		return error({ code = 0, message = "Please make sure you have free slots in your store inbox." })
+	end
 end
 
 function GameStore.processSingleBlessingPurchase(player, blessId, count)
@@ -1553,7 +1569,7 @@ function GameStore.processPremiumPurchase(player, offerId)
 	end
 end
 
-function GameStore.processStackablePurchase(player, offerId, offerCount, offerName, movable, setOwner)
+function GameStore.processStackablePurchase(player, offerId, offerCount, offerName, movable)
 	local function isKegItem(itemId)
 		return itemId >= ITEM_KEG_START and itemId <= ITEM_KEG_END
 	end
@@ -2099,7 +2115,7 @@ function sendHomePage(playerId)
 	msg:addU16(#homeOffers) -- offers
 
 	for p, offer in pairs(homeOffers) do
-		msg:addString(offer.name)
+		msg:addString(offer.name, "sendHomePage - offer.name")
 		msg:addByte(0x1) -- ?
 		msg:addU32(offer.id or 0) -- id
 		msg:addU16(0x1)

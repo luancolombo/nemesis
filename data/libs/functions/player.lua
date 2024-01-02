@@ -555,27 +555,13 @@ function Player.updateHazard(self)
 	return true
 end
 
-function Player:addItemStoreInboxEx(item, movable, setOwner)
+function Player:addItemStoreInbox(itemId, amount, moveable)
 	local inbox = self:getSlotItem(CONST_SLOT_STORE_INBOX)
-	if not movable then
-		item:setOwner(self)
-		item:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
-	elseif setOwner then
-		item:setOwner(self)
-	end
-	inbox:addItemEx(item, INDEX_WHEREEVER, FLAG_NOLIMIT)
-	return item
-end
-
-function Player:addItemStoreInbox(itemId, amount, movable, setOwner)
-	local iType = ItemType(itemId)
-	if not iType then
-		return nil
-	end
-	if iType:isStackable() then
-		while amount > iType:getStackSize() do
-			self:addItemStoreInboxEx(Game.createItem(itemId, iType:getStackSize()), movable, setOwner)
-			amount = amount - iType:getStackSize()
+	if not moveable then
+		for _, item in pairs(inbox:getItems()) do
+			if item:getId() == itemId then
+				item:removeAttribute(ITEM_ATTRIBUTE_STORE)
+			end
 		end
 	end
 
@@ -588,7 +574,7 @@ function Player:addItemStoreInbox(itemId, amount, movable, setOwner)
 			end
 		end
 	end
-	return self:addItemStoreInboxEx(item, movable, setOwner)
+	return newItem
 end
 
 ---@param monster Monster
