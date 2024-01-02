@@ -107,46 +107,48 @@ DailyReward = {
 		[1] = {
 			type = DAILY_REWARD_TYPE_ITEM,
 			systemType = DAILY_REWARD_SYSTEM_TYPE_ONE,
-			freeAccount = 5,
-			premiumAccount = 10,
-		},
+			items = { 28540, 28541, 28542, 28543, 28544, 28545, 44064 },
+			freeAccount = 1,
+			premiumAccount = 2,
+			itemCharges = 1500,
+		},	
 		[2] = {
-			type = DAILY_REWARD_TYPE_ITEM,
-			systemType = DAILY_REWARD_SYSTEM_TYPE_ONE,
-			freeAccount = 5,
-			premiumAccount = 10,
+			type = DAILY_REWARD_TYPE_PREY_REROLL,
+			systemType = DAILY_REWARD_SYSTEM_TYPE_TWO,
+			freeAccount = 2,
+			premiumAccount = 4,
 		},
 		[3] = {
-			type = DAILY_REWARD_TYPE_PREY_REROLL,
+			type = DAILY_REWARD_TYPE_XP_BOOST,
 			systemType = DAILY_REWARD_SYSTEM_TYPE_TWO,
-			freeAccount = 1,
-			premiumAccount = 2,
+			freeAccount = 40,
+			premiumAccount = 55,
 		},
 		[4] = {
-			type = DAILY_REWARD_TYPE_ITEM,
-			systemType = DAILY_REWARD_SYSTEM_TYPE_ONE,
-			freeAccount = 10,
-			premiumAccount = 20,
-		},
-		[5] = {
-			type = DAILY_REWARD_TYPE_PREY_REROLL,
-			systemType = DAILY_REWARD_SYSTEM_TYPE_TWO,
-			freeAccount = 1,
-			premiumAccount = 2,
-		},
-		[6] = {
 			type = DAILY_REWARD_TYPE_ITEM,
 			systemType = DAILY_REWARD_SYSTEM_TYPE_ONE,
 			items = { 28540, 28541, 28542, 28543, 28544, 28545, 44064 },
 			freeAccount = 1,
 			premiumAccount = 2,
-			itemCharges = 50,
+			itemCharges = 1500,
+		},
+		[5] = {
+			type = DAILY_REWARD_TYPE_PREY_REROLL,
+			systemType = DAILY_REWARD_SYSTEM_TYPE_TWO,
+			freeAccount = 2,
+			premiumAccount = 4,
+		},
+		[6] = {
+			type = DAILY_REWARD_TYPE_XP_BOOST,
+			systemType = DAILY_REWARD_SYSTEM_TYPE_TWO,
+			freeAccount = 40,
+			premiumAccount = 55,
 		},
 		[7] = {
 			type = DAILY_REWARD_TYPE_XP_BOOST,
 			systemType = DAILY_REWARD_SYSTEM_TYPE_TWO,
-			freeAccount = 10,
-			premiumAccount = 30,
+			freeAccount = 40,
+			premiumAccount = 55,
 		},
 		-- Storage reward template
 		--[[[5] = {
@@ -412,7 +414,7 @@ function Player.selectDailyReward(self, msg)
 	end
 
 	local rewardCount = dailyTable.freeAccount
-	if (configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) and self:isVip()) or self:isPremium() then
+	if (configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) and self:isVip()) then
 		rewardCount = dailyTable.premiumAccount
 	end
 
