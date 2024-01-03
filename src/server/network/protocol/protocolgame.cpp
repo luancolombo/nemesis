@@ -5735,9 +5735,9 @@ void ProtocolGame::sendRestingStatus(uint8_t protection) {
 	NetworkMessage msg;
 	msg.addByte(0xA9);
 	msg.addByte(protection); // 1 / 0
-	int32_t dailyStreak = static_cast<int32_t>(player->kv()->scoped("daily-reward")->get("streak")->getNumber());
-	msg.addByte(dailyStreak < 2 ? 0 : 1);
-	if (dailyStreak < 2) {
+	int32_t PlayerdailyStreak = player->getStorageValue(STORAGEVALUE_DAILYREWARD);
+	msg.addByte(PlayerdailyStreak < 2 ? 0 : 1);
+	if (PlayerdailyStreak < 2) {
 		msg.addString("Resting Area (no active bonus)", "ProtocolGame::sendRestingStatus - Resting Area (no active bonus)");
 	} else {
 		std::ostringstream ss;
