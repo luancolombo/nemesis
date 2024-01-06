@@ -111,7 +111,7 @@ DailyReward = {
 			items = { 28540, 28541, 28542, 28543, 28544, 28545, 44064 },
 			freeAccount = 1,
 			premiumAccount = 2,
-			itemCharges = 1500,
+			itemCharges = 2000,
 		},	
 		[2] = {
 			type = DAILY_REWARD_TYPE_PREY_REROLL,
@@ -131,7 +131,7 @@ DailyReward = {
 			items = { 28540, 28541, 28542, 28543, 28544, 28545, 44064 },
 			freeAccount = 1,
 			premiumAccount = 2,
-			itemCharges = 1500,
+			itemCharges = 2000,
 		},
 		[5] = {
 			type = DAILY_REWARD_TYPE_PREY_REROLL,

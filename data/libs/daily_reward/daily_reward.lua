@@ -45,7 +45,7 @@ function RegenSoul(id, delay)
 		return false
 	end
 	local maxsoul = 100
-	if (configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) and player:isVip()) then
+	if (configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED)) then
 		maxsoul = 200
 	end
 	if player:getTile():hasFlag(TILESTATE_PROTECTIONZONE) then
