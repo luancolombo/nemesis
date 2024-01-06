@@ -115,7 +115,8 @@ monster.loot = {
 	{ name = "violet gem", chance = 3130 },
 	{ name = "winterblade", chance = 6250 },
 	{ name = "yellow gem", chance = 34380, maxCount = 2 },
-	{ name = "silver nemesis token", minCount = 0, maxCount = 2, chance = 18000 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 4 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 10 },
 }
 
 monster.attacks = {

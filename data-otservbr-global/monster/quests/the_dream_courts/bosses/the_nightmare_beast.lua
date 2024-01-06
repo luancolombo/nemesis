@@ -119,7 +119,8 @@ monster.loot = {
 	{ name = "ultimate spirit potion", chance = 58060, maxCount = 24 },
 	{ name = "violet gem", chance = 6450 },
 	{ name = "yellow gem", chance = 45160, maxCount = 2 },
-	{ name = "silver nemesis token", minCount = 0, maxCount = 2, chance = 18000 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

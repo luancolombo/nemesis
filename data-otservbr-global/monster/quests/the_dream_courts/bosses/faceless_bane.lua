@@ -105,7 +105,8 @@ monster.loot = {
 	{ name = "violet gem", chance = 1750 },
 	{ name = "wand of everblazing", chance = 880 },
 	{ name = "yellow gem", chance = 16670 },
-	{ name = "silver nemesis token", minCount = 0, maxCount = 2, chance = 18000 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 4 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 10 },
 }
 
 monster.attacks = {
