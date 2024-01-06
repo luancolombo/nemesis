@@ -77,7 +77,9 @@ monster.loot = {
 	{ name = "wand of starstorm", chance = 1000 },
 	{ name = "wand of cosmic energy", chance = 1000 },
 	{ name = "death toll", chance = 1000 },
-	{ name = "pair of nightmare boots", chance = 230 },
+	{ name = "pair of nightmare boots", chance = 1000 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 4 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 8 },
 }
 
 monster.attacks = {

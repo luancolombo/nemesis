@@ -74,7 +74,9 @@ monster.loot = {
 	{ name = "ornate crossbow", chance = 10000 },
 	{ name = "silver hand mirror", chance = 150 },
 	{ name = "death toll", chance = 150 },
-	{ name = "pair of nightmare boots", chance = 150 },
+	{ name = "pair of nightmare boots", chance = 1000 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 4 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 8 },
 }
 
 monster.attacks = {
