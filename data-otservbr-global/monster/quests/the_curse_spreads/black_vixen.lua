@@ -101,8 +101,8 @@ monster.loot = {
 	{ name = "foxtail", chance = 100 },
 	{ name = "wolf backpack", chance = 100 },
 	{ name = "silver token", chance = 100 },
-	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
-	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 4 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 10 },
 }
 
 monster.attacks = {

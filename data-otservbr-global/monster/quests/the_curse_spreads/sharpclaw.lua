@@ -94,8 +94,8 @@ monster.loot = {
 	{ name = "underworld rod", chance = 400 },
 	{ name = "wand of voodoo", chance = 400 },
 	{ name = "wolf backpack", chance = 250 },
-	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
-	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 4 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 10 },
 }
 
 monster.attacks = {
