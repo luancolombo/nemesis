@@ -89,12 +89,12 @@ monster.loot = {
 	{ name = "red crystal fragment", chance = 4500 },
 	{ name = "leaf star", chance = 4000, maxCount = 8 },
 	{ id = 23529, chance = 2500 }, -- ring of blue plasma
-	{ name = "sun fruit", chance = 890 },
-	{ id = 23542, chance = 900 }, -- collar of blue plasma
+	{ name = "sun fruit", chance = 1000 },
+	{ id = 23542, chance = 91000 }, -- collar of blue plasma
 	{ name = "wood cape", chance = 1300 },
-	{ name = "small diamond", chance = 600 },
-	{ name = "yellow gem", chance = 1000 },
-	{ name = "crystal crossbow", chance = 500 },
+	{ name = "small diamond", chance = 6000 },
+	{ name = "yellow gem", chance = 3000 },
+	{ name = "crystal crossbow", chance = 1000 },
 }
 
 monster.attacks = {

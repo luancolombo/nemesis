@@ -90,8 +90,8 @@ monster.loot = {
 	{ name = "glacier amulet", chance = 5000 },
 	{ name = "ice rapier", chance = 6250 },
 	{ name = "glacier robe", chance = 2500 },
-	{ name = "elven amulet", chance = 720 },
-	{ name = "blue gem", chance = 200 },
+	{ name = "elven amulet", chance = 3000 },
+	{ name = "blue gem", chance = 3000 },
 }
 
 monster.attacks = {

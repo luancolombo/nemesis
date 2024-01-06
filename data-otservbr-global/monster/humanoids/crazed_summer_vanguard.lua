@@ -90,9 +90,9 @@ monster.loot = {
 	{ name = "magma amulet", chance = 5500 },
 	{ name = "wand of dragonbreath", chance = 4800 },
 	{ name = "wand of draconia", chance = 4800 },
-	{ name = "magma boots", chance = 2900 },
-	{ name = "sun fruit", chance = 900 },
-	{ name = "bullseye potion", chance = 300 },
+	{ name = "magma boots", chance = 3000 },
+	{ name = "sun fruit", chance = 1000 },
+	{ name = "bullseye potion", chance = 1000 },
 }
 
 monster.attacks = {

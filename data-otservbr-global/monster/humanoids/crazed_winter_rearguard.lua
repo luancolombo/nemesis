@@ -92,10 +92,10 @@ monster.loot = {
 	{ name = "northwind rod", chance = 2360 },
 	{ name = "glacier amulet", chance = 2930 },
 	{ name = "hailstorm rod", chance = 2660 },
-	{ name = "glacier robe", chance = 1930 },
-	{ name = "cyan crystal fragment", chance = 2100 },
-	{ name = "elven amulet", chance = 1260 },
-	{ name = "blue gem", chance = 330 },
+	{ name = "glacier robe", chance = 3000 },
+	{ name = "cyan crystal fragment", chance = 3000 },
+	{ name = "elven amulet", chance = 3000 },
+	{ name = "blue gem", chance = 3300 },
 }
 
 monster.attacks = {
