@@ -19,7 +19,7 @@ monster.bosstiary = {
 }
 
 monster.health = 100000
-monster.maxHealth = 512000
+monster.maxHealth = 400000
 monster.race = "blood"
 monster.corpse = 31413
 monster.speed = 95
