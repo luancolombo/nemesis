@@ -88,13 +88,13 @@ monster.loot = {
 	{ name = "crossbow", chance = 5690 },
 	{ name = "focus cape", chance = 2370 },
 	{ name = "small diamond", chance = 1420, maxCount = 3 },
-	{ name = "wand of starstorm", chance = 1420 },
-	{ name = "wand of draconia", chance = 1420 },
-	{ name = "composite hornbow", chance = 950 },
-	{ name = "dragonbone staff", chance = 470 },
-	{ name = "lightning pendant", chance = 470 },
-	{ name = "shockwave amulet", chance = 470 },
-	{ name = "hibiscus dress", chance = 470 },
+	{ name = "wand of starstorm", chance = 3000 },
+	{ name = "wand of draconia", chance = 3500 },
+	{ name = "composite hornbow", chance = 3000 },
+	{ name = "dragonbone staff", chance = 2000 },
+	{ name = "lightning pendant", chance = 2000 },
+	{ name = "shockwave amulet", chance = 2000},
+	{ name = "hibiscus dress", chance = 3000 },
 }
 
 monster.attacks = {

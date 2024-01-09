@@ -92,11 +92,11 @@ monster.loot = {
 	{ id = 3572, chance = 1000 }, -- scarf
 	{ id = 2815, chance = 830 }, -- scroll
 	{ id = 3028, chance = 830 }, -- small diamond
-	{ id = 3279, chance = 130 }, -- war hammer
-	{ id = 3269, chance = 830 }, -- halberd
-	{ id = 3415, chance = 330 }, -- guardian shield
-	{ id = 3371, chance = 230 }, -- knight legs
-	{ id = 3369, chance = 200 }, -- warrior helmet
+	{ id = 3279, chance = 1300 }, -- war hammer
+	{ id = 3269, chance = 3000 }, -- halberd
+	{ id = 3415, chance = 3300 }, -- guardian shield
+	{ id = 3371, chance = 2300 }, -- knight legs
+	{ id = 3369, chance = 2000 }, -- warrior helmet
 }
 
 monster.attacks = {

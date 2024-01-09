@@ -86,16 +86,16 @@ monster.loot = {
 	{ name = "hydra head", chance = 10820 },
 	{ name = "cucumber", chance = 6900 },
 	{ name = "small sapphire", chance = 3920 },
-	{ name = "warrior helmet", chance = 1310 },
-	{ name = "knight armor", chance = 1120 },
+	{ name = "warrior helmet", chance = 4000 },
+	{ name = "knight armor", chance = 4500 },
 	{ name = "life crystal", chance = 930 },
 	{ id = 3098, chance = 840 }, -- ring of healing
 	{ name = "hydra egg", chance = 840 },
-	{ name = "strong mana potion", chance = 840 },
-	{ name = "stone skin amulet", chance = 750 },
-	{ name = "boots of haste", chance = 190 },
-	{ name = "medusa shield", chance = 190 },
-	{ name = "royal helmet", chance = 90 },
+	{ name = "strong mana potion", chance = 8400 },
+	{ name = "stone skin amulet", chance = 2000 },
+	{ name = "boots of haste", chance = 1300 },
+	{ name = "medusa shield", chance = 1900 },
+	{ name = "royal helmet", chance = 2000 },
 }
 
 monster.attacks = {

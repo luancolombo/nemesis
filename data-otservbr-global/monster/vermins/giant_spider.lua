@@ -94,13 +94,13 @@ monster.loot = {
 	{ name = "two handed sword", chance = 5100 },
 	{ name = "steel helmet", chance = 4980 },
 	{ name = "plate armor", chance = 9980 },
-	{ name = "knight armor", chance = 500 },
-	{ name = "knight legs", chance = 840 },
+	{ name = "knight armor", chance = 2000 },
+	{ name = "knight legs", chance = 2000 },
 	{ name = "poison arrow", chance = 11950, maxCount = 12 },
 	{ name = "plate legs", chance = 8333 },
 	{ name = "spider silk", chance = 1990 },
 	{ name = "strong health potion", chance = 3550 },
-	{ name = "lightning headband", chance = 270 },
+	{ name = "lightning headband", chance = 2700 },
 }
 
 monster.attacks = {

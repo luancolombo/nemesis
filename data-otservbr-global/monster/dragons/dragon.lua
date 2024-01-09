@@ -102,13 +102,13 @@ monster.loot = {
 	{ name = "strong health potion", chance = 1130 },
 	{ name = "green dragon leather", chance = 1070 },
 	{ name = "green dragon scale", chance = 1010 },
-	{ name = "wand of inferno", chance = 560 },
-	{ name = "small diamond", chance = 450 },
-	{ name = "serpent sword", chance = 230 },
-	{ name = "dragon hammer", chance = 230 },
-	{ name = "dragonbone staff", chance = 170 },
+	{ name = "wand of inferno", chance = 2000 },
+	{ name = "small diamond", chance = 1000 },
+	{ name = "serpent sword", chance = 3000 },
+	{ name = "dragon hammer", chance = 3000},
+	{ name = "dragonbone staff", chance = 3000 },
 	{ name = "life crystal", chance = 170 },
-	{ name = "dragon shield", chance = 110 },
+	{ name = "dragon shield", chance = 3000 },
 }
 
 monster.attacks = {

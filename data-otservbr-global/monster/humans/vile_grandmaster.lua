@@ -87,22 +87,22 @@ monster.loot = {
 	{ id = 3592, chance = 1210 }, -- grapes
 	{ id = 3577, chance = 1210, maxCount = 2 }, -- meat
 	{ id = 239, chance = 1210 }, -- great health potion
-	{ id = 3269, chance = 1610 }, -- halberd
+	{ id = 3269, chance = 1610 }, -- halberdgg
 	{ id = 3658, chance = 510 }, -- red rose
 	{ id = 3003, chance = 1510 }, -- rope
 	{ id = 11510, chance = 910 }, -- scroll of heroic deeds
 	{ id = 11450, chance = 910 }, -- small notebook
 	{ id = 3030, chance = 810, maxCount = 2 }, -- small ruby
 	{ id = 3029, chance = 810, maxCount = 2 }, -- small sapphire
-	{ id = 3004, chance = 510 }, -- wedding ring
-	{ id = 5911, chance = 210 }, -- red piece of cloth
-	{ id = 3279, chance = 210 }, -- war hammer
-	{ id = 3381, chance = 310 }, -- crown armor
-	{ id = 3280, chance = 210 }, -- fire sword
-	{ id = 3385, chance = 310 }, -- crown helmet
-	{ id = 3419, chance = 210 }, -- crown shield
-	{ id = 3382, chance = 110 }, -- crown legs
-	{ id = 3055, chance = 210 }, -- platinum amulet
+	{ id = 3004, chance = 5100 }, -- wedding ring
+	{ id = 5911, chance = 2100 }, -- red piece of cloth
+	{ id = 3279, chance = 2100 }, -- war hammer
+	{ id = 3381, chance = 3100 }, -- crown armor
+	{ id = 3280, chance = 2100 }, -- fire sword
+	{ id = 3385, chance = 3100 }, -- crown helmet
+	{ id = 3419, chance = 2100 }, -- crown shield
+	{ id = 3382, chance = 1100 }, -- crown legs
+	{ id = 3055, chance = 2100 }, -- platinum amulet
 }
 
 monster.attacks = {
