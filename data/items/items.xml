@@ -48062,6 +48062,18 @@
 		<attribute key="absorbpercentlifedrain" value="5"/>
 		<attribute key="weight" value="3800"/>
 	</item>
+	<item id="43863" article="a" name="conch shell horn">
+		<attribute key="primarytype" value="quest items"/>
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="absorbpercentice" value="2"/>
+		<attribute key="weight" value="3800"/>
+	</item>
+	<item id="43740" article="a" name="scarab ocarina">
+		<attribute key="primarytype" value="quest items"/>
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="absorbpercentpoison" value="2"/>
+		<attribute key="weight" value="3800"/>
+	</item>
 	<item id="28494" article="a" name="silver chimes">
 		<attribute key="primarytype" value="shields"/>
 		<attribute key="weight" value="280"/>

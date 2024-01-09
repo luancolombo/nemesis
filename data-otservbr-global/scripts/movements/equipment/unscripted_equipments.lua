@@ -5400,6 +5400,42 @@ local items = {
 		slot = "ammo",
 	},
 	{
+		-- conch shell horn
+		itemid = 43863,
+		type = "equip",
+		slot = "ammo",
+	},
+	{
+		-- conch shell horn
+		itemid = 43863,
+		type = "deequip",
+		slot = "ammo",
+	},
+	{
+		-- bone fiddle
+		itemid = 28493,
+		type = "equip",
+		slot = "ammo",
+	},
+	{
+		-- bone fiddle
+		itemid = 28493,
+		type = "deequip",
+		slot = "ammo",
+	},
+	{
+		-- scarab ocarina
+		itemid = 43740,
+		type = "equip",
+		slot = "ammo",
+	},
+	{
+		-- scarab ocarina
+		itemid = 43740,
+		type = "deequip",
+		slot = "ammo",
+	},
+	{
 		-- energy war hammer replica
 		itemid = 25974,
 		type = "equip",

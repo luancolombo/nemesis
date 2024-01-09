@@ -6533,7 +6533,7 @@ GameStore.Categories = {
 			{
 				icons = { "nemesis_roulette.png" },
 				name = "Nemesis Roulette Token",
-				price = 300,
+				price = 150,
 				itemtype = 44188,
 				count = 1,
 				description = "This magic token allows you to use the Nemesis Magic Roullete.\n{capacity}",
@@ -6544,7 +6544,7 @@ GameStore.Categories = {
 			{
 				icons = { "bag_of_forge_dusts.png" },
 				name = "Bag Of Forge Dusts",
-				price = 250,
+				price = 50,
 				itemtype = 23682,
 				count = 1,
 				description = "Use this item to get 100 forge dusts\nIt weighs 15.00 oz.\n{capacity}",
