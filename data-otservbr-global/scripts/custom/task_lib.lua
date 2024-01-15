@@ -1,6 +1,6 @@
 taskOptions = {
 	bonusReward = 65001, -- storage bonus reward
-	bonusRate = 1, -- rate bonus reward
+	bonusRate = 2, -- rate bonus reward
 	taskBoardPositions = {
         {x = 32343, y = 32219, z = 7}, --thais
 		{x = 32335, y = 31785, z = 7}, --carlin
@@ -236,7 +236,7 @@ taskConfiguration = {
 			{3043, 50},
 			{22721, 5},
 			{"exp", 20000000},
-			{19082, 25},
+			{19082, 20},
 		},
 		mobs = {"Dawnfire Asura", "Midnight Asura", "Frost Flower Asura"},
 	},
@@ -251,7 +251,7 @@ taskConfiguration = {
 			{3043, 50},
 			{22721, 5},
 			{"exp", 20000000},
-			{19082, 30},
+			{19082, 20},
 		},
 		mobs = {"True Dawnfire Asura", "True Midnight Asura", "True Frost Flower Asura"},
 	},
