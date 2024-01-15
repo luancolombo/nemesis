@@ -68890,6 +68890,7 @@
 		<attribute key="lifeleechchance" value="100"/>
 		<attribute key="manaleechamount" value="100"/>
 		<attribute key="manaleechchance" value="100"/>
+		<attribute key="range" value="4"/>
 		<attribute key="weight" value="2200"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -68911,6 +68912,7 @@
 		<attribute key="lifeleechchance" value="100"/>
 		<attribute key="manaleechamount" value="100"/>
 		<attribute key="manaleechchance" value="100"/>
+		<attribute key="range" value="4"/>
 		<attribute key="weight" value="2100"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -68945,6 +68947,7 @@
 		<attribute key="lifeleechchance" value="100"/>
 		<attribute key="manaleechamount" value="300"/>
 		<attribute key="manaleechchance" value="100"/>
+		<attribute key="range" value="4"/>
 		<attribute key="weight" value="2500"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -68966,6 +68969,7 @@
 		<attribute key="lifeleechchance" value="100"/>
 		<attribute key="manaleechamount" value="300"/>
 		<attribute key="manaleechchance" value="100"/>
+		<attribute key="range" value="4"/>
 		<attribute key="weight" value="2400"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
