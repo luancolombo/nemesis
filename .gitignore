@@ -396,3 +396,4 @@ vcpkg_installed
 
 # CLION
 cmake-build-debug*
+data/modules/scripts/gamestore/gamestore original/\#gamestore.lua
