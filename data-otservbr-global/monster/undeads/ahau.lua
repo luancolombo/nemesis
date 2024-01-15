@@ -95,6 +95,8 @@ monster.loot = {
 	{ name = "broken macuahuitl", chance = 1000 },
 	{ name = "broken iks faulds", chance = 1000 },
 	{ name = "broken iks cuirass", chance = 1000 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 4 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 10 },
 }
 
 monster.attacks = {

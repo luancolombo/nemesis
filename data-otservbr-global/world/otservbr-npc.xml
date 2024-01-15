@@ -837,6 +837,9 @@
 	<npc centerx="32826" centery="32574" centerz="6" radius="1">
 		<npc name="Hairycles" x="0" y="0" z="6" spawntime="60" />
 	</npc>
+	<npc centerx="33710" centery="32601" centerz="6" radius="1">
+		<npc name="Hawkhurst (Ingol)" x="0" y="0" z="6" spawntime="60" />
+	</npc>
 	<npc centerx="33047" centery="32622" centerz="6" radius="1">
 		<npc name="Ubaid" x="0" y="0" z="6" spawntime="60" />
 	</npc>
@@ -1551,6 +1554,9 @@
 	<npc centerx="33189" centery="31982" centerz="7" radius="1">
 		<npc name="Scrutinon" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="33355" centery="31982" centerz="7" radius="1">
+		<npc name="Hawkhurst" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="33479" centery="31986" centerz="7" radius="1">
 		<npc name="Captain Gulliver" x="0" y="0" z="7" spawntime="60" />
 	</npc>
@@ -1784,6 +1790,9 @@
 	</npc>
 	<npc centerx="32368" centery="32240" centerz="7" radius="1">
 		<npc name="Quentin" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="32378" centery="32241" centerz="7" radius="1">
+		<npc name="Nemesis Token Trader" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="33450" centery="32246" centerz="7" radius="1">
 		<npc name="Gerimor" x="0" y="0" z="7" spawntime="60" />
@@ -2991,14 +3000,5 @@
 	</npc>
 	<npc centerx="33587" centery="32966" centerz="15" radius="1">
 		<npc name="Gnomish Operative (Raiders)" x="0" y="0" z="15" spawntime="60" />
-	</npc>
-	<npc centerx="33355" centery="31982" centerz="7" radius="1">
-		<npc name="Hawkhurst" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="33710" centery="32601" centerz="6" radius="1">
-		<npc name="Hawkhurst (Ingol)" x="0" y="0" z="6" spawntime="60" />
-	</npc>
-	<npc centerx="32378" centery="32241" centerz="7" radius="1">
-		<npc name="Nemesis Token Trader" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 </npcs>
