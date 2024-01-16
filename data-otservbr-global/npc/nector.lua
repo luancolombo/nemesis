@@ -50,21 +50,23 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "gold tokens" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you very rare items changing your gold tokens. If you'd like to check the quality of my wares, ask me for a {trade}." })
+keywordHandler:addKeyword({ "silver nemesis token" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you very rare items changing your gold tokens. If you'd like to check the quality of my wares, ask me for a {trade}." })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to my supreme {gold tokens} shop, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_GREET, "Welcome to my supreme {silver nemesis token} shop, |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Please come and buy again, |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, take a good look at my very rare items.")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
-npcConfig.currency = 22721
+npcConfig.currency = 19083
 
 npcConfig.shop = {
-	{ itemName = "wealth duplex", clientId = 36727, buy = 50 },
+	{ itemName = "wealth duplex", clientId = 36727, buy = 100 },
 	{ itemName = "strike enhancement", clientId = 36724, buy = 60 },
 	{ itemName = "stamina extension", clientId = 36725, buy = 60 },
 	{ itemName = "bestiary betterment", clientId = 36728, buy = 100 },
-	{ itemName = "silver raid token", clientId = 19083, buy = 200 },
+	{ itemName = "gold token", clientId = 22721, buy = 5 },
+	{ itemName = "silver token", clientId = 22516, buy = 10 },
+
 }
 
 -- On buy npc shop message
