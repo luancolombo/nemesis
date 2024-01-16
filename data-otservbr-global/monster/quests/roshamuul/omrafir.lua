@@ -106,6 +106,8 @@ monster.loot = {
 	{ id = 7643, chance = 31250, maxCount = 8 }, -- ultimate health potion
 	{ id = 20264, chance = 81250, maxCount = 3 }, -- unrealized dream
 	{ id = 16120, chance = 18750, maxCount = 5 }, -- violet crystal shard
+	{ name = "golden nemesis token", chance = 100000, minCount = 50, maxCount = 70 },
+	{ name = "silver nemesis token", chance = 100000, minCount = 50, maxCount = 80 },
 }
 
 monster.attacks = {

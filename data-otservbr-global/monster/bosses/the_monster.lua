@@ -72,15 +72,17 @@ monster.loot = {
 	{ name = "giant amethyst", chance = 4300 },
 	{ name = "giant topaz", chance = 4600 },
 	{ name = "giant emerald", chance = 4500 },
-	{ id = 33778, chance = 900 }, -- raw watermelon turmaline
-	{ name = "alchemist's notepad", chance = 420 },
-	{ name = "antler-horn helmet", chance = 390 },
-	{ name = "mutant bone kilt", chance = 450 },
-	{ name = "mutated skin armor", chance = 430 },
-	{ name = "mutated skin legs", chance = 410 },
-	{ name = "stitched mutant hide legs", chance = 440 },
-	{ name = "alchemist's boots", chance = 460 },
-	{ name = "mutant bone boots", chance = 400 },
+	{ id = 33778, chance = 2000 }, -- raw watermelon turmaline
+	{ name = "alchemist's notepad", chance = 2000 },
+	{ name = "antler-horn helmet", chance = 1500 },
+	{ name = "mutant bone kilt", chance = 2000 },
+	{ name = "mutated skin armor", chance = 2000 },
+	{ name = "mutated skin legs", chance = 2000 },
+	{ name = "stitched mutant hide legs", chance = 2000 },
+	{ name = "alchemist's boots", chance = 2000 },
+	{ name = "mutant bone boots", chance = 2000 },
+	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
+	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
 }
 
 monster.attacks = {

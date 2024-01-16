@@ -133,8 +133,8 @@ monster.loot = {
 	{ name = "dragon robe", chance = 4500 },
 	{ name = "molten plate", chance = 4500 },
 	{ name = "great shield", chance = 500 },
-	{ name = "golden nemesis token", chance = 100000, maxCount = 7 },
-	{ name = "silver nemesis token", chance = 100000, maxCount = 14 },
+	{ name = "golden nemesis token", chance = 100000, minCount = 50, maxCount = 70 },
+	{ name = "silver nemesis token", chance = 100000, minCount = 50, maxCount = 80 },
 }
 
 monster.attacks = {
