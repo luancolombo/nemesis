@@ -112,7 +112,7 @@ monster.loot = {
 	{ name = "mysterious remains", chance = 100000 },
 	{ name = "cobra crown", chance = 400 },
 	{ name = "silver token", chance = 2500 },
-	{ name = "elven mail", chance = 3000 },
+	{ name = "elven mail", chance = 500 },
 }
 
 monster.attacks = {

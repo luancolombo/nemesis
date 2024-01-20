@@ -90,11 +90,11 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -145, maxDamage = -390, target = true }, -- basic_attack
-	{ name = "combat", interval = 2500, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -305, maxDamage = -390, radius = 3, effect = CONST_ME_STONES, shootEffect = CONST_ANI_EARTH, target = true }, -- stone_shower_ball
-	{ name = "combat", interval = 3000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -305, maxDamage = -390, radius = 5, effect = CONST_ME_STONES, shootEffect = CONST_ANI_EARTH, target = true }, -- great_stone_shower_ball
-	{ name = "combat", interval = 3500, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -360, maxDamage = -390, range = 7, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = true }, -- ice_strike
-	{ name = "makarawatersplash", interval = 4000, chance = 25, minDamage = -380, maxDamage = -455, target = false }, -- short_water_cone-wave
+	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -145, maxDamage = -320, target = true }, -- basic_attack
+	{ name = "combat", interval = 2500, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -295, maxDamage = -350, radius = 3, effect = CONST_ME_STONES, shootEffect = CONST_ANI_EARTH, target = true }, -- stone_shower_ball
+	{ name = "combat", interval = 3000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -278, maxDamage = -345, radius = 5, effect = CONST_ME_STONES, shootEffect = CONST_ANI_EARTH, target = true }, -- great_stone_shower_ball
+	{ name = "combat", interval = 3500, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -310, maxDamage = -360, range = 7, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = true }, -- ice_strike
+	{ name = "makarawatersplash", interval = 4000, chance = 25, minDamage = -280, maxDamage = -355, target = false }, -- short_water_cone-wave
 }
 
 monster.defenses = {
