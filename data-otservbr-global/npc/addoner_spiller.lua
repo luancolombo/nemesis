@@ -59,6 +59,8 @@ end
 addoninfo = {
 	["first citizen addon"] = { cost = 0, items = { { 5878, 100 } }, outfit_female = 136, outfit_male = 128, addon = 1, storageID = Storage.OutfitQuest.Citizen.AddonBackpack },
 	["second citizen addon"] = { cost = 0, items = { { 5890, 50 }, { 5902, 25 }, { 3374, 1 } }, outfit_female = 136, outfit_male = 128, addon = 2, storageID = Storage.OutfitQuest.Citizen.AddonHat },
+	["first ahau addon"] = { cost = 0, items = { { 40533, 1 }, { 40532, 1 }, { 40531, 1 }, { 40534, 1 } }, outfit_female = 1598, outfit_male = 1597, addon = 1, storageID = 51040 },
+	["second ahau addon"] = { cost = 0, items = { { 40530, 1 } }, outfit_female = 1598, outfit_male = 1597, addon = 2, storageID = 51041 },
 	["first hunter addon"] = { cost = 0, items = { { 5876, 100 }, { 5948, 100 }, { 5891, 5 }, { 5887, 1 }, { 5889, 1 }, { 5888, 1 } }, outfit_female = 137, outfit_male = 129, addon = 1, storageID = Storage.OutfitQuest.Hunter.AddonHat },
 	["second hunter addon"] = { cost = 0, items = { { 5875, 1 } }, outfit_female = 137, outfit_male = 129, addon = 2, storageID = Storage.OutfitQuest.Hunter.AddonGlove },
 	["first knight addon"] = { cost = 0, items = { { 5880, 100 }, { 5892, 1 } }, outfit_female = 139, outfit_male = 131, addon = 1, storageID = Storage.OutfitQuest.Knight.AddonSword },
@@ -90,7 +92,7 @@ addoninfo = {
 	["first norseman addon"] = { cost = 0, items = { { 7290, 5 } }, outfit_female = 252, outfit_male = 251, addon = 1, storageID = 51038 },
 	["second norseman addon"] = { cost = 0, items = { { 7290, 10 } }, outfit_female = 252, outfit_male = 251, addon = 2, storageID = 51039 },
 }
-local o = { "citizen", "hunter", "knight", "mage", "nobleman", "summoner", "warrior", "barbarian", "druid", "wizard", "oriental", "pirate", "assassin", "beggar", "shaman", "norseman" }
+local o = { "ahau", "citizen", "hunter", "knight", "mage", "nobleman", "summoner", "warrior", "barbarian", "druid", "wizard", "oriental", "pirate", "assassin", "beggar", "shaman", "norseman" }
 local rtnt = {}
 local function creatureSayCallback(npc, creature, type, message)
 	local talkUser = creature
