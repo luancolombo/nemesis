@@ -1,5 +1,3 @@
-local banDays = 7
-
 local ban = TalkAction("/ban")
 
 function ban.onSay(player, words, param)
@@ -7,18 +5,19 @@ function ban.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" then
-		player:sendCancelMessage("Command param required.")
+		player:sendCancelMessage("Um parametro eh exigido.")
 		return true
 	end
 
-	local name = param
-	local reason = ""
+	local t = {}
 
-	local separatorPos = param:find(",")
-	if separatorPos then
-		name = param:sub(0, separatorPos - 1)
-		reason = string.trim(param:sub(separatorPos + 1))
+	for str in string.gmatch(param, '([^,]+)') do
+			table.insert(t, str)
 	end
+
+	local name = string.trim(t[1])
+	local reason = string.trim(t[2])
+	local banDays = t[3] and tonumber(string.trim(t[3])) or 7
 
 	local accountId = getAccountNumberByPlayerName(name)
 	if accountId == 0 then
@@ -36,12 +35,12 @@ function ban.onSay(player, words, param)
 
 	local target = Player(name)
 	if target then
-		local text = target:getName() .. " has been banned"
-		player:sendTextMessage(MESSAGE_ADMINISTRADOR, text)
-		Webhook.sendMessage("Player Banned", text .. " reason: " .. reason .. ". (by: " .. player:getName() .. ")", WEBHOOK_COLOR_WARNING, announcementChannels["bans"])
+		player:sendTextMessage(MESSAGE_ADMINISTRADOR, target:getName() .. " foi banido por ".. banDays.." dias ")
+		Webhook.sendMessage("Player Banido: ", name .. " Motivo: " .. reason .. ", Duracao: "..banDays.." dias. (by: " .. player:getName() .. ")", WEBHOOK_COLOR_WARNING, announcementChannels["bans"])
 		target:remove()
 	else
-		player:sendTextMessage(MESSAGE_ADMINISTRADOR, name .. " has been banned.")
+		player:sendTextMessage(MESSAGE_ADMINISTRADOR, name .. " foi banido por ".. banDays.." dias ")
+		Webhook.sendMessage("Player Banido: ", name .. " Motivo: " .. reason .. ", Duracao: "..banDays.." dias. (by: " .. player:getName() .. ")", WEBHOOK_COLOR_WARNING, announcementChannels["bans"])
 	end
 end
 
