@@ -76,7 +76,7 @@ monster.voices = {
 
 monster.loot = {
 	{ name = "gold coin", chance = 100000, maxCount = 100 },
-	{ name = "the living idol of tukh", chance = 100000 },
+	{ name = "the living idol of tukh", chance = 9000 },
 	{ name = "rotten feather", chance = 50000 },
 	{ name = "great health potion", chance = 40000, maxCount = 5 },
 	{ name = "great spirit potion", chance = 25530, maxCount = 1 },
@@ -92,6 +92,7 @@ monster.loot = {
 	{ id = 23542, chance = 3500 }, --collar of blue plasma
 	{ id = 23543, chance = 3500 }, --collar of green plasma
 	{ name = "broken iks headpiece", chance = 1000 },
+	{ name = "broken iks sandals", chance = 1000 },
 	{ name = "broken macuahuitl", chance = 1000 },
 	{ name = "broken iks faulds", chance = 1000 },
 	{ name = "broken iks cuirass", chance = 1000 },
