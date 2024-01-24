@@ -13,7 +13,6 @@ local raids = {
 
 	--Quinta-Feira
 	["Thursday"] = {
-		["15:00"] = { raidName = "Ghazbaran" },
 		["17:15"] = { raidName = "Dracola" },
 		["19:00"] = { raidName = "Undead Cavebear" },
 	},
@@ -28,6 +27,7 @@ local raids = {
 	["Saturday"] = {
 		["17:15"] = { raidName = "The Handmaiden" },
 		["20:00"] = { raidName = "Draptor" },
+		["22:30"] = { raidName = "Ghazbaran" },
 	},
 
 	--Domingo
