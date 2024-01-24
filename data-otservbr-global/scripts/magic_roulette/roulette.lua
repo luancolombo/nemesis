@@ -20,8 +20,8 @@ slots = {
 				{id = 43895, count = 1, chance = 0.2, rare = true}, -- bag you covet
 				{id = 39546, count = 1, chance = 0.3, rare = true}, -- primal bag
 				{id = 34109, count = 1, chance = 0.5, rare = true}, -- bag you desire
-				{id = 44051, count = 1, chance = 9}, --duality doll (dog)
-				{id = 44052, count = 1, chance = 9}, --duality doll (cat)
+				{id = 44188, count = 2, chance = 9}, --nemesis roulette token
+				{id = 23682, count = 1, chance = 9}, --bag of forge dusts
 				{id = 19083, count = 50, chance = 9}, --silver raid token (50x)
 				{id = 39693, count = 1, chance = 9}, --25 years backpack
 				{id = 24395, count = 1, chance = 9}, --20 years backpack
