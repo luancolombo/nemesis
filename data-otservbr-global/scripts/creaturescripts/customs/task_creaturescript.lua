@@ -9,7 +9,7 @@ function taskCreature.onDeath(creature)
 		local targetName = creature:getName():lower()
 		local data = getTaskByMonsterName(targetName)
 		if data ~= false and player:hasStartedTask(data.storage) then
-			if player:getStorageValue(10102) >= os.time() then
+			if TaskEventschedulerValueEvent then
 				player:addTaskKill(data.storage, 2)
 			else
 				player:addTaskKill(data.storage, 1)

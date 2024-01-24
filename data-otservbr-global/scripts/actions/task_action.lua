@@ -44,7 +44,7 @@ function endTaskModalWindow(player, storage)
 				elseif tonumber(info[1]) then
 					window:addChoice("- ".. info[2]*taskOptions.bonusRate .." "..ItemType(info[1]):getName())
 					player:addItem(info[1], info[2]*taskOptions.bonusRate)
-					player:setStorageValue(taskOptions.uniqueTaskStorage, -1)
+					player:setStorageValue(taskOptions.multipleTaskStorage, -1)
 					player:getPosition():sendSingleSoundEffect(SOUND_EFFECT_TYPE_ACTION_LEVEL_ACHIEVEMENT, player:isInGhostMode() and nil or player)
 					player:getPosition():sendMagicEffect(CONST_ME_PRISMATIC_SPARK)
 					if taskOptions.selectLanguage == 1 then
@@ -74,7 +74,7 @@ function endTaskModalWindow(player, storage)
 				elseif tonumber(info[1]) then
 					window:addChoice("- ".. info[2] .." "..ItemType(info[1]):getName())
 					player:addItem(info[1], info[2])
-					player:setStorageValue(taskOptions.uniqueTaskStorage, -1)
+					player:setStorageValue(taskOptions.multipleTaskStorage, -1)
 					player:getPosition():sendSingleSoundEffect(SOUND_EFFECT_TYPE_ACTION_LEVEL_ACHIEVEMENT, player:isInGhostMode() and nil or player)
 					player:getPosition():sendMagicEffect(CONST_ME_PRISMATIC_SPARK)
 					if taskOptions.selectLanguage == 1 then
@@ -184,12 +184,14 @@ function confirmTaskModalWindow(player, storage)
 	local function confirmCallback(player, button, choice)
 		if player:hasStartedTask(storage) or not player:canStartCustomTask(storage) then
 			errorModalWindow(player)
-		elseif taskOptions.uniqueTask == true and player:getStorageValue(taskOptions.uniqueTaskStorage) == 1 then
+		elseif taskOptions.taskTimesMode == -1 and player:getStorageValue(taskOptions.multipleTaskStorage) >= 0 then
 			uniqueModalWindow(player)
+		elseif taskOptions.taskTimesMode == 1 and player:getStorageValue(taskOptions.multipleTaskStorage) >= (taskOptions.limitedTaskNTimes - 1) then
+			limitedTaskWindow(player)
 		else
 			acceptedTaskModalWindow(player)
 			player:startTask(storage)
-			player:setStorageValue(taskOptions.uniqueTaskStorage, 1)
+			player:setStorageValue(taskOptions.multipleTaskStorage, player:getStorageValue(taskOptions.multipleTaskStorage) + 1 )
 			player:getPosition():sendSingleSoundEffect(SOUND_EFFECT_TYPE_ACTION_NOTIFICATION, player:isInGhostMode() and nil or player)
 		end
 	end
@@ -223,7 +225,25 @@ end
 function uniqueModalWindow(player)
 	local title = taskOptions.selectLanguage == 1 and task_pt_br.title or "Task System"
 	local completedMessage = taskOptions.selectLanguage == 1 and task_pt_br.uniqueMissionError or "You can only do one mission at a time."
-	local window = ModalWindow{
+	local window = ModalWindow {
+		title = title,
+		message = completedMessage
+	}
+	player:getPosition():sendMagicEffect(CONST_ME_POFF)
+	player:getPosition():sendSingleSoundEffect(SOUND_EFFECT_TYPE_DIST_ATK_THROW_SHOT, player:isInGhostMode() and nil or player)
+	if taskOptions.selectLanguage == 1 then
+		window:addButton(task_pt_br.returnButton, function() sendTaskModalWindow(player) end)
+	else
+		window:addButton("Back", function() sendTaskModalWindow(player) end)
+	end
+	window:sendToPlayer(player)
+end
+
+function limitedTaskWindow(player)
+	local taskstackTimes = taskOptions.limitedTaskNTimes
+	local title = taskOptions.selectLanguage == 1 and task_pt_br.title or "Task System"
+	local completedMessage = taskOptions.selectLanguage == 1 and task_pt_br.limitedTaskNTimes or "You can only do "..taskstackTimes.." missions at a time."
+	local window = ModalWindow {
 		title = title,
 		message = completedMessage
 	}
@@ -307,8 +327,10 @@ function sendTaskModalWindow(player)
 			endTaskModalWindow(player, temptasks[id])
 		elseif not player:canStartCustomTask(temptasks[id]) then
 			errorModalWindow(player)
-		elseif taskOptions.uniqueTask == true and player:getStorageValue(taskOptions.uniqueTaskStorage) >= 1 then
+		elseif taskOptions.taskTimesMode == -1 and player:getStorageValue(taskOptions.multipleTaskStorage) >= 0 then
 			uniqueModalWindow(player)
+		elseif taskOptions.taskTimesMode == 1 and player:getStorageValue(taskOptions.multipleTaskStorage) >= (taskOptions.limitedTaskNTimes - 1) then
+			limitedTaskWindow(player)
 		else
 			confirmTaskModalWindow(player, temptasks[id])
 		end
@@ -318,7 +340,7 @@ function sendTaskModalWindow(player)
 		if player:hasStartedTask(temptasks[id]) then
 			cancelTaskModalWindow(player, true)
 			player:endTask(temptasks[id], true)
-			player:setStorageValue(taskOptions.uniqueTaskStorage, -1)
+			player:setStorageValue(taskOptions.multipleTaskStorage, -1)
 		else
 			cancelTaskModalWindow(player, false)
 		end

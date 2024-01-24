@@ -2,17 +2,18 @@ taskOptions = {
 	bonusReward = 65001, -- storage bonus reward
 	bonusRate = 2, -- rate bonus reward
 	taskBoardPositions = {
-        {x = 32343, y = 32219, z = 7}, --thais
+    {x = 32343, y = 32219, z = 7}, --thais
 		{x = 32335, y = 31785, z = 7}, --carlin
 		{x = 32921, y = 32075, z = 7}, --venore
 		{x = 33213, y = 32457, z = 8}, --darashia
 		{x = 32793, y = 31248, z = 7}, --yalahar
 		{x = 32337, y = 32838, z = 7}, --liberty bay
 		{x = 32623, y = 32746, z = 6}, --port hope
-    },
+  },
 	selectLanguage = 1, -- options: 1 = pt_br or 2 = english
-	uniqueTask = false, -- do one task at a time
-	uniqueTaskStorage = 65002
+	taskTimesMode = 1, -- -1 - do one task at a time | 1 - do limitedTaskNTimes task at a time | 2 - no task limit at a time
+	limitedTaskNTimes = 5,
+	multipleTaskStorage = 65002 -- starage sempre inicia -1
 }
 
 -- Ultima storage utilizada: 190135
@@ -25,6 +26,7 @@ task_pt_br = {
 	title = "Task Board",
 	missionError = "Missao esta em andamento ou ela ja foi concluida.",
 	uniqueMissionError = "Voce so pode fazer uma missao por vez.",
+	limitedTaskNTimes = "Voce so pode fazer "..taskOptions.limitedTaskNTimes.." missoes por vez.",
 	missionErrorTwo = "Voce concluiu a missao",
 	missionErrorTwoo = "\nAqui estao suas recompensas:",
 	choiceText = "- Experiencia: ",
@@ -209,6 +211,21 @@ taskConfiguration = {
 			{"exp", 1500000},
 		},
 		mobs = {"Dragon Lord"},
+	},
+	{
+		name = "Frost Dragon",
+		color = 40,
+		total = 200,
+		type = "daily",
+		storage = 190136,
+		storagecount = 190137,
+		rewards = {
+			{3043, 20},
+			{22721, 5},
+			{"exp", 1500000},
+			{19082, 10},
+		},
+		mobs = {"Frost Dragon", "Frost Dragon Hatchling"},
 	},
 	{
 		name = "Wyrm",
