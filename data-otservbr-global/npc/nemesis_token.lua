@@ -84,6 +84,7 @@ local itemsTable = {
 		{ itemName = "skull staff", clientId = 3324, buy = 5 },
 		{ itemName = "spiked squelcher", clientId = 7452, buy = 5 },
 		{ itemName = "one hit wonder", clientId = 21219, buy = 15 },
+		{ itemName = "vampire shield", clientId = 3434, buy = 10 },
 	},
 	["paladin sets"] = {
 		{ itemName = "wood cape", clientId = 3575, buy = 3 },
@@ -110,7 +111,8 @@ local itemsTable = {
 		{ itemName = "wand of defiance", clientId = 16096, buy = 5 },
 		{ itemName = "wand of everblazing", clientId = 16115, buy = 15 },
 		{ itemName = "glacial rod", clientId = 16118, buy = 15 },
-		{ itemName = "underworld rod", clientId = 8082, buy = 5 },		
+		{ itemName = "underworld rod", clientId = 8082, buy = 5 },
+		{ itemName = "spellbook of warding", clientId = 8073, buy = 10 },	
 	},
 	["sorcerer sets"] = {
 		{ itemName = "cobra crown", clientId = 11674, buy = 5 },
