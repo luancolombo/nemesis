@@ -77,7 +77,7 @@ monster.loot = {
 	{ name = "dawnfire sherwani", chance = 1000 },
 	{ name = "frostflower boots", chance = 1000 },
 	{ name = "feverbloom boots", chance = 1000 },
-	{ id = 39233, chance = 200 }, -- enchanted turtle amulet
+	{ id = 39233, chance = 900 }, -- enchanted turtle amulet
 	{ name = "midnight tunic", chance = 900 },
 	{ name = "midnight sarong", chance = 900 },
 	{ name = "naga quiver", chance = 1500 },
@@ -86,7 +86,7 @@ monster.loot = {
 	{ name = "naga club", chance = 1500 },
 	{ name = "naga wand", chance = 1500 },
 	{ name = "naga rod", chance = 1500 },
-	{ name = "naga crossbow", chance = 200 },
+	{ name = "naga crossbow", chance = 1000 },
 	{ name = "golden nemesis token", chance = 100000, maxCount = 4 },
 	{ name = "silver nemesis token", chance = 100000, maxCount = 10 },
 }

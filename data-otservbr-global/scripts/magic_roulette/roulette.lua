@@ -12,7 +12,7 @@ local Strings = dofile(DATA_DIRECTORY .. '/scripts/magic_roulette/lib/core/strin
 
 slots = {
 		[17320] = Slot {
-			needItem = {id = 44188, count = 1},
+			needItem = {id = 55005, count = 1},
 			tilesPerSlot = 9,
 			centerPosition = Position(1024, 963, 7), --Centro da Roleta onde o pr�mio do item para
 
@@ -20,7 +20,7 @@ slots = {
 				{id = 43895, count = 1, chance = 0.2, rare = true}, -- bag you covet
 				{id = 39546, count = 1, chance = 0.3, rare = true}, -- primal bag
 				{id = 34109, count = 1, chance = 0.5, rare = true}, -- bag you desire
-				{id = 44188, count = 2, chance = 9}, --nemesis roulette token
+				{id = 55005, count = 2, chance = 9}, --nemesis roulette token
 				{id = 23682, count = 1, chance = 9}, --bag of forge dusts
 				{id = 19083, count = 50, chance = 9}, --silver raid token (50x)
 				{id = 39693, count = 1, chance = 9}, --25 years backpack
@@ -29,8 +29,8 @@ slots = {
 				{id = 3423, count = 1, chance = 9}, --blessed shield
 				{id = 19082, count = 20, chance = 9}, --golden raid token (20x)
 				{id = 3365, count = 1, chance = 9}, --golden helmet
-				{id = 44183, count = 1, chance = 9}, --nemesis backpack
-				{id = 44185, count = 1, chance = 9} --legendary treasure
+				{id = 55001, count = 1, chance = 9}, --nemesis backpack
+				{id = 55003, count = 1, chance = 9} --legendary treasure
 			},
 		}
 }

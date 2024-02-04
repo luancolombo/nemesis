@@ -49,5 +49,5 @@ function misteryBox.onUse(player, item, fromPosition, target, toPosition, isHotk
 	return true
 end
 
-misteryBox:id(44185)
+misteryBox:id(55003)
 misteryBox:register()

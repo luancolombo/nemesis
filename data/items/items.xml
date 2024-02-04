@@ -69019,34 +69019,114 @@
 		<attribute key="charges" value="14400"/>
 		<attribute key="weight" value="1000"/>
 	</item>
-	<item id="44183" article="a" name="nemesis backpack">
-		<attribute key="containersize" value="30"/>
+	<item id="55001" article="a" name="nemesis backpack">
+		<attribute key="containersize" value="50"/>
 		<attribute key="weight" value="1500"/>
 		<attribute key="description" value="It was rewarded by the kings."/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 	</item>
-	<item id="44184" article="a" name="war dragon backpack">
-		<attribute key="containersize" value="50"/>
+	<item id="55002" article="a" name="war dragon backpack">
+		<attribute key="containersize" value="100"/>
 		<attribute key="weight" value="1500"/>
 		<attribute key="imbuementslot" value="1">
 			<attribute key="increase capacity" value="3"/>
 		</attribute>
 	</item>
-	<item id="44185" article="a" name="legendary treasure">
+	<item id="55003" article="a" name="legendary treasure">
 		<attribute key="primarytype" value="quest items"/>
 		<attribute key="weight" value="1500"/>
 	</item>
-	<item id="44186" article="a" name="nemesis king treasure">
+	<item id="55004" article="a" name="nemesis king treasure">
 		<attribute key="primarytype" value="quest items"/>
 		<attribute key="weight" value="1500"/>
 	</item>
-	<item id="44187" article="the" name="nemesis task board">
+	<item id="55506" article="the" name="nemesis task board">
 	<attribute key="description" value="Here you can find the Kingdom Quests."/>
 	</item>
-	<item id="44188" article="a" name="nemesis roulette token">
+	<item id="55005" article="a" name="nemesis roulette token">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="110"/>
 	</item>
+	<item id="44621" article="a" name="dauntless dragon scale armor">
+	<attribute key="primarytype" value="armors"/>
+	<attribute key="absorbpercentphysical" value="8"/>
+	<attribute key="armor" value="18"/>
+	<attribute key="skillclub" value="3"/>
+    <attribute key="skillaxe" value="3"/>
+    <attribute key="skillsword" value="3"/>
+	<attribute key="lifeleechamount" value="400"/>
+	<attribute key="lifeleechchance" value="100"/>
+    <attribute key="weight" value="15200"/>
+	<attribute key="imbuementslot" value="2">
+		<attribute key="life leech" value="3"/>
+		<attribute key="elemental protection death" value="3"/>
+		<attribute key="elemental protection earth" value="3"/>
+		<attribute key="elemental protection fire" value="3"/>
+		<attribute key="elemental protection ice" value="3"/>
+		<attribute key="elemental protection energy" value="3"/>
+		<attribute key="elemental protection holy" value="3"/>
+	</attribute>
+    </item>
+	<item id="44622" article="a" name="unerring dragon scale armor">
+	<attribute key="primarytype" value="armors"/>
+	<attribute key="armor" value="17"/>
+	<attribute key="skilldist" value="3"/>
+	<attribute key="holymagiclevelpoints" value="1"/>
+	<attribute key="absorbpercentenergy" value="10"/>
+	<attribute key="absorbpercentpoison" value="-5"/>
+	<attribute key="lifeleechamount" value="400"/>
+	<attribute key="lifeleechchance" value="100"/>
+    <attribute key="weight" value="13500"/>
+	<attribute key="imbuementslot" value="2">
+		<attribute key="life leech" value="3"/>
+		<attribute key="elemental protection death" value="3"/>
+		<attribute key="elemental protection earth" value="3"/>
+		<attribute key="elemental protection fire" value="3"/>
+		<attribute key="elemental protection ice" value="3"/>
+		<attribute key="elemental protection energy" value="3"/>
+		<attribute key="elemental protection holy" value="3"/>
+	</attribute>
+	</item>
+	<item id="44623" article="a" name="arcane dragon robe">
+	<attribute key="primarytype" value="armors"/>
+	<attribute key="armor" value="15"/>
+	<attribute key="magiclevelpoints" value="3"/>
+	<attribute key="energymagiclevelpoints" value="1"/>
+	<attribute key="absorbpercentice" value="12"/>
+	<attribute key="absorbpercentfire" value="-6"/>
+	<attribute key="lifeleechamount" value="500"/>
+	<attribute key="lifeleechchance" value="100"/>
+    <attribute key="weight" value="4300"/>
+	<attribute key="imbuementslot" value="2">
+		<attribute key="life leech" value="3"/>
+		<attribute key="elemental protection death" value="3"/>
+		<attribute key="elemental protection earth" value="3"/>
+		<attribute key="elemental protection fire" value="3"/>
+		<attribute key="elemental protection ice" value="3"/>
+		<attribute key="elemental protection energy" value="3"/>
+		<attribute key="elemental protection holy" value="3"/>
+	</attribute>
+	</item>
+	<item id="44624" article="a" name="mystical dragon robe">
+	<attribute key="primarytype" value="armors"/>
+	<attribute key="armor" value="15"/>
+	<attribute key="magiclevelpoints" value="3"/>
+	<attribute key="earthmagiclevelpoints" value="1"/>
+	<attribute key="absorbpercentfire" value="12"/>
+	<attribute key="absorbpercentice" value="-6"/>
+	<attribute key="lifeleechamount" value="500"/>
+	<attribute key="lifeleechchance" value="100"/>
+    <attribute key="weight" value="4300"/>
+	<attribute key="imbuementslot" value="2">
+		<attribute key="life leech" value="3"/>
+		<attribute key="elemental protection death" value="3"/>
+		<attribute key="elemental protection earth" value="3"/>
+		<attribute key="elemental protection fire" value="3"/>
+		<attribute key="elemental protection ice" value="3"/>
+		<attribute key="elemental protection energy" value="3"/>
+		<attribute key="elemental protection holy" value="3"/>
+	</attribute>
+ 	</item>
 </items>

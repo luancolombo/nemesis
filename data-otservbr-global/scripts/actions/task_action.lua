@@ -400,5 +400,23 @@ function task.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	return true
 end
 
-task:id(44187)
+task:id(55506)
 task:register()
+
+local taskSpawn = GlobalEvent("taskSpawn")
+function taskSpawn.onStartup()
+
+    logger.info("--------------Criando TaskBoards--------------")
+
+    for index, location in ipairs(taskOptions.taskBoardPositions) do
+        Game.createItem(10145, 1, location)
+        Game.createItem(44187, 1, location)
+        logger.info("[ TaskBoard {} ] - Cidade: {}.", index, location.town)
+    end
+
+    logger.info("--------------Criando TaskBoards--------------")
+
+    return true
+end
+
+taskSpawn:register()

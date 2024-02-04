@@ -182,17 +182,26 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
+--[[   if not amount then
+    player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("Voce nao pode fazer reroll com itens imbuidos."))
+    return false
+  end ]]
+  print(itemId)
+  local embuement = ItemType(itemId):getImbuement()
+  print(embuement)
+  print(#embuement)
+  print(id, name, duration)
   if not player:canRemoveTransferableCoins(bagsPriceInTransferableCoins[allBags[itemId].bag] * amount) then
     player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("Voce nao tem %dTc", bagsPriceInTransferableCoins[allBags[itemId].bag] * amount))
     player:addItem(itemId, amount)
     player:setBankBalance(player:getBankBalance() - amount)
-    return 0
+    return false
   end
   if player:getFreeBackpackSlots() < amount then
-    player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("Voce nao tem espaco na backpack"))
+    player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("Voce nao tem espaco na backpack."))
     player:addItem(itemId, amount)
     player:setBankBalance(player:getBankBalance() - amount)
-    return 0
+    return false
   end
   player:removeTransferableCoinsBalance(bagsPriceInTransferableCoins[allBags[itemId].bag] * amount)
   GameStore.insertHistory(

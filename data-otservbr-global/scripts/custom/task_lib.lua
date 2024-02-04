@@ -2,14 +2,15 @@ taskOptions = {
 	bonusReward = 65001, -- storage bonus reward
 	bonusRate = 2, -- rate bonus reward
 	taskBoardPositions = {
-    {x = 32343, y = 32219, z = 7}, --thais
-		{x = 32335, y = 31785, z = 7}, --carlin
-		{x = 32921, y = 32075, z = 7}, --venore
-		{x = 33213, y = 32457, z = 8}, --darashia
-		{x = 32793, y = 31248, z = 7}, --yalahar
-		{x = 32337, y = 32838, z = 7}, --liberty bay
-		{x = 32623, y = 32746, z = 6}, --port hope
-  },
+		{x = 32343, y = 32219, z = 7, town = 'Thais' }, --thais
+		{x = 32335, y = 31785, z = 7, town = 'Carlin' }, --carlin
+		{x = 32921, y = 32075, z = 7, town = 'Venore' }, --venore
+		{x = 33213, y = 32457, z = 8, town = 'Darashia' }, --darashia
+		{x = 32793, y = 31248, z = 7, town = 'Yalahar' }, --yalahar
+		{x = 32337, y = 32838, z = 7, town = 'Liberty Bay' }, --liberty bay
+		{x = 32623, y = 32746, z = 6, town = 'Port Hope' }, --port hope
+		{x = 33165, y = 31813, z = 7, town = 'Edron' } --edron
+	},
 	selectLanguage = 1, -- options: 1 = pt_br or 2 = english
 	taskTimesMode = 1, -- -1 - do one task at a time | 1 - do limitedTaskNTimes task at a time | 2 - no task limit at a time
 	limitedTaskNTimes = 5,
