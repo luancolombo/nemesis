@@ -410,7 +410,7 @@ function taskSpawn.onStartup()
 
     for index, location in ipairs(taskOptions.taskBoardPositions) do
         Game.createItem(10145, 1, location)
-        Game.createItem(44187, 1, location)
+        Game.createItem(55506, 1, location)
         logger.info("[ TaskBoard {} ] - Cidade: {}.", index, location.town)
     end
 
